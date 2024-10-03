@@ -1,17 +1,27 @@
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const DocLinkApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class DocLinkApp extends StatelessWidget {
+  const DocLinkApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      locale: const Locale('ar'),
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: const HomeView(),
     );
   }
 }
@@ -21,6 +31,12 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Text(
+          S.of(context).title,
+        ),
+      ),
+    );
   }
 }
