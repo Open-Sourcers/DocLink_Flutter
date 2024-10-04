@@ -3,7 +3,8 @@
     "passwordHintTxt" : " كلمة المرور ",
     "loginHere" : "سجل من هنا",
     "loginWelcome" : "مرحباً بعودتك! لقد افتقدناك",
-    "forgetPassword" : "هل نسيت كلمة المرور ؟",
+    "forgetYourPassword" : "هل نسيت كلمة المرور ؟",
+    "forgetPassword" : "هل نسيت كلمة المرور ",
     "signIn" : "تسجيل الدخول",
     "createNewAccount" : "أنشئ حساب جديد",
     "continueWith" : "أو سجل بواسطة",
@@ -21,5 +22,8 @@
     "resetYoutPassword" : "إعادة تعيين كلمة المرور الخاصة بك",
     "resetPass" : "إعادة تعيين كلمة المرور ",
     "plesesResetPass" : "الرجاء إعادة تعيين كلمة المرور الخاصة بك",
-    "confirmPass" : "تأكيد كلمة المرور"
+    "confirmPass" : "تأكيد كلمة المرور",
+
+    "emailToReset" : "أدخل بريدك الالكتروني لتغيير كلمة المرور"
+
 }

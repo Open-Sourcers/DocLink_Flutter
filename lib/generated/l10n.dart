@@ -91,9 +91,19 @@ class S {
   }
 
   /// `Forgot your password ? `
-  String get forgetPassword {
+  String get forgetYourPassword {
     return Intl.message(
       'Forgot your password ? ',
+      name: 'forgetYourPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot password`
+  String get forgetPassword {
+    return Intl.message(
+      'Forgot password',
       name: 'forgetPassword',
       desc: '',
       args: [],
@@ -255,6 +265,16 @@ class S {
     return Intl.message(
       'Confirm password',
       name: 'confirmPass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your email to reset your password`
+  String get emailToReset {
+    return Intl.message(
+      'Enter your email to reset your password',
+      name: 'emailToReset',
       desc: '',
       args: [],
     );

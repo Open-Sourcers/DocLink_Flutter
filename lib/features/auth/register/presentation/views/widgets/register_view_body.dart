@@ -4,9 +4,11 @@ import 'package:doc_link_project/core/common/widgets/custom_continue_with_sectio
 import 'package:doc_link_project/core/common/widgets/custom_password_text_form_field.dart';
 import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/features/auth/common/create_or_have_account_button.dart';
 import 'package:doc_link_project/features/auth/register/presentation/views/widgets/custom_name_text_field_section.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class RegisterViewBody extends StatelessWidget {
@@ -20,6 +22,7 @@ class RegisterViewBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            SizedBox(height: 70.h),
             Text(
               S.of(context).createAccount,
               textAlign: TextAlign.center,
@@ -61,19 +64,11 @@ class RegisterViewBody extends StatelessWidget {
               onPressed: () {},
             ),
             const SizedBox(height: 30),
-            InkWell(
+            CreateOrHaveAccountButton(
+              title: S.of(context).haveAccount,
               onTap: () {
                 GoRouter.of(context).pop();
               },
-              child: Text(
-                S.of(context).haveAccount,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: spaceGrotesk,
-                ),
-              ),
             ),
             const SizedBox(height: 30),
             Text(

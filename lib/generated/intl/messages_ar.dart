@@ -34,8 +34,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("أنشئ حساب جديد"),
         "emailHintTxt":
             MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني  "),
+        "emailToReset": MessageLookupByLibrary.simpleMessage(
+            "أدخل بريدك الالكتروني لتغيير كلمة المرور"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول "),
         "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور "),
+        "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل "),
