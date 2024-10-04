@@ -59,6 +59,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Enter your password`
+  String get passwordHintTxt {
+    return Intl.message(
+      'Enter your password',
+      name: 'passwordHintTxt',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

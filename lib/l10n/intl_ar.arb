@@ -1,3 +1,4 @@
 {
-    "emailHintTxt" : "أدخل بريدك الالكتروني : "
+    "emailHintTxt" : "أدخل بريدك الالكتروني : ",
+    "passwordHintTxt" : "أدخل كلمة المرور :"
 }
