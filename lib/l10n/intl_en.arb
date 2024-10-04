@@ -1,3 +1,4 @@
 {
-    "emailHintTxt" : "Enter your email :"
+    "emailHintTxt" : "Enter your email :",
+    "passwordHintTxt" : "Enter your password"
 }

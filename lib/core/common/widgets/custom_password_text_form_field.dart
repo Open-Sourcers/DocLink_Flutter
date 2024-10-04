@@ -2,18 +2,41 @@ import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({
+class CustomPasswordTextFormField extends StatefulWidget {
+  final String hintTxt;
+  final TextEditingController controller;
+  const CustomPasswordTextFormField({
     super.key,
+    required this.hintTxt,
+    required this.controller,
   });
 
+  @override
+  State<CustomPasswordTextFormField> createState() =>
+      _CustomPasswordTextFormFieldState();
+}
+
+class _CustomPasswordTextFormFieldState
+    extends State<CustomPasswordTextFormField> {
+  bool isShown = false;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: TextFormField(
         cursorColor: AppColors.commonColor,
+        obscureText: isShown,
         decoration: InputDecoration(
+          suffixIcon: IconButton(
+            onPressed: () {
+              setState(() {
+                isShown = !isShown;
+              });
+            },
+            icon: !isShown
+                ? const Icon(Icons.visibility)
+                : const Icon(Icons.visibility_off),
+          ),
           contentPadding: const EdgeInsets.all(20),
           enabled: true,
           hintText: S.of(context).emailHintTxt,
