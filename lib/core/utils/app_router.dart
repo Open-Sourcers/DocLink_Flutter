@@ -2,7 +2,7 @@ import 'package:doc_link_project/features/auth/login/presentation/views/login_vi
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
-  final router = GoRouter(
+  static final router = GoRouter(
     routes: [
       GoRoute(
         path: '/',

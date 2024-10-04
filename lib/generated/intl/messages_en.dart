@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "emailHintTxt":
-            MessageLookupByLibrary.simpleMessage("Enter your email :")
+            MessageLookupByLibrary.simpleMessage("Enter your email :"),
+        "passwordHintTxt":
+            MessageLookupByLibrary.simpleMessage("Enter your password")
       };
 }

@@ -12,16 +12,3 @@ Future<void> main() async {
     runApp(const DocLinkApp());
   });
 }
-
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: null,
-      ),
-    );
-  }
-}
