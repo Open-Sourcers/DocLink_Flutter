@@ -33,7 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("أنشئ حساب جديد"),
         "emailHintTxt":
-            MessageLookupByLibrary.simpleMessage("أدخل بريدك الالكتروني : "),
+            MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني : "),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول :"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
@@ -44,7 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginWelcome":
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
         "passwordHintTxt":
-            MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور :"),
+            MessageLookupByLibrary.simpleMessage(" كلمة المرور :"),
         "plesesResetPass": MessageLookupByLibrary.simpleMessage(
             "الرجاء إعادة تعيين كلمة المرور الخاصة بك"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(

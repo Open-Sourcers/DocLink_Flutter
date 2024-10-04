@@ -1,6 +1,6 @@
 {
-    "emailHintTxt" : "أدخل بريدك الالكتروني : ",
-    "passwordHintTxt" : "أدخل كلمة المرور :",
+    "emailHintTxt" : " بريدك الالكتروني : ",
+    "passwordHintTxt" : " كلمة المرور :",
     "loginHere" : "سجل من هنا",
     "loginWelcome" : "مرحباً بعودتك! لقد افتقدناك",
     "forgetPassword" : "هل نسيت كلمة المرور ؟",

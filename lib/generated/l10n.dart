@@ -50,20 +50,20 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Enter your email :`
+  /// `Email :`
   String get emailHintTxt {
     return Intl.message(
-      'Enter your email :',
+      'Email :',
       name: 'emailHintTxt',
       desc: '',
       args: [],
     );
   }
 
-  /// `Enter your password`
+  /// `Password`
   String get passwordHintTxt {
     return Intl.message(
-      'Enter your password',
+      'Password',
       name: 'passwordHintTxt',
       desc: '',
       args: [],
@@ -80,20 +80,20 @@ class S {
     );
   }
 
-  /// `Welcome back you’ve been missed!`
+  /// `Welcome back you’ve\nbeen missed!`
   String get loginWelcome {
     return Intl.message(
-      'Welcome back you’ve been missed!',
+      'Welcome back you’ve\nbeen missed!',
       name: 'loginWelcome',
       desc: '',
       args: [],
     );
   }
 
-  /// `Forgot your password?`
+  /// `Forgot your password ? `
   String get forgetPassword {
     return Intl.message(
-      'Forgot your password?',
+      'Forgot your password ? ',
       name: 'forgetPassword',
       desc: '',
       args: [],
