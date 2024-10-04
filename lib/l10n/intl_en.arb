@@ -1,4 +1,25 @@
 {
-    "emailHintTxt" : "Enter your email :",
-    "passwordHintTxt" : "Enter your password"
+    "emailHintTxt" : "Email :",
+    "passwordHintTxt" : "Password",
+    "loginHere" : "Login here",
+    "loginWelcome" : "Welcome back you’ve\nbeen missed!",
+    "forgetPassword" : "Forgot your password ? ",
+    "signIn" : "Sign in",
+    "createNewAccount" : "Create new account",
+    "continueWith" : "Or continue with",
+
+    "createAccount" : "Create Account",
+    "registerDescription" : "Create an account so you can explore all the existing doctors.",
+    "firstName" : "First Name :",
+    "lastName" : "Last Name :",
+    "SignUp" : "Sign up",
+    "haveAccount" : "Already have an account",
+
+    "verifyAccount" : "Verify your account",
+    "codeVerify" : "Please enter 6 digits code that sent to ",
+    "confirm" : "Confirm",
+    "resetYoutPassword" : "Reset your password",
+    "resetPass" : "Reset password",
+    "plesesResetPass" : "please reset you password",
+    "confirmPass" : "Confirm password"
 }
