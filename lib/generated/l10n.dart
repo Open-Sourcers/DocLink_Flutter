@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `Password`
+  /// `Password :`
   String get passwordHintTxt {
     return Intl.message(
-      'Password',
+      'Password :',
       name: 'passwordHintTxt',
       desc: '',
       args: [],
@@ -250,10 +250,10 @@ class S {
     );
   }
 
-  /// `Confirm password`
+  /// `Confirm password :`
   String get confirmPass {
     return Intl.message(
-      'Confirm password',
+      'Confirm password :',
       name: 'confirmPass',
       desc: '',
       args: [],

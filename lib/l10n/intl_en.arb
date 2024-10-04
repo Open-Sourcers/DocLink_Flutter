@@ -1,6 +1,6 @@
 {
     "emailHintTxt" : "Email :",
-    "passwordHintTxt" : "Password",
+    "passwordHintTxt" : "Password :",
     "loginHere" : "Login here",
     "loginWelcome" : "Welcome back you’ve\nbeen missed!",
     "forgetPassword" : "Forgot your password ? ",
@@ -21,5 +21,5 @@
     "resetYoutPassword" : "Reset your password",
     "resetPass" : "Reset password",
     "plesesResetPass" : "please reset you password",
-    "confirmPass" : "Confirm password"
+    "confirmPass" : "Confirm password :"
 }

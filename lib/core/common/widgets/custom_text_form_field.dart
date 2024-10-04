@@ -19,7 +19,7 @@ class CustomTextFormField extends StatelessWidget {
         hintStyle: const TextStyle(
           color: AppColors.txtFieldTxtColor,
           fontSize: 18,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w500,
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide.none,

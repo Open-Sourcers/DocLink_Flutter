@@ -28,9 +28,9 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  adaptive_screen_utils: ^2.2.0
-  easy_splash_screen: ^1.0.4
+  flutter_screenutil: ^5.9.3
   cupertino_icons: ^1.0.8
+  easy_splash_screen: ^1.0.4
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -70,8 +70,6 @@ flutter:
         - asset: assets/fonts/SpaceGrotesk-Regular.ttf
         - asset: assets/fonts/SpaceGrotesk-Bold.ttf
           weight: 700
-
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_intl:
@@ -80,5 +78,5 @@ flutter_assets:
   assets_path: assets/images/
   output_path: lib/core/utils/
   filename: app_images.dart
-  field_prefix:
+  field_prefix: null
   classname: AppImages

@@ -26,7 +26,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
-        "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm password"),
+        "confirmPass":
+            MessageLookupByLibrary.simpleMessage("Confirm password :"),
         "continueWith":
             MessageLookupByLibrary.simpleMessage("Or continue with"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
@@ -42,7 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),
-        "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
+        "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password :"),
         "plesesResetPass":
             MessageLookupByLibrary.simpleMessage("please reset you password"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(

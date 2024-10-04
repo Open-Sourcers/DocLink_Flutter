@@ -1,9 +1,11 @@
 import 'package:doc_link_project/features/auth/login/presentation/views/login_view.dart';
+import 'package:doc_link_project/features/auth/register/presentation/views/register_view.dart';
 import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
-  static String login = '/login';
+  static String loginView = '/loginview';
+  static String registerView = '/registerView';
 
   static final router = GoRouter(
     routes: [
@@ -12,8 +14,12 @@ abstract class AppRouter {
         builder: (context, state) => const SpashView(),
       ),
       GoRoute(
-        path: login,
+        path: loginView,
         builder: (context, state) => const LoginView(),
+      ),
+      GoRoute(
+        path: registerView,
+        builder: (context, state) => const RegisterView(),
       ),
     ],
   );

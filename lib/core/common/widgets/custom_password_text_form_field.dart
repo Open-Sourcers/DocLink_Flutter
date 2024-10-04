@@ -15,7 +15,7 @@ class CustomPasswordTextFormField extends StatefulWidget {
 
 class _CustomPasswordTextFormFieldState
     extends State<CustomPasswordTextFormField> {
-  bool isShown = false;
+  bool isShown = true;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -28,9 +28,9 @@ class _CustomPasswordTextFormFieldState
               isShown = !isShown;
             });
           },
-          icon: !isShown
-              ? const Icon(Icons.visibility)
-              : const Icon(Icons.visibility_off),
+          icon: isShown
+              ? const Icon(Icons.visibility_off)
+              : const Icon(Icons.visibility),
         ),
         contentPadding: const EdgeInsets.all(20),
         enabled: true,
@@ -38,7 +38,7 @@ class _CustomPasswordTextFormFieldState
         hintStyle: const TextStyle(
           color: AppColors.txtFieldTxtColor,
           fontSize: 18,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w500,
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide.none,
