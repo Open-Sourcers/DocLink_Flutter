@@ -22,9 +22,38 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
+        "codeVerify": MessageLookupByLibrary.simpleMessage(
+            "Please enter 6 digits code that sent to "),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm password"),
+        "continueWith":
+            MessageLookupByLibrary.simpleMessage("Or continue with"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("Create new account"),
         "emailHintTxt":
             MessageLookupByLibrary.simpleMessage("Enter your email :"),
+        "firstName": MessageLookupByLibrary.simpleMessage("First Name :"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot your password?"),
+        "haveAccount":
+            MessageLookupByLibrary.simpleMessage("Already have an account"),
+        "lastName": MessageLookupByLibrary.simpleMessage("Last Name :"),
+        "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
+        "loginWelcome": MessageLookupByLibrary.simpleMessage(
+            "Welcome back you’ve been missed!"),
         "passwordHintTxt":
-            MessageLookupByLibrary.simpleMessage("Enter your password")
+            MessageLookupByLibrary.simpleMessage("Enter your password"),
+        "plesesResetPass":
+            MessageLookupByLibrary.simpleMessage("please reset you password"),
+        "registerDescription": MessageLookupByLibrary.simpleMessage(
+            "Create an account so you can explore all the existing doctors."),
+        "resetPass": MessageLookupByLibrary.simpleMessage("Reset password"),
+        "resetYoutPassword":
+            MessageLookupByLibrary.simpleMessage("Reset your password"),
+        "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
+        "verifyAccount":
+            MessageLookupByLibrary.simpleMessage("Verify your account")
       };
 }
