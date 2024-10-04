@@ -26,24 +26,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
-        "confirmPass":
-            MessageLookupByLibrary.simpleMessage("Confirm password :"),
+        "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm password"),
         "continueWith":
             MessageLookupByLibrary.simpleMessage("Or continue with"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create new account"),
-        "emailHintTxt": MessageLookupByLibrary.simpleMessage("Email :"),
-        "firstName": MessageLookupByLibrary.simpleMessage("First Name :"),
+        "emailHintTxt": MessageLookupByLibrary.simpleMessage("Email"),
+        "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
-        "lastName": MessageLookupByLibrary.simpleMessage("Last Name :"),
+        "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),
-        "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password :"),
+        "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
         "plesesResetPass":
             MessageLookupByLibrary.simpleMessage("please reset you password"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(

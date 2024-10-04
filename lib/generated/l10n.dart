@@ -50,20 +50,20 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Email :`
+  /// `Email`
   String get emailHintTxt {
     return Intl.message(
-      'Email :',
+      'Email',
       name: 'emailHintTxt',
       desc: '',
       args: [],
     );
   }
 
-  /// `Password :`
+  /// `Password`
   String get passwordHintTxt {
     return Intl.message(
-      'Password :',
+      'Password',
       name: 'passwordHintTxt',
       desc: '',
       args: [],
@@ -150,20 +150,20 @@ class S {
     );
   }
 
-  /// `First Name :`
+  /// `First Name`
   String get firstName {
     return Intl.message(
-      'First Name :',
+      'First Name',
       name: 'firstName',
       desc: '',
       args: [],
     );
   }
 
-  /// `Last Name :`
+  /// `Last Name`
   String get lastName {
     return Intl.message(
-      'Last Name :',
+      'Last Name',
       name: 'lastName',
       desc: '',
       args: [],
@@ -250,10 +250,10 @@ class S {
     );
   }
 
-  /// `Confirm password :`
+  /// `Confirm password`
   String get confirmPass {
     return Intl.message(
-      'Confirm password :',
+      'Confirm password',
       name: 'confirmPass',
       desc: '',
       args: [],

@@ -1,6 +1,6 @@
 {
-    "emailHintTxt" : " بريدك الالكتروني : ",
-    "passwordHintTxt" : " كلمة المرور :",
+    "emailHintTxt" : " بريدك الالكتروني  ",
+    "passwordHintTxt" : " كلمة المرور ",
     "loginHere" : "سجل من هنا",
     "loginWelcome" : "مرحباً بعودتك! لقد افتقدناك",
     "forgetPassword" : "هل نسيت كلمة المرور ؟",
@@ -10,8 +10,8 @@
 
     "createAccount" : "انشاء حساب",
     "registerDescription" : "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين .",
-    "firstName" : "الاسم الاول :",
-    "lastName" : "الاسم الأخير :",
+    "firstName" : "الاسم الاول ",
+    "lastName" : "الاسم الأخير ",
     "SignUp" : "تسجيل",
     "haveAccount" : "لديك حساب بالفعل ",
     

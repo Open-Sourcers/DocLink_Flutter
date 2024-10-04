@@ -2,6 +2,7 @@ import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class ForgetPasswordButton extends StatelessWidget {
   const ForgetPasswordButton({
@@ -14,7 +15,8 @@ class ForgetPasswordButton extends StatelessWidget {
       onTap: () {},
       child: Text(
         S.of(context).forgetPassword,
-        textAlign: TextAlign.right,
+        textAlign:
+            Intl.getCurrentLocale() == 'ar' ? TextAlign.left : TextAlign.right,
         style: const TextStyle(
           fontSize: 14,
           fontFamily: spaceGrotesk,
