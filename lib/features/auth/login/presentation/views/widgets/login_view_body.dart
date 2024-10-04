@@ -24,7 +24,7 @@ class LoginViewBody extends StatelessWidget {
                 fontSize: 30,
                 color: AppColors.commonColor,
                 fontWeight: FontWeight.w900,
-                fontFamily: docFontFamilyBold,
+                fontFamily: spaceGrotesk,
               ),
             ),
             const SizedBox(height: 25),
@@ -34,7 +34,7 @@ class LoginViewBody extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
-                fontFamily: docFontFamilyBold,
+                fontFamily: spaceGrotesk,
               ),
             ),
             const SizedBox(height: 70),
@@ -53,7 +53,7 @@ class LoginViewBody extends StatelessWidget {
                 textAlign: TextAlign.right,
                 style: const TextStyle(
                   fontSize: 14,
-                  fontFamily: docFontFamilyRegular,
+                  fontFamily: spaceGrotesk,
                   fontWeight: FontWeight.bold,
                   color: AppColors.commonColor,
                 ),
