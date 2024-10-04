@@ -2,8 +2,12 @@
 class AppImages {
   AppImages._();
   
-  /// Assets for imagesSplashImage
-  /// assets/images/splash_image.jpg
-  static const String imagesSplashImage = "assets/images/splash_image.jpg";
+  /// Assets for imagesAppLogo
+  /// assets/images/app_logo.png
+  static const String imagesAppLogo = "assets/images/app_logo.png";
+
+  /// Assets for imagesLogo2
+  /// assets/images/logo2.jpg
+  static const String imagesLogo2 = "assets/images/logo2.jpg";
 }
 

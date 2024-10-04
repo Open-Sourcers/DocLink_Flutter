@@ -1,4 +1,5 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -30,7 +31,7 @@ class DocLinkApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+      home: const SpashView(),
     );
   }
 }
