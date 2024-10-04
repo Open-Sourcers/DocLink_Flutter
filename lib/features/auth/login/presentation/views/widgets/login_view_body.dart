@@ -1,8 +1,10 @@
 import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
+import 'package:doc_link_project/core/common/widgets/custom_continue_with_section.dart';
 import 'package:doc_link_project/core/common/widgets/custom_password_text_form_field.dart';
 import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/features/auth/login/presentation/views/widgets/forget_password_button.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,7 @@ class LoginViewBody extends StatelessWidget {
               S.of(context).loginHere,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 30,
+                fontSize: 28,
                 color: AppColors.commonColor,
                 fontWeight: FontWeight.w900,
                 fontFamily: spaceGrotesk,
@@ -32,7 +34,7 @@ class LoginViewBody extends StatelessWidget {
               S.of(context).loginWelcome,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontSize: 22,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
                 fontFamily: spaceGrotesk,
               ),
@@ -46,25 +48,35 @@ class LoginViewBody extends StatelessWidget {
               hintTxt: S.of(context).passwordHintTxt,
             ),
             const SizedBox(height: 20),
-            GestureDetector(
-              onTap: () {},
-              child: Text(
-                S.of(context).forgetPassword,
-                textAlign: TextAlign.right,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontFamily: spaceGrotesk,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.commonColor,
-                ),
-              ),
-            ),
+            const ForgetPasswordButton(),
             const SizedBox(height: 20),
             CustomButton(
               buttonTitle: S.of(context).signIn,
               onPressed: () {},
             ),
             const SizedBox(height: 30),
+            Text(
+              S.of(context).createNewAccount,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                fontFamily: spaceGrotesk,
+              ),
+            ),
+            const SizedBox(height: 80),
+            Text(
+              S.of(context).continueWith,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 16,
+                color: AppColors.commonColor,
+                fontWeight: FontWeight.w900,
+                fontFamily: spaceGrotesk,
+              ),
+            ),
+            const SizedBox(height: 20),
+            const CustomContinueWithSection()
           ],
         ),
       ),
