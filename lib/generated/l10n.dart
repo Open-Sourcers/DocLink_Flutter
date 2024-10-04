@@ -50,21 +50,11 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `DocLink App`
-  String get title {
+  /// `Enter your email :`
+  String get emailHintTxt {
     return Intl.message(
-      'DocLink App',
-      name: 'title',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `DocLink App`
-  String get text {
-    return Intl.message(
-      'DocLink App',
-      name: 'text',
+      'Enter your email :',
+      name: 'emailHintTxt',
       desc: '',
       args: [],
     );

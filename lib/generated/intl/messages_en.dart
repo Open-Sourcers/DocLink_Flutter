@@ -22,7 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "text": MessageLookupByLibrary.simpleMessage("DocLink App"),
-        "title": MessageLookupByLibrary.simpleMessage("DocLink App")
+        "emailHintTxt":
+            MessageLookupByLibrary.simpleMessage("Enter your email :")
       };
 }
