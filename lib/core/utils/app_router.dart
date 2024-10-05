@@ -3,10 +3,12 @@ import 'package:doc_link_project/features/auth/forget_password/presentation/view
 import 'package:doc_link_project/features/auth/forget_password/presentation/views/verify_account_view.dart';
 import 'package:doc_link_project/features/auth/login/presentation/views/login_view.dart';
 import 'package:doc_link_project/features/auth/register/presentation/views/register_view.dart';
+import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
+  static String onboarding = '/onboarding';
   static String loginView = '/loginview';
   static String registerView = '/registerView';
   static String forgetPasswordView = '/forgetPasswordView';
@@ -18,6 +20,10 @@ abstract class AppRouter {
       GoRoute(
         path: '/',
         builder: (context, state) => const SpashView(),
+      ),
+      GoRoute(
+        path: onboarding,
+        builder: (context, state) => const OnboardingView(),
       ),
       GoRoute(
         path: loginView,

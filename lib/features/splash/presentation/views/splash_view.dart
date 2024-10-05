@@ -32,7 +32,7 @@ class _SpashViewState extends State<SpashView> {
     Timer(
       const Duration(seconds: 6),
       () {
-        GoRouter.of(context).pushReplacement(AppRouter.loginView);
+        GoRouter.of(context).pushReplacement(AppRouter.onboarding);
       },
     );
   }

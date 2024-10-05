@@ -7,11 +7,15 @@ class CustomButton extends StatelessWidget {
   final String buttonTitle;
   final Function() onPressed;
   final bool isCompleted;
+  final Color backgroundColor;
+  final Color textColor;
   const CustomButton({
     super.key,
     required this.buttonTitle,
     required this.onPressed,
     this.isCompleted = true,
+    this.backgroundColor = AppColors.commonColor,
+    this.textColor = AppColors.white,
   });
 
   @override
@@ -19,11 +23,14 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: isCompleted ? onPressed : null,
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.commonColor,
+        backgroundColor: backgroundColor,
         padding: const EdgeInsets.symmetric(vertical: 15),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-      child: Text(buttonTitle, style: Styless.textSemiBold20),
+      child: Text(buttonTitle,
+          style: Styless.textSemiBold20.copyWith(
+            color: textColor,
+          )),
     );
   }
 }
