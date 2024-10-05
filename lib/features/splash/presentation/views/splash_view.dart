@@ -1,31 +1,39 @@
-import 'package:doc_link_project/core/utils/app_colors.dart';
-import 'package:doc_link_project/core/utils/app_images.dart';
-import 'package:doc_link_project/core/utils/app_router.dart';
-import 'package:easy_splash_screen/easy_splash_screen.dart';
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/core/utils/app_router.dart';
+import 'package:doc_link_project/features/splash/presentation/views/widgets/splash_view_body.dart';
 import 'package:go_router/go_router.dart';
 
-class SpashView extends StatelessWidget {
+class SpashView extends StatefulWidget {
   const SpashView({super.key});
 
   @override
+  State<SpashView> createState() => _SpashViewState();
+}
+
+class _SpashViewState extends State<SpashView> {
+  @override
+  void initState() {
+    super.initState();
+    navigationMethod();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return EasySplashScreen(
-      logo: Image.asset(AppImages.imagesAppLogo),
-      title: const Text(
-        "DOCTOR",
-        style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),
-      ),
-      backgroundColor:AppColors.commonColor,
-      showLoader: true,
-      loadingText: const Text("Loading..."),
-      loaderColor: Colors.white,
-      navigator: GoRoute(path: AppRouter.splash),
-      durationInSeconds: 5,
+    return const Scaffold(
+      backgroundColor: AppColors.commonColor,
+      body: SplashViewBody(),
+    );
+  }
+
+  void navigationMethod() {
+    Timer(
+      const Duration(seconds: 6),
+      () {
+        GoRouter.of(context).pushReplacement(AppRouter.onboarding);
+      },
     );
   }
 }

@@ -1,0 +1,60 @@
+import 'package:doc_link_project/core/common/widgets/custom_button.dart';
+import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/core/utils/app_images.dart';
+import 'package:doc_link_project/core/utils/app_router.dart';
+import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
+import 'package:doc_link_project/core/utils/styless.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+class OnboardingViewBody extends StatelessWidget {
+  const OnboardingViewBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: decorationAppMethod(),
+      child: Padding(
+        padding: const EdgeInsets.all(30),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            const SizedBox(width: 25),
+            Image.asset(AppImages.imagesOnboarding),
+            const SizedBox(height: 30),
+            const Text(
+              'Lorem Ipsum',
+              style: Styless.textSemiBold35,
+            ),
+            const Text(
+              'Lorem Ipsum',
+              style: Styless.textRegular14,
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: CustomButton(
+                  buttonTitle: 'Login',
+                  onPressed: () {
+                    GoRouter.of(context).pushReplacement(AppRouter.loginView);
+                  },
+                )),
+                const SizedBox(width: 25),
+                Expanded(
+                  child: CustomButton(
+                    buttonTitle: 'Register',
+                    textColor: AppColors.black,
+                    backgroundColor: AppColors.white,
+                    onPressed: () {
+                      GoRouter.of(context).pushReplacement(AppRouter.registerView);
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

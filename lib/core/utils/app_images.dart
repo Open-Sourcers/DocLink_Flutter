@@ -6,8 +6,20 @@ class AppImages {
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
 
+  /// Assets for imagesForgetPass
+  /// assets/images/forgetPass.jpg
+  static const String imagesForgetPass = "assets/images/forgetPass.jpg";
+
   /// Assets for imagesLogo2
   /// assets/images/logo2.jpg
   static const String imagesLogo2 = "assets/images/logo2.jpg";
+
+  /// Assets for imagesObjects
+  /// assets/images/objects.png
+  static const String imagesObjects = "assets/images/objects.png";
+
+  /// Assets for imagesOnboarding
+  /// assets/images/onboarding.png
+  static const String imagesOnboarding = "assets/images/onboarding.png";
 }
 

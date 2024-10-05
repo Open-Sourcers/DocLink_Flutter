@@ -1,4 +1,29 @@
 {
-    "emailHintTxt" : "أدخل بريدك الالكتروني : ",
-    "passwordHintTxt" : "أدخل كلمة المرور :"
+    "emailHintTxt" : " بريدك الالكتروني  ",
+    "passwordHintTxt" : " كلمة المرور ",
+    "loginHere" : "سجل من هنا",
+    "loginWelcome" : "مرحباً بعودتك! لقد افتقدناك",
+    "forgetYourPassword" : "هل نسيت كلمة المرور ؟",
+    "forgetPassword" : "هل نسيت كلمة المرور ",
+    "signIn" : "تسجيل الدخول",
+    "createNewAccount" : "أنشئ حساب جديد",
+    "continueWith" : "أو سجل بواسطة",
+
+    "createAccount" : "انشاء حساب",
+    "registerDescription" : "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين .",
+    "firstName" : "الاسم الاول ",
+    "lastName" : "الاسم الأخير ",
+    "SignUp" : "تسجيل",
+    "haveAccount" : "لديك حساب بالفعل ",
+    
+    "verifyAccount" : "التحقق من حسابك",
+    "codeVerify" : "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى ",
+    "confirm" : "تأكيد",
+    "resetYoutPassword" : "إعادة تعيين كلمة المرور الخاصة بك",
+    "resetPass" : "إعادة تعيين كلمة المرور ",
+    "plesesResetPass" : "الرجاء إعادة تعيين كلمة المرور الخاصة بك",
+    "confirmPass" : "تأكيد كلمة المرور",
+
+    "emailToReset" : "أدخل بريدك الالكتروني لتغيير كلمة المرور"
+
 }
