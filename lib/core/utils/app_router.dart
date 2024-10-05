@@ -1,4 +1,5 @@
 import 'package:doc_link_project/features/auth/forget_password/presentation/views/forget_password_view.dart';
+import 'package:doc_link_project/features/auth/forget_password/presentation/views/reset_password_view.dart';
 import 'package:doc_link_project/features/auth/forget_password/presentation/views/verify_account_view.dart';
 import 'package:doc_link_project/features/auth/login/presentation/views/login_view.dart';
 import 'package:doc_link_project/features/auth/register/presentation/views/register_view.dart';
@@ -10,6 +11,7 @@ abstract class AppRouter {
   static String registerView = '/registerView';
   static String forgetPasswordView = '/forgetPasswordView';
   static String verifyAccountView = '/verifyAccountView';
+  static String resetPasswordView = '/resetPasswordView';
 
   static final router = GoRouter(
     routes: [
@@ -32,6 +34,10 @@ abstract class AppRouter {
       GoRoute(
         path: verifyAccountView,
         builder: (context, state) => const VerifyAccountView(),
+      ),
+      GoRoute(
+        path: resetPasswordView,
+        builder: (context, state) => const ResetPasswordView(),
       ),
     ],
   );

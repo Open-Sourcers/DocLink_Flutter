@@ -1,22 +1,14 @@
 import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
+import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
-import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:pinput/pinput.dart';
 
-class VerifyAccountViewBody extends StatefulWidget {
-  const VerifyAccountViewBody({super.key});
+class ResetPasswordViewBody extends StatelessWidget {
+  const ResetPasswordViewBody({super.key});
 
-  @override
-  State<VerifyAccountViewBody> createState() => _VerifyAccountViewBodyState();
-}
-
-class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
-  bool isCompleted = false;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,7 +18,7 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
         children: [
           SizedBox(height: 70.h),
           Text(
-            S.of(context).verifyAccount,
+            S.of(context).resetYoutPassword,
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 28,
@@ -37,7 +29,7 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
           ),
           const SizedBox(height: 15),
           Text(
-            S.of(context).codeVerify,
+            S.of(context).plesesResetPass,
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 16,
@@ -45,35 +37,21 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
               fontFamily: spaceGrotesk,
             ),
           ),
-          const SizedBox(height: 160),
-          pinputMethod(),
-          const SizedBox(height: 100),
+          const SizedBox(height: 110),
+          CustomTextFormField(
+            hintTxt: S.of(context).resetYoutPassword,
+          ),
+          const SizedBox(height: 20),
+          CustomTextFormField(
+            hintTxt: S.of(context).confirmPass,
+          ),
+          const SizedBox(height: 30),
           CustomButton(
-            buttonTitle: S.of(context).confirm,
-            onPressed: () {
-              GoRouter.of(context).push(AppRouter.resetPasswordView);
-            },
-            isCompleted: isCompleted,
+            buttonTitle: S.of(context).resetPass,
+            onPressed: () {},
           ),
         ],
       ),
-    );
-  }
-
-  Pinput pinputMethod() {
-    return Pinput(
-      length: 6,
-      onChanged: (value) {
-        setState(() {
-          isCompleted = false;
-        });
-      },
-      onCompleted: (value) {
-        isCompleted = true;
-      },
-      defaultPinTheme: defaultPinTheme,
-      focusedPinTheme: focusedPinTheme,
-      keyboardType: TextInputType.number,
     );
   }
 }
