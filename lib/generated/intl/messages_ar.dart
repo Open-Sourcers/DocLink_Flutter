@@ -22,9 +22,38 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "codeVerify": MessageLookupByLibrary.simpleMessage(
+            "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
+        "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
+        "confirmPass":
+            MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "continueWith": MessageLookupByLibrary.simpleMessage("أو سجل بواسطة"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("أنشئ حساب جديد"),
         "emailHintTxt":
-            MessageLookupByLibrary.simpleMessage("أدخل بريدك الالكتروني : "),
+            MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني : "),
+        "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول :"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
+        "haveAccount":
+            MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل "),
+        "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير :"),
+        "loginHere": MessageLookupByLibrary.simpleMessage("سجل من هنا"),
+        "loginWelcome":
+            MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
         "passwordHintTxt":
-            MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور :")
+            MessageLookupByLibrary.simpleMessage(" كلمة المرور :"),
+        "plesesResetPass": MessageLookupByLibrary.simpleMessage(
+            "الرجاء إعادة تعيين كلمة المرور الخاصة بك"),
+        "registerDescription": MessageLookupByLibrary.simpleMessage(
+            "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين ."),
+        "resetPass":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور "),
+        "resetYoutPassword": MessageLookupByLibrary.simpleMessage(
+            "إعادة تعيين كلمة المرور الخاصة بك"),
+        "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "verifyAccount": MessageLookupByLibrary.simpleMessage("التحقق من حسابك")
       };
 }
