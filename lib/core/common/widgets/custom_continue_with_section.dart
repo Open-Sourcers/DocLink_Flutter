@@ -1,5 +1,7 @@
 import 'package:doc_link_project/constants.dart';
+import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/features/auth/common/custom_continue_with_button.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class CustomContinueWithSection extends StatelessWidget {
@@ -9,17 +11,32 @@ class CustomContinueWithSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
       children: [
-        CustomContinueWithButton(
-          icon: googleIcon,
-          onPressed: () {},
+        Text(
+          S.of(context).continueWith,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontSize: 16,
+            color: AppColors.commonColor,
+            fontWeight: FontWeight.w900,
+            fontFamily: spaceGrotesk,
+          ),
         ),
-        const SizedBox(width: 10),
-        CustomContinueWithButton(
-          icon: faceIcon,
-          onPressed: () {},
+        const SizedBox(height: 20),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CustomContinueWithButton(
+              icon: googleIcon,
+              onPressed: () {},
+            ),
+            const SizedBox(width: 10),
+            CustomContinueWithButton(
+              icon: faceIcon,
+              onPressed: () {},
+            ),
+          ],
         ),
       ],
     );

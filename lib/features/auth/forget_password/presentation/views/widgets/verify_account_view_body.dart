@@ -2,6 +2,7 @@ import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
+import 'package:doc_link_project/features/auth/common/custom_description_texts.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,25 +26,10 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SizedBox(height: 70.h),
-          Text(
-            S.of(context).verifyAccount,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 28,
-              color: AppColors.commonColor,
-              fontWeight: FontWeight.w900,
-              fontFamily: spaceGrotesk,
-            ),
-          ),
-          const SizedBox(height: 15),
-          Text(
-            S.of(context).codeVerify,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-              fontFamily: spaceGrotesk,
-            ),
+          CustomDescriptionTexts(
+            headerTxt: S.of(context).verifyAccount,
+            description: S.of(context).codeVerify,
+            fontSize: 16,
           ),
           const SizedBox(height: 160),
           pinputMethod(),

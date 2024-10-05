@@ -1,12 +1,10 @@
-import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/common/widgets/custom_continue_with_section.dart';
-import 'package:doc_link_project/core/common/widgets/custom_password_text_form_field.dart';
-import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
-import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/features/auth/common/create_or_have_account_button.dart';
+import 'package:doc_link_project/features/auth/common/custom_description_texts.dart';
+import 'package:doc_link_project/features/auth/login/presentation/views/widgets/custom_login_text_field_section.dart';
 import 'package:doc_link_project/features/auth/login/presentation/views/widgets/forget_password_button.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -27,38 +25,14 @@ class LoginViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               SizedBox(height: 70.h),
-              // Login Here text
-              Text(
-                S.of(context).loginHere,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 28,
-                  color: AppColors.commonColor,
-                  fontWeight: FontWeight.w900,
-                  fontFamily: spaceGrotesk,
-                ),
-              ),
-              const SizedBox(height: 25),
-              // Welcome back text
-              Text(
-                S.of(context).loginWelcome,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: spaceGrotesk,
-                ),
+              // custom description texts
+              CustomDescriptionTexts(
+                headerTxt: S.of(context).loginHere,
+                description: S.of(context).loginWelcome,
               ),
               const SizedBox(height: 70),
-              // Email text form field
-              CustomTextFormField(
-                hintTxt: S.of(context).emailHintTxt,
-              ),
-              const SizedBox(height: 25),
-              // Password text form field
-              CustomPasswordTextFormField(
-                hintTxt: S.of(context).passwordHintTxt,
-              ),
+              // custom text form field section
+              const CustomLoginTextFieldsSection(),
               const SizedBox(height: 20),
               //forget password button
               const ForgetPasswordButton(),
@@ -77,19 +51,7 @@ class LoginViewBody extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 80),
-              // Continue with text
-              Text(
-                S.of(context).continueWith,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 16,
-                  color: AppColors.commonColor,
-                  fontWeight: FontWeight.w900,
-                  fontFamily: spaceGrotesk,
-                ),
-              ),
-              const SizedBox(height: 20),
-              // Continue with buttons
+              // Continue with section
               const CustomContinueWithSection(),
             ],
           ),
