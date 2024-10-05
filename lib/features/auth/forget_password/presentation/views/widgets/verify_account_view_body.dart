@@ -1,6 +1,5 @@
 import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
-import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/features/auth/common/custom_description_texts.dart';
 import 'package:doc_link_project/generated/l10n.dart';
