@@ -5,16 +5,18 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   final String buttonTitle;
   final Function() onPressed;
+  final bool isCompleted;
   const CustomButton({
     super.key,
     required this.buttonTitle,
     required this.onPressed,
+    this.isCompleted = true,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onPressed,
+      onPressed: isCompleted ? onPressed : null,
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.commonColor,
         padding: const EdgeInsets.symmetric(vertical: 15),

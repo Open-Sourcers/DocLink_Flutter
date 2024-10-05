@@ -3,9 +3,11 @@ import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_images.dart';
+import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class ForgetPasswordViewBody extends StatelessWidget {
   const ForgetPasswordViewBody({super.key});
@@ -52,7 +54,9 @@ class ForgetPasswordViewBody extends StatelessWidget {
             const SizedBox(height: 50),
             CustomButton(
               buttonTitle: S.of(context).confirm,
-              onPressed: () {},
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.verifyAccountView);
+              },
             ),
           ],
         ),

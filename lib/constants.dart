@@ -1,5 +1,6 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:pinput/pinput.dart';
 
 const String spaceGrotesk = "SpaceGrotesk";
 
@@ -12,4 +13,24 @@ const Icon googleIcon = Icon(
   Icons.email_outlined,
   size: 30,
   color: AppColors.commonColor,
+);
+
+final defaultPinTheme = PinTheme(
+  width: 60,
+  height: 60,
+  textStyle: const TextStyle(
+    fontSize: 20,
+    color: AppColors.commonColor,
+    fontWeight: FontWeight.w600,
+  ),
+  decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(5),
+    border: Border.all(
+      color: const Color.fromARGB(255, 193, 190, 190),
+    ),
+  ),
+);
+
+final focusedPinTheme = defaultPinTheme.copyDecorationWith(
+  border: Border.all(color: Colors.black),
 );
