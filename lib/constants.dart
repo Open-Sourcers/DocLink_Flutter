@@ -19,7 +19,9 @@ const Icon googleIcon = Icon(
 final defaultPinTheme = PinTheme(
   width: 60,
   height: 60,
-  textStyle: Styless.textSemiBold20,
+  textStyle: Styless.textSemiBold20.copyWith(
+    color:AppColors.commonColor
+  ),
   decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(5),
     border: Border.all(
