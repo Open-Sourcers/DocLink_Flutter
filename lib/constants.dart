@@ -1,4 +1,5 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
@@ -18,11 +19,7 @@ const Icon googleIcon = Icon(
 final defaultPinTheme = PinTheme(
   width: 60,
   height: 60,
-  textStyle: const TextStyle(
-    fontSize: 20,
-    color: AppColors.commonColor,
-    fontWeight: FontWeight.w600,
-  ),
+  textStyle: Styless.textSemiBold20,
   decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(5),
     border: Border.all(

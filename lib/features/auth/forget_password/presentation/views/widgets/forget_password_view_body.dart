@@ -1,7 +1,5 @@
-import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
-import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/features/auth/common/custom_description_texts.dart';
@@ -26,7 +24,6 @@ class ForgetPasswordViewBody extends StatelessWidget {
             CustomDescriptionTexts(
               headerTxt: S.of(context).forgetPassword,
               description: S.of(context).emailToReset,
-              fontSize: 18,
             ),
             const SizedBox(height: 20),
             Image.asset(

@@ -19,7 +19,6 @@ class ResetPasswordViewBody extends StatelessWidget {
           CustomDescriptionTexts(
             headerTxt: S.of(context).resetYoutPassword,
             description: S.of(context).plesesResetPass,
-            fontSize: 16,
           ),
           const SizedBox(height: 110),
           const CustomResetPasswordTextFields(),

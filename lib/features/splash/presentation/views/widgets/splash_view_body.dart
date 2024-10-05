@@ -1,4 +1,5 @@
 import 'package:doc_link_project/core/utils/app_images.dart';
+import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 
 class SplashViewBody extends StatelessWidget {
@@ -16,21 +17,18 @@ class SplashViewBody extends StatelessWidget {
             height: MediaQuery.of(context).size.height / 2.5,
           ),
           Image.asset(AppImages.imagesAppLogo),
-          const Text(
-            "DOCTOR",
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
-          ),
+          const SizedBox(height: 10),
+          const Text("DOCTOR", style: Styless.textBold18),
           const Spacer(),
           const CircularProgressIndicator(
             color: Colors.white,
             strokeWidth: 3,
           ),
           const SizedBox(height: 10),
-          const Text("Loading ..."),
+          Text(
+            "Loading ...",
+            style: Styless.textMedium14.copyWith(color: Colors.white),
+          ),
           const SizedBox(height: 10),
         ],
       ),

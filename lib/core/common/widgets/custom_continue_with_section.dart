@@ -1,5 +1,5 @@
 import 'package:doc_link_project/constants.dart';
-import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:doc_link_project/features/auth/common/custom_continue_with_button.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -16,12 +16,7 @@ class CustomContinueWithSection extends StatelessWidget {
         Text(
           S.of(context).continueWith,
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 16,
-            color: AppColors.commonColor,
-            fontWeight: FontWeight.w900,
-            fontFamily: spaceGrotesk,
-          ),
+          style: Styless.textBold14,
         ),
         const SizedBox(height: 20),
         Row(

@@ -26,7 +26,6 @@ class RegisterViewBody extends StatelessWidget {
               CustomDescriptionTexts(
                 headerTxt: S.of(context).createAccount,
                 description: S.of(context).registerDescription,
-                fontSize: 16,
               ),
               const SizedBox(height: 20),
               const CustomRegisterTextFieldSection(),

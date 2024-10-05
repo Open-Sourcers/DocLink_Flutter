@@ -1,4 +1,5 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -16,11 +17,7 @@ class CustomTextFormField extends StatelessWidget {
         contentPadding: const EdgeInsets.all(20),
         enabled: true,
         hintText: hintTxt,
-        hintStyle: const TextStyle(
-          color: AppColors.txtFieldTxtColor,
-          fontSize: 18,
-          fontWeight: FontWeight.w500,
-        ),
+        hintStyle: Styless.textMedium16,
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(10),

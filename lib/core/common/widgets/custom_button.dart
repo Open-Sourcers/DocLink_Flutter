@@ -1,6 +1,7 @@
-import 'package:doc_link_project/constants.dart';
-import 'package:doc_link_project/core/utils/app_colors.dart';
+import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
+
+import '../../utils/app_colors.dart';
 
 class CustomButton extends StatelessWidget {
   final String buttonTitle;
@@ -22,15 +23,7 @@ class CustomButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 15),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-      child: Text(
-        buttonTitle,
-        style: const TextStyle(
-          fontSize: 20,
-          fontFamily: spaceGrotesk,
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),
-      ),
+      child: Text(buttonTitle, style: Styless.textSemiBold20),
     );
   }
 }
