@@ -1,5 +1,3 @@
-import 'package:doc_link_project/constants.dart';
-import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:doc_link_project/generated/l10n.dart';

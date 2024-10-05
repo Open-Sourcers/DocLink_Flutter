@@ -1,4 +1,3 @@
-import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +17,9 @@ class CreateOrHaveAccountButton extends StatelessWidget {
       child: Text(
         title,
         textAlign: TextAlign.center,
-        style: Styless.textBold18,
+        style: Styless.textBold18.copyWith(
+          color: const Color(0xff494949),
+        ),
       ),
     );
   }
