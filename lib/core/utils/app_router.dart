@@ -9,7 +9,7 @@ abstract class AppRouter {
   static final router = GoRouter(
     routes: [
       GoRoute(
-        path: splash,
+        path: 'splash',
         builder: (context, state) => const SpashView(),
       ),
       GoRoute(
