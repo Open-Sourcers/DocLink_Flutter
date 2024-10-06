@@ -1,4 +1,4 @@
-import 'package:doc_link_project/features/app/presentation/doc_link_app.dart';
+import 'package:doc_link_project/doc_link_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
