@@ -6,9 +6,17 @@ class AppImages {
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
 
-  /// Assets for imagesForgetPass
-  /// assets/images/forgetPass.jpg
-  static const String imagesForgetPass = "assets/images/forgetPass.jpg";
+  /// Assets for imagesForgPass
+  /// assets/images/forgPass.jpg
+  static const String imagesForgPass = "assets/images/forgPass.jpg";
+
+  /// Assets for imagesForgetPassword
+  /// assets/images/forgetPassword.png
+  static const String imagesForgetPassword = "assets/images/forgetPassword.png";
+
+  /// Assets for imagesForgggPasssss
+  /// assets/images/forgggPasssss.png
+  static const String imagesForgggPasssss = "assets/images/forgggPasssss.png";
 
   /// Assets for imagesLogo2
   /// assets/images/logo2.jpg
@@ -21,5 +29,13 @@ class AppImages {
   /// Assets for imagesOnboarding
   /// assets/images/onboarding.png
   static const String imagesOnboarding = "assets/images/onboarding.png";
+
+  /// Assets for imagesPasssForg
+  /// assets/images/passsForg.jpg
+  static const String imagesPasssForg = "assets/images/passsForg.jpg";
+
+  /// Assets for imagesSisi
+  /// assets/images/sisi.jpg
+  static const String imagesSisi = "assets/images/sisi.jpg";
 }
 

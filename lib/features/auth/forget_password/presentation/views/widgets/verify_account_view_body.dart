@@ -1,6 +1,7 @@
 import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
+import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/features/auth/common/custom_description_texts.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -19,27 +20,30 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
   bool isCompleted = false;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          SizedBox(height: 70.h),
-          CustomDescriptionTexts(
-            headerTxt: S.of(context).verifyAccount,
-            description: S.of(context).codeVerify,
-          ),
-          const SizedBox(height: 160),
-          pinputMethod(),
-          const SizedBox(height: 100),
-          CustomButton(
-            buttonTitle: S.of(context).confirm,
-            onPressed: () {
-              GoRouter.of(context).push(AppRouter.resetPasswordView);
-            },
-            isCompleted: isCompleted,
-          ),
-        ],
+    return Container(
+      decoration: decorationAppMethod(),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            SizedBox(height: 70.h),
+            CustomDescriptionTexts(
+              headerTxt: S.of(context).verifyAccount,
+              description: S.of(context).codeVerify,
+            ),
+            const SizedBox(height: 160),
+            pinputMethod(),
+            const SizedBox(height: 100),
+            CustomButton(
+              buttonTitle: S.of(context).confirm,
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.resetPasswordView);
+              },
+              isCompleted: isCompleted,
+            ),
+          ],
+        ),
       ),
     );
   }

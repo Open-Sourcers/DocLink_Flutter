@@ -22,7 +22,7 @@ class DocLinkApp extends StatelessWidget {
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          scaffoldBackgroundColor: const Color.fromARGB(240, 255, 255, 255),
+          scaffoldBackgroundColor: const Color.fromARGB(235, 255, 255, 255),
         ),
       ),
     );
