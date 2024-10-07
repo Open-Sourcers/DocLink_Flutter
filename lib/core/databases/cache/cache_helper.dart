@@ -1,10 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CacheHelper {
-  CacheHelper._();
-
-  static CacheHelper instant = CacheHelper._();
-
+  
   static late SharedPreferences sharedPreferences;
 
   ///Below method is to initialize the SharedPreference instance.
