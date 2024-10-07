@@ -2,6 +2,10 @@
 class AppImages {
   AppImages._();
   
+  /// Assets for animationsAnimatedHart
+  /// assets/animations/animated_hart.json
+  static const String animationsAnimatedHart = "assets/animations/animated_hart.json";
+
   /// Assets for imagesAppLogo
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
