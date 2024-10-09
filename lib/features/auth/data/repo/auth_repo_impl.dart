@@ -28,9 +28,27 @@ class AuthRepoImpl implements AuthRepo {
       if (authModel.statusCode == 200) {
         return right(authModel);
       }
-      return left(authModel.message ?? "Failure");
+      return left(authModel.message ?? "there was an error please try agsin");
     } on ServerException catch (e) {
-      return left(e.errorModel.message ?? "there is an error please try agsin");
+      return left(e.errorModel.message ?? "there was an error please try agsin");
+    }
+  }
+
+  @override
+  Future<Either<String, AuthModel>> login(
+      {required String email, required String password}) async {
+    try {
+      final response = await dioConsumer.post(EndPoints.login, data: {
+        ApiKeys.email: email,
+        ApiKeys.password: password,
+      });
+      AuthModel authModel = AuthModel.fromJson(response);
+      if (authModel.statusCode == 200) {
+        return right(authModel);
+      }
+      return left(authModel.message ?? "there was an error please try agsin");
+    } on ServerException catch (e) {
+      return left(e.errorModel.message ?? "there was an error please try agsin");
     }
   }
 }

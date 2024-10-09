@@ -8,4 +8,8 @@ abstract class AuthRepo {
     required String email,
     required String password,
   });
+  Future<Either<String, AuthModel>> login({
+    required String email,
+    required String password,
+  });
 }
