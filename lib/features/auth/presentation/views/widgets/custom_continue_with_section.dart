@@ -1,5 +1,5 @@
 import 'package:doc_link_project/constants.dart';
-import 'package:doc_link_project/features/auth/common/custom_continue_with_button.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_continue_with_button.dart';
 import 'package:flutter/material.dart';
 
 class CustomContinueWithSection extends StatelessWidget {

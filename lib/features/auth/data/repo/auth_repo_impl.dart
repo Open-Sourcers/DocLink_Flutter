@@ -1,3 +1,6 @@
+
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:dartz/dartz.dart';
 import 'package:doc_link_project/core/api/api_keys.dart';
 import 'package:doc_link_project/core/api/dio_consumer.dart';
