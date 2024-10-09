@@ -6,4 +6,5 @@ class ApiKeys {
   static const message = 'message';
   static const errors = 'errors';
   static const data = 'data';
+  static const displayName = 'displayName';
 }
