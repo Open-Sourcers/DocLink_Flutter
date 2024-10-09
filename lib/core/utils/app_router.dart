@@ -1,8 +1,8 @@
-import 'package:doc_link_project/features/auth/forget_password/presentation/views/forget_password_view.dart';
-import 'package:doc_link_project/features/auth/forget_password/presentation/views/reset_password_view.dart';
-import 'package:doc_link_project/features/auth/forget_password/presentation/views/verify_account_view.dart';
-import 'package:doc_link_project/features/auth/login/presentation/views/login_view.dart';
-import 'package:doc_link_project/features/auth/register/presentation/views/register_view.dart';
+import 'package:doc_link_project/features/auth/presentation/views/forget_password_view.dart';
+import 'package:doc_link_project/features/auth/presentation/views/reset_password_view.dart';
+import 'package:doc_link_project/features/auth/presentation/views/verify_account_view.dart';
+import 'package:doc_link_project/features/auth/presentation/views/login_view.dart';
+import 'package:doc_link_project/features/auth/presentation/views/register_view.dart';
 import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
