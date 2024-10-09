@@ -1,4 +1,4 @@
 class EndPoints {
-  static const baseUrl = '';
-  // static const signIn = 'user/signin';
+  static const baseUrl = 'https://doclink.runasp.net';
+  static const register = '/api/Account/Register';
 }
