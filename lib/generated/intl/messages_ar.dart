@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "authError": MessageLookupByLibrary.simpleMessage(
+            "حدث خطا , من فضلك حاول مره اخري لاحقا"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
