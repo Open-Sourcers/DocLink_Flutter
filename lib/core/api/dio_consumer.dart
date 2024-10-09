@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:doc_link_project/core/api/api_consumer.dart';
 import 'package:doc_link_project/core/api/api_interceptor.dart';
 import 'package:doc_link_project/core/api/end_points.dart';
+import 'package:doc_link_project/core/error/exception.dart';
 
 class DioConsumer extends ApiConsumer {
   final Dio dio;
@@ -35,8 +36,7 @@ class DioConsumer extends ApiConsumer {
       );
       return response.data;
     } on DioException catch (e) {
-      throw e.toString();
-      //handelDioException(e);
+      handelDioException(e);
     }
   }
 
@@ -55,8 +55,7 @@ class DioConsumer extends ApiConsumer {
       );
       return response.data;
     } on DioException catch (e) {
-      throw e.toString();
-      //handelDioException(e);
+      handelDioException(e);
     }
   }
 
@@ -75,8 +74,7 @@ class DioConsumer extends ApiConsumer {
       );
       return response.data;
     } on DioException catch (e) {
-      throw e.toString();
-      //handelDioException(e);
+      handelDioException(e);
     }
   }
 
@@ -95,8 +93,7 @@ class DioConsumer extends ApiConsumer {
       );
       return response.data;
     } on DioException catch (e) {
-      throw e.toString();
-      //handelDioException(e);
+      handelDioException(e);
     }
   }
 }
