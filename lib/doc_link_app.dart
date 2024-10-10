@@ -1,6 +1,9 @@
 import 'package:doc_link_project/core/app/cubit/app_lang_change_cubit.dart';
 import 'package:doc_link_project/core/app/cubit/app_lang_change_states.dart';
+import 'package:doc_link_project/core/services/services_locator.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
+import 'package:doc_link_project/features/auth/data/repo/auth_repo_impl.dart';
+import 'package:doc_link_project/features/auth/presentation/manager/auth_cubit.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,9 +17,12 @@ class DocLinkApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
+        BlocProvider<AppLangChangeCubit>(
           create: (context) =>
               AppLangChangeCubit()..langChange(sharedLang: true),
+        ),
+        BlocProvider<AuthCubit>(
+          create: (context) => AuthCubit(authRepo: getit.get<AuthRepoImpl>()),
         ),
       ],
       child: BlocBuilder<AppLangChangeCubit, AppLangChangeStates>(
