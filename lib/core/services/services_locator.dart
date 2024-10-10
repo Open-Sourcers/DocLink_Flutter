@@ -8,8 +8,8 @@ final getit = GetIt.instance;
 
 void setupServicesLocator() {
   getit.registerSingleton<CacheHelper>(CacheHelper());
+  getit.registerSingleton<Dio>(Dio());
+  getit.registerSingleton<DioConsumer>(DioConsumer(dio: getit.get<Dio>()));
   getit.registerSingleton<AuthRepoImpl>(
       AuthRepoImpl(dioConsumer: getit.get<DioConsumer>()));
-  getit.registerSingleton<DioConsumer>(DioConsumer(dio: getit.get<Dio>()));
-  getit.registerSingleton<Dio>(Dio());
 }
