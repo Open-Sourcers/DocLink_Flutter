@@ -26,7 +26,7 @@ class CustomContinueWithSection extends StatelessWidget {
             CustomContinueWithButton(
               icon: googleIcon,
               onPressed: () async {
-                await GoogleSignInApi.login();
+                await GoogleSignInApi.signInWithGoogle();
               },
             ),
             const SizedBox(width: 10),

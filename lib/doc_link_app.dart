@@ -18,8 +18,7 @@ class DocLinkApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<AppLangChangeCubit>(
-          create: (context) =>
-              AppLangChangeCubit()..getCachedLanguage(),
+          create: (context) => AppLangChangeCubit()..getCachedLanguage(),
         ),
         BlocProvider<AuthCubit>(
           create: (context) => AuthCubit(authRepo: getit.get<AuthRepoImpl>()),

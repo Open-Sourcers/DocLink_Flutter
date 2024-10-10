@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class AppLangChangeCubit extends Cubit<AppLangChangeStates> {
   AppLangChangeCubit() : super(LangChangeInitial());
 
-  String currentLang = 'ar';
+  String currentLang = 'en';
 
   //
   getCachedLanguage() {
