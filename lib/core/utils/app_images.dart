@@ -6,6 +6,10 @@ class AppImages {
   /// assets/animations/animated_hart.json
   static const String animationsAnimatedHart = "assets/animations/animated_hart.json";
 
+  /// Assets for animationsLoadingIcon
+  /// assets/animations/loading_icon.json
+  static const String animationsLoadingIcon = "assets/animations/loading_icon.json";
+
   /// Assets for imagesAppLogo
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";

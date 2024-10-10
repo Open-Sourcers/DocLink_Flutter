@@ -31,8 +31,7 @@ class DocLinkApp extends StatelessWidget {
           return ScreenUtilInit(
             child: MaterialApp.router(
               routerConfig: AppRouter.router,
-              locale:
-                  langCubit.isEnglish ? const Locale('en') : const Locale('ar'),
+              locale: Locale(langCubit.isEnglish ? 'en' : 'ar'),
               localizationsDelegates: const [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,
