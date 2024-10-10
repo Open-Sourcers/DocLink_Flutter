@@ -1,4 +1,4 @@
-import 'package:doc_link_project/core/app/bloc_observer.dart';
+import 'package:doc_link_project/core/app/app_bloc_observer.dart';
 import 'package:doc_link_project/core/databases/cache/cache_helper.dart';
 import 'package:doc_link_project/core/services/services_locator.dart';
 import 'package:doc_link_project/doc_link_app.dart';

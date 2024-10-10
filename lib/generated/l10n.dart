@@ -289,6 +289,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Please enter your email adress`
+  String get pleaseEnterYouremail {
+    return Intl.message(
+      'Please enter your email adress',
+      name: 'pleaseEnterYouremail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid email adress`
+  String get pleaseEnterValidemail {
+    return Intl.message(
+      'Please enter a valid email adress',
+      name: 'pleaseEnterValidemail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter password`
+  String get enterPassword {
+    return Intl.message(
+      'Please enter password',
+      name: 'enterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `size of password greater than 8 char`
+  String get sizeOfPassword {
+    return Intl.message(
+      'size of password greater than 8 char',
+      name: 'sizeOfPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter valid password \n password should contain at least one upper , lower case , number , special character`
+  String get enterValidPassword {
+    return Intl.message(
+      'Enter valid password \n password should contain at least one upper , lower case , number , special character',
+      name: 'enterValidPassword',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

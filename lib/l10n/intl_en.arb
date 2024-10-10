@@ -22,5 +22,10 @@
   "plesesResetPass": "please reset you password",
   "confirmPass": "Confirm password",
   "emailToReset": "Enter your email to reset your password",
-  "authError": "There was an error please try again"
+  "authError": "There was an error please try again",
+  "pleaseEnterYouremail": "Please enter your email adress",
+  "pleaseEnterValidemail": "Please enter a valid email adress",
+  "enterPassword": "Please enter password",
+  "sizeOfPassword" : "size of password greater than 8 char",
+  "enterValidPassword" : "Enter valid password \n password should contain at least one upper , lower case , number , special character"
 }

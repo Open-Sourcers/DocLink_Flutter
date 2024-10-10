@@ -38,6 +38,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني  "),
         "emailToReset": MessageLookupByLibrary.simpleMessage(
             "أدخل بريدك الالكتروني لتغيير كلمة المرور"),
+        "enterPassword":
+            MessageLookupByLibrary.simpleMessage("من فضلك ادخل الرقم السري"),
+        "enterValidPassword": MessageLookupByLibrary.simpleMessage(
+            " رقم سري غير مقبول ,  يجب ان يتكون الرفم السري من احرف و رموز و ارقام"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول "),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور "),
@@ -51,6 +55,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
         "passwordHintTxt":
             MessageLookupByLibrary.simpleMessage(" كلمة المرور "),
+        "pleaseEnterValidemail":
+            MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني غير صحيح"),
+        "pleaseEnterYouremail": MessageLookupByLibrary.simpleMessage(
+            "من فضبك ادخل بريدك الالكتروني"),
         "plesesResetPass": MessageLookupByLibrary.simpleMessage(
             "الرجاء إعادة تعيين كلمة المرور الخاصة بك"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
@@ -60,6 +68,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetYoutPassword": MessageLookupByLibrary.simpleMessage(
             "إعادة تعيين كلمة المرور الخاصة بك"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
+            ", أيجب ان يتكون الرفم السري من 8 احرف و رموز و ارقام"),
         "verifyAccount": MessageLookupByLibrary.simpleMessage("التحقق من حسابك")
       };
 }

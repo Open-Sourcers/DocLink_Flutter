@@ -4,14 +4,21 @@ import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String hintTxt;
+  final TextEditingController? controller;
+  final String? Function(String?)? validator;
   const CustomTextFormField({
     super.key,
     required this.hintTxt,
+    this.controller,
+    this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: validator,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
+      controller: controller,
       cursorColor: AppColors.commonColor,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.all(20),
