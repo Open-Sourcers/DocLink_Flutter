@@ -1,5 +1,6 @@
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/common/widgets/custom_continue_with_section.dart';
+import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/create_or_have_account_button.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_description_texts.dart';
@@ -31,14 +32,14 @@ class RegisterViewBody extends StatelessWidget {
               const CustomRegisterTextFieldSection(),
               const SizedBox(height: 20),
               CustomButton(
-                buttonTitle: S.of(context).signIn,
+                buttonTitle: S.of(context).SignUp,
                 onPressed: () {},
               ),
               const SizedBox(height: 30),
               CreateOrHaveAccountButton(
                 title: S.of(context).haveAccount,
                 onTap: () {
-                  GoRouter.of(context).pop();
+                  GoRouter.of(context).pushReplacement(AppRouter.loginView);
                 },
               ),
               const SizedBox(height: 30),

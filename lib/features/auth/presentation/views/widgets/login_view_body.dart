@@ -36,7 +36,7 @@ class LoginViewBody extends StatelessWidget {
               CreateOrHaveAccountButton(
                 title: S.of(context).createNewAccount,
                 onTap: () {
-                  GoRouter.of(context).push(AppRouter.registerView);
+                  GoRouter.of(context).pushReplacement(AppRouter.registerView);
                 },
               ),
               const SizedBox(height: 80),
