@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
+        "authError": MessageLookupByLibrary.simpleMessage(
+            "There was an error please try again"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),

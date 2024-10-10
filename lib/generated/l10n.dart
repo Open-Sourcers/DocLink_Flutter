@@ -279,6 +279,16 @@ class S {
       args: [],
     );
   }
+
+  /// `There was an error please try again`
+  String get authError {
+    return Intl.message(
+      'There was an error please try again',
+      name: 'authError',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
