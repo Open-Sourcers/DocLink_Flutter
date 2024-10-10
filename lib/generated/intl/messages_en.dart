@@ -43,7 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Enter valid password \n password should contain at least one upper , lower case , number , special character"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPassword":
-            MessageLookupByLibrary.simpleMessage("Forgot password"),
+            MessageLookupByLibrary.simpleMessage("Forgot password ?"),
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
         "haveAccount":

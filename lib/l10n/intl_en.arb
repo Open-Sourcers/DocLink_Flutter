@@ -4,7 +4,7 @@
   "loginHere": "Login here",
   "loginWelcome": "Welcome back you’ve\nbeen missed!",
   "forgetYourPassword": "Forgot your password ? ",
-  "forgetPassword": "Forgot password",
+  "forgetPassword": "Forgot password ?",
   "signIn": "Sign in",
   "createNewAccount": "Create new account",
   "continueWith": "Or continue with",
@@ -26,6 +26,6 @@
   "pleaseEnterYouremail": "Please enter your email adress",
   "pleaseEnterValidemail": "Please enter a valid email adress",
   "enterPassword": "Please enter password",
-  "sizeOfPassword" : "size of password greater than 8 char",
-  "enterValidPassword" : "Enter valid password \n password should contain at least one upper , lower case , number , special character"
+  "sizeOfPassword": "size of password greater than 8 char",
+  "enterValidPassword": "Enter valid password \n password should contain at least one upper , lower case , number , special character"
 }

@@ -100,10 +100,10 @@ class S {
     );
   }
 
-  /// `Forgot password`
+  /// `Forgot password ?`
   String get forgetPassword {
     return Intl.message(
-      'Forgot password',
+      'Forgot password ?',
       name: 'forgetPassword',
       desc: '',
       args: [],

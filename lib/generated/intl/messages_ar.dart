@@ -44,7 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
             " رقم سري غير مقبول ,  يجب ان يتكون الرفم السري من احرف و رموز و ارقام"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول "),
         "forgetPassword":
-            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور "),
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "haveAccount":
