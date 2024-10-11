@@ -1,36 +1,38 @@
+import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils/app_colors.dart';
-
 class CustomButton extends StatelessWidget {
-  final String buttonTitle;
-  final Function() onPressed;
-  final bool isCompleted;
-  final Color backgroundColor;
-  final Color textColor;
   const CustomButton({
     super.key,
-    required this.buttonTitle,
     required this.onPressed,
-    this.isCompleted = true,
+    required this.buttonTitle,
     this.backgroundColor = AppColors.commonColor,
     this.textColor = AppColors.white,
+    this.child,  
+    this.isCompleted = true,
   });
+  final Function()? onPressed;
+  final String buttonTitle;
+  final Color textColor;
+  final Widget? child;
+  final bool isCompleted;
+    final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return MaterialButton(
       onPressed: isCompleted ? onPressed : null,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor,
-        padding: const EdgeInsets.symmetric(vertical: 15),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      color: backgroundColor ,
+      minWidth: MediaQuery.sizeOf(context).width,
+      height: 60,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.0),
       ),
-      child: Text(buttonTitle,
-          style: Styless.textSemiBold20.copyWith(
-            color: textColor,
-          )),
+      child:child ?? Text(
+        buttonTitle,
+        style:Styless.textSemiBold20.copyWith(color: textColor),
+      ),
     );
   }
 }

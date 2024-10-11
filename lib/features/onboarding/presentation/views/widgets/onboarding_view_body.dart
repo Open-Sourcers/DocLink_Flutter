@@ -4,6 +4,7 @@ import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -34,7 +35,7 @@ class OnboardingViewBody extends StatelessWidget {
               children: [
                 Expanded(
                     child: CustomButton(
-                  buttonTitle: 'Login',
+                  buttonTitle: S.of(context).signIn,
                   onPressed: () {
                     GoRouter.of(context).pushReplacement(AppRouter.loginView);
                   },
@@ -42,11 +43,12 @@ class OnboardingViewBody extends StatelessWidget {
                 const SizedBox(width: 25),
                 Expanded(
                   child: CustomButton(
-                    buttonTitle: 'Register',
+                    buttonTitle: S.of(context).SignUp,
                     textColor: AppColors.black,
                     backgroundColor: AppColors.white,
                     onPressed: () {
-                      GoRouter.of(context).pushReplacement(AppRouter.registerView);
+                      GoRouter.of(context)
+                          .pushReplacement(AppRouter.registerView);
                     },
                   ),
                 ),

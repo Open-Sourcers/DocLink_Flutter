@@ -1,6 +1,5 @@
 abstract class AppLangChangeStates {}
 
-class LangChangeState extends AppLangChangeStates {
-  final bool isEnglish;
-  LangChangeState({required this.isEnglish});
-}
+class LangChangeInitial extends AppLangChangeStates {}
+
+class LangChangeState extends AppLangChangeStates {}

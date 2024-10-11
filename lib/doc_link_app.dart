@@ -3,7 +3,7 @@ import 'package:doc_link_project/core/app/cubit/app_lang_change_states.dart';
 import 'package:doc_link_project/core/services/services_locator.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/features/auth/data/repo/auth_repo_impl.dart';
-import 'package:doc_link_project/features/auth/presentation/manager/auth_cubit.dart';
+import 'package:doc_link_project/features/auth/presentation/manager/cubits/auth_cubit.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,7 +19,7 @@ class DocLinkApp extends StatelessWidget {
       providers: [
         BlocProvider<AppLangChangeCubit>(
           create: (context) =>
-              AppLangChangeCubit()..langChange(sharedLang: true),
+              AppLangChangeCubit()..getCachedLanguage(),
         ),
         BlocProvider<AuthCubit>(
           create: (context) => AuthCubit(authRepo: getit.get<AuthRepoImpl>()),
@@ -31,7 +31,7 @@ class DocLinkApp extends StatelessWidget {
           return ScreenUtilInit(
             child: MaterialApp.router(
               routerConfig: AppRouter.router,
-              locale: Locale(langCubit.isEnglish ? 'en' : 'ar'),
+              locale: Locale(langCubit.currentLang),
               localizationsDelegates: const [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,

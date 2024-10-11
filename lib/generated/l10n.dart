@@ -50,6 +50,16 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `عربي`
+  String get language {
+    return Intl.message(
+      'عربي',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email`
   String get emailHintTxt {
     return Intl.message(
@@ -100,10 +110,10 @@ class S {
     );
   }
 
-  /// `Forgot password`
+  /// `Forgot password ?`
   String get forgetPassword {
     return Intl.message(
-      'Forgot password',
+      'Forgot password ?',
       name: 'forgetPassword',
       desc: '',
       args: [],
@@ -285,6 +295,76 @@ class S {
     return Intl.message(
       'There was an error please try again',
       name: 'authError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your email adress`
+  String get pleaseEnterYouremail {
+    return Intl.message(
+      'Please enter your email adress',
+      name: 'pleaseEnterYouremail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid email adress`
+  String get pleaseEnterValidemail {
+    return Intl.message(
+      'Please enter a valid email adress',
+      name: 'pleaseEnterValidemail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter password`
+  String get enterPassword {
+    return Intl.message(
+      'Please enter password',
+      name: 'enterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `size of password greater than 8 char`
+  String get sizeOfPassword {
+    return Intl.message(
+      'size of password greater than 8 char',
+      name: 'sizeOfPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter valid password \n password should contain at least one upper , lower case , number , special character`
+  String get enterValidPassword {
+    return Intl.message(
+      'Enter valid password \n password should contain at least one upper , lower case , number , special character',
+      name: 'enterValidPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Be Careful !`
+  String get beCareful {
+    return Intl.message(
+      'Be Careful !',
+      name: 'beCareful',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password and confirm password must be the same.`
+  String get passwordEqualConfirmPass {
+    return Intl.message(
+      'Password and confirm password must be the same.',
+      name: 'passwordEqualConfirmPass',
       desc: '',
       args: [],
     );

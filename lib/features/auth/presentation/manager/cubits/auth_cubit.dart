@@ -1,5 +1,5 @@
 import 'package:doc_link_project/features/auth/data/repo/auth_repo_impl.dart';
-import 'package:doc_link_project/features/auth/presentation/manager/auth_state.dart';
+import 'package:doc_link_project/features/auth/presentation/manager/cubits/auth_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -11,6 +11,7 @@ class AuthCubit extends Cubit<AuthState> {
   TextEditingController registerLastName = TextEditingController();
   TextEditingController registerEmail = TextEditingController();
   TextEditingController registerPassword = TextEditingController();
+  TextEditingController registerConfirmPassword = TextEditingController();
   GlobalKey<FormState> registerFormKey = GlobalKey();
 
   // login

@@ -1,10 +1,11 @@
 {
+  "language": "عربي",
   "emailHintTxt": "Email",
   "passwordHintTxt": "Password",
   "loginHere": "Login here",
   "loginWelcome": "Welcome back you’ve\nbeen missed!",
   "forgetYourPassword": "Forgot your password ? ",
-  "forgetPassword": "Forgot password",
+  "forgetPassword": "Forgot password ?",
   "signIn": "Sign in",
   "createNewAccount": "Create new account",
   "continueWith": "Or continue with",
@@ -22,5 +23,12 @@
   "plesesResetPass": "please reset you password",
   "confirmPass": "Confirm password",
   "emailToReset": "Enter your email to reset your password",
-  "authError": "There was an error please try again"
+  "authError": "There was an error please try again",
+  "pleaseEnterYouremail": "Please enter your email adress",
+  "pleaseEnterValidemail": "Please enter a valid email adress",
+  "enterPassword": "Please enter password",
+  "sizeOfPassword": "size of password greater than 8 char",
+  "enterValidPassword": "Enter valid password \n password should contain at least one upper , lower case , number , special character",
+  "beCareful": "Be Careful !",
+  "passwordEqualConfirmPass":"Password and confirm password must be the same."
 }

@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "There was an error please try again"),
+        "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
@@ -37,18 +38,29 @@ class MessageLookup extends MessageLookupByLibrary {
         "emailHintTxt": MessageLookupByLibrary.simpleMessage("Email"),
         "emailToReset": MessageLookupByLibrary.simpleMessage(
             "Enter your email to reset your password"),
+        "enterPassword":
+            MessageLookupByLibrary.simpleMessage("Please enter password"),
+        "enterValidPassword": MessageLookupByLibrary.simpleMessage(
+            "Enter valid password \n password should contain at least one upper , lower case , number , special character"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPassword":
-            MessageLookupByLibrary.simpleMessage("Forgot password"),
+            MessageLookupByLibrary.simpleMessage("Forgot password ?"),
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
+        "language": MessageLookupByLibrary.simpleMessage("عربي"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),
+        "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
+            "Password and confirm password must be the same."),
         "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
+        "pleaseEnterValidemail": MessageLookupByLibrary.simpleMessage(
+            "Please enter a valid email adress"),
+        "pleaseEnterYouremail": MessageLookupByLibrary.simpleMessage(
+            "Please enter your email adress"),
         "plesesResetPass":
             MessageLookupByLibrary.simpleMessage("please reset you password"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
@@ -57,6 +69,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetYoutPassword":
             MessageLookupByLibrary.simpleMessage("Reset your password"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
+        "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
+            "size of password greater than 8 char"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("Verify your account")
       };

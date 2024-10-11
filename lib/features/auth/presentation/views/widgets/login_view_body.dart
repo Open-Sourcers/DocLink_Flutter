@@ -1,11 +1,9 @@
-import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/common/widgets/custom_continue_with_section.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/create_or_have_account_button.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_description_texts.dart';
-import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_login_text_field_section.dart';
-import 'package:doc_link_project/features/auth/presentation/views/widgets/forget_password_button.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/login_form.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -32,22 +30,13 @@ class LoginViewBody extends StatelessWidget {
               ),
               const SizedBox(height: 70),
               // custom text form field section
-              const CustomLoginTextFieldsSection(),
-              const SizedBox(height: 20),
-              //forget password button
-              const ForgetPasswordButton(),
-              const SizedBox(height: 20),
-              // Sign in button
-              CustomButton(
-                buttonTitle: S.of(context).signIn,
-                onPressed: () {},
-              ),
+              const LoginForm(),
               const SizedBox(height: 30),
               // Create account (Register page open) button
               CreateOrHaveAccountButton(
                 title: S.of(context).createNewAccount,
                 onTap: () {
-                  GoRouter.of(context).push(AppRouter.registerView);
+                  GoRouter.of(context).pushReplacement(AppRouter.registerView);
                 },
               ),
               const SizedBox(height: 80),
