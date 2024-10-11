@@ -49,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل "),
+        "language": MessageLookupByLibrary.simpleMessage("ُEnglish"),
         "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير "),
         "loginHere": MessageLookupByLibrary.simpleMessage("سجل من هنا"),
         "loginWelcome":

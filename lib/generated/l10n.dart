@@ -50,6 +50,16 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `عربي`
+  String get language {
+    return Intl.message(
+      'عربي',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email`
   String get emailHintTxt {
     return Intl.message(

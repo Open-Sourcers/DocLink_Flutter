@@ -19,7 +19,7 @@ class DocLinkApp extends StatelessWidget {
       providers: [
         BlocProvider<AppLangChangeCubit>(
           create: (context) =>
-              AppLangChangeCubit()..langChange(sharedLang: true),
+              AppLangChangeCubit()..getCachedLanguage(),
         ),
         BlocProvider<AuthCubit>(
           create: (context) => AuthCubit(authRepo: getit.get<AuthRepoImpl>()),
@@ -31,7 +31,7 @@ class DocLinkApp extends StatelessWidget {
           return ScreenUtilInit(
             child: MaterialApp.router(
               routerConfig: AppRouter.router,
-              locale: Locale(langCubit.isEnglish ? 'en' : 'ar'),
+              locale: Locale(langCubit.currentLang),
               localizationsDelegates: const [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,
