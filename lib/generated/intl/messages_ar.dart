@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
+        "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
@@ -54,6 +55,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginHere": MessageLookupByLibrary.simpleMessage("سجل من هنا"),
         "loginWelcome":
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
+        "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
+            "لابد ان تتطابق كلمه المرور مع تاكيد كلمه المرور"),
         "passwordHintTxt":
             MessageLookupByLibrary.simpleMessage(" كلمة المرور "),
         "pleaseEnterValidemail":

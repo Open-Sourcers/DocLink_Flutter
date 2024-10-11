@@ -349,6 +349,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Be Careful !`
+  String get beCareful {
+    return Intl.message(
+      'Be Careful !',
+      name: 'beCareful',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password and confirm password must be the same.`
+  String get passwordEqualConfirmPass {
+    return Intl.message(
+      'Password and confirm password must be the same.',
+      name: 'passwordEqualConfirmPass',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "There was an error please try again"),
+        "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
@@ -53,6 +54,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),
+        "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
+            "Password and confirm password must be the same."),
         "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
         "pleaseEnterValidemail": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid email adress"),

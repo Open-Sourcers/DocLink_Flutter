@@ -11,6 +11,7 @@ class AuthCubit extends Cubit<AuthState> {
   TextEditingController registerLastName = TextEditingController();
   TextEditingController registerEmail = TextEditingController();
   TextEditingController registerPassword = TextEditingController();
+  TextEditingController registerConfirmPassword = TextEditingController();
   GlobalKey<FormState> registerFormKey = GlobalKey();
 
   // login
