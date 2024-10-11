@@ -30,5 +30,6 @@
   "sizeOfPassword": "size of password greater than 8 char",
   "enterValidPassword": "Enter valid password \n password should contain at least one upper , lower case , number , special character",
   "beCareful": "Be Careful !",
-  "passwordEqualConfirmPass":"Password and confirm password must be the same."
+  "passwordEqualConfirmPass": "Password and confirm password must be the same.",
+  "required": "Required"
 }

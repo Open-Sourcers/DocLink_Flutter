@@ -31,6 +31,13 @@ String? validatorOfPassword(BuildContext context, {String? value}) {
   }
 }
 
+String? validatorUserName(BuildContext context, {required String? name}) {
+  if (name == null || name.isEmpty) {
+    return S.of(context).required;
+  }
+  return null;
+}
+
 // String? validUserName(String? value) {
 //   bool upper = value!.contains(RegExp(r'[A-Z]'));
 //   bool lower = value.contains(RegExp(r'[a-z]'));

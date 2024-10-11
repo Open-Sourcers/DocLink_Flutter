@@ -67,6 +67,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "الرجاء إعادة تعيين كلمة المرور الخاصة بك"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين ."),
+        "required": MessageLookupByLibrary.simpleMessage("مطلوب"),
         "resetPass":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور "),
         "resetYoutPassword": MessageLookupByLibrary.simpleMessage(

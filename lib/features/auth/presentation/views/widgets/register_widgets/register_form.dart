@@ -1,6 +1,6 @@
 import 'package:doc_link_project/features/auth/presentation/manager/cubits/auth_cubit.dart';
-import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_register_text_field_section.dart';
-import 'package:doc_link_project/features/auth/presentation/views/widgets/register_button_bloc_consumer.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/custom_register_text_field_section.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/register_button_bloc_consumer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
