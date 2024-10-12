@@ -28,10 +28,11 @@ class CustomButton extends StatelessWidget {
       height: 60,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12.0),
+        side: BorderSide(color: isCompleted? textColor : AppColors.black)
       ),
       child:child ?? Text(
         buttonTitle,
-        style:Styless.textSemiBold20.copyWith(color: textColor),
+        style:Styless.textSemiBold20.copyWith(color: isCompleted? textColor : AppColors.black),
       ),
     );
   }
