@@ -15,4 +15,9 @@ abstract class AuthRepo {
     required String email,
     required String password,
   });
+
+  Future<Either<String, AuthModel>> sendOtpToEmail(
+    BuildContext context, {
+    required String email,
+  });
 }

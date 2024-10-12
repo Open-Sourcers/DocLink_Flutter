@@ -65,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("please reset you password"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "Create an account so you can explore all the existing doctors."),
+        "required": MessageLookupByLibrary.simpleMessage("Required"),
         "resetPass": MessageLookupByLibrary.simpleMessage("Reset password"),
         "resetYoutPassword":
             MessageLookupByLibrary.simpleMessage("Reset your password"),
