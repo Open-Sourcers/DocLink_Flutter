@@ -1,12 +1,10 @@
 import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
-import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_description_texts.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:pinput/pinput.dart';
 
 class VerifyAccountViewBody extends StatefulWidget {
@@ -37,9 +35,7 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
             const SizedBox(height: 100),
             CustomButton(
               buttonTitle: S.of(context).confirm,
-              onPressed: () {
-                GoRouter.of(context).push(AppRouter.resetPasswordView);
-              },
+              onPressed: () {},
               isCompleted: isCompleted,
             ),
           ],
