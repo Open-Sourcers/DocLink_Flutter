@@ -21,3 +21,12 @@ class LoginFailure extends AuthState {
 
   LoginFailure({required this.errorMessage});
 }
+
+class SendOtpToEmailLoading extends AuthState {}
+
+class SendOtpToEmailSuccess extends AuthState {}
+
+class SendOtpToEmailFailure extends AuthState {
+  final String errorMessage;
+  SendOtpToEmailFailure({required this.errorMessage});
+}
