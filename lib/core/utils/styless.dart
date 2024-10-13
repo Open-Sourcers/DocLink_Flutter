@@ -43,7 +43,7 @@ abstract class Styless {
     fontFamily: spaceGrotesk,
     color: AppColors.black,
   );
-  static const TextStyle textSemiBold = TextStyle(
+  static const TextStyle textSemiBold14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w600,
     fontFamily: spaceGrotesk, color: AppColors.commonColor, // or 0xff494949
