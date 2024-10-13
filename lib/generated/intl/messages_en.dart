@@ -28,6 +28,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
+        "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
+            "Now , You can get the code (******) form your email :\n "),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm password"),
         "continueWith":

@@ -379,6 +379,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Now , You can get the code (******) form your email :\n `
+  String get codeWasSentToYourEmail {
+    return Intl.message(
+      'Now , You can get the code (******) form your email :\n ',
+      name: 'codeWasSentToYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
