@@ -14,6 +14,10 @@ class AppImages {
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
 
+  /// Assets for imagesError
+  /// assets/images/Error.svg
+  static const String imagesError = "assets/images/Error.svg";
+
   /// Assets for imagesForgPass
   /// assets/images/forgPass.jpg
   static const String imagesForgPass = "assets/images/forgPass.jpg";
@@ -25,6 +29,10 @@ class AppImages {
   /// Assets for imagesForgggPasssss
   /// assets/images/forgggPasssss.png
   static const String imagesForgggPasssss = "assets/images/forgggPasssss.png";
+
+  /// Assets for imagesInfo
+  /// assets/images/Info.svg
+  static const String imagesInfo = "assets/images/Info.svg";
 
   /// Assets for imagesLogo2
   /// assets/images/logo2.jpg
@@ -45,5 +53,13 @@ class AppImages {
   /// Assets for imagesSisi
   /// assets/images/sisi.jpg
   static const String imagesSisi = "assets/images/sisi.jpg";
+
+  /// Assets for imagesSuccess
+  /// assets/images/Success.svg
+  static const String imagesSuccess = "assets/images/Success.svg";
+
+  /// Assets for imagesWarning
+  /// assets/images/Warning.svg
+  static const String imagesWarning = "assets/images/Warning.svg";
 }
 

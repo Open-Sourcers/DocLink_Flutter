@@ -28,6 +28,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
+        "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
+            "الآن يمكنك الحصول على رقم التأكيد من البريد الالكتروني الخاص بك : \n"),
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "confirmPass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
