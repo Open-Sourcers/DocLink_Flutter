@@ -25,6 +25,8 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
   //forgetPassword-send email
   TextEditingController forgetedPasswordEmail = TextEditingController();
   GlobalKey<FormState> forgetedPasswordFormKey = GlobalKey();
+  //
+  String forgetPasswordToken = '';
 
   sendOtpToEmail(BuildContext context) async {
     emit(SendOtpToEmailLoading());
@@ -32,7 +34,10 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
         email: forgetedPasswordEmail.text);
     response.fold(
       (message) => emit(SendOtpToEmailFailure(errorMessage: message)),
-      (forgetPasswordModel) => emit(SendOtpToEmailSuccess(forgetPasswordModel:forgetPasswordModel)),
+      (forgetPasswordModel) {
+        forgetPasswordToken = forgetPasswordModel.data!;
+        emit(SendOtpToEmailSuccess(forgetPasswordModel: forgetPasswordModel));
+      },
     );
   }
 }
