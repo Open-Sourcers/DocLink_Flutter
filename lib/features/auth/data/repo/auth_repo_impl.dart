@@ -63,21 +63,4 @@ class AuthRepoImpl implements AuthRepo {
       return left(e.errorModel.message ?? S.of(context).authError);
     }
   }
-
-  @override
-  Future<Either<String, AuthModel>> sendOtpToEmail(BuildContext context,
-      {required String email}) async {
-    try {
-      final response = await dioConsumer.post(EndPoints.login, data: {
-        ApiKeys.email: email,
-      });
-      AuthModel authModel = AuthModel.fromJson(response);
-      if (authModel.statusCode == 200) {
-        return right(authModel);
-      }
-      return left(authModel.message ?? S.of(context).authError);
-    } on ServerException catch (e) {
-      return left(e.errorModel.message ?? S.of(context).authError);
-    }
-  }
 }
