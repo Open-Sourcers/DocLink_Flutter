@@ -60,6 +60,16 @@ class S {
     );
   }
 
+  /// `Welcome broo`
+  String get welcome {
+    return Intl.message(
+      'Welcome broo',
+      name: 'welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email`
   String get emailHintTxt {
     return Intl.message(
@@ -385,6 +395,36 @@ class S {
     return Intl.message(
       'Now , You can get the code (******) form your email :\n ',
       name: 'codeWasSentToYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Resend Email`
+  String get resendEmail {
+    return Intl.message(
+      'Resend Email',
+      name: 'resendEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verification of email has been sent to your email, check your email`
+  String get verificationEmail {
+    return Intl.message(
+      'Verification of email has been sent to your email, check your email',
+      name: 'verificationEmail',
       desc: '',
       args: [],
     );

@@ -10,16 +10,16 @@ showAwesomDialog(BuildContext context,
     void Function()? btnOkOnPress,
     DialogType dialogType = DialogType.error}) {
   return AwesomeDialog(
-    dialogBackgroundColor: AppColors.commonColor,
-    context: context,
-    animType: AnimType.topSlide,
-    title: title,
-    desc: desc,
-    descTextStyle: Styless.textMedium20.copyWith(color: AppColors.white),
-    titleTextStyle: Styless.textBold30.copyWith(color: AppColors.white),
-    dialogType: dialogType,
-    btnOkOnPress: btnOkOnPress,
-    btnCancelOnPress: (){},
-    btnCancelText: "Try again 😮!"
-  )..show();
+      dialogBackgroundColor: AppColors.commonColor,
+      context: context,
+      animType: AnimType.topSlide,
+      title: title,
+      desc: desc,
+      descTextStyle: Styless.textMedium20.copyWith(color: AppColors.white),
+      titleTextStyle: Styless.textBold30.copyWith(color: AppColors.white),
+      dialogType: dialogType,
+      btnOkOnPress: btnOkOnPress,
+      btnCancelOnPress: () {},
+      btnCancelText: "Try again 😮!")
+    ..show();
 }

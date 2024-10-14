@@ -58,6 +58,10 @@ class AppImages {
   /// assets/images/Success.svg
   static const String imagesSuccess = "assets/images/Success.svg";
 
+  /// Assets for imagesVerify
+  /// assets/images/verify.png
+  static const String imagesVerify = "assets/images/verify.png";
+
   /// Assets for imagesWarning
   /// assets/images/Warning.svg
   static const String imagesWarning = "assets/images/Warning.svg";

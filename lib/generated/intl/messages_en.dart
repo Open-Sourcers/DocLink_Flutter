@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "authError": MessageLookupByLibrary.simpleMessage(
             "There was an error please try again"),
         "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
@@ -68,13 +69,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "Create an account so you can explore all the existing doctors."),
         "required": MessageLookupByLibrary.simpleMessage("Required"),
+        "resendEmail": MessageLookupByLibrary.simpleMessage("Resend Email"),
         "resetPass": MessageLookupByLibrary.simpleMessage("Reset password"),
         "resetYoutPassword":
             MessageLookupByLibrary.simpleMessage("Reset your password"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
             "size of password greater than 8 char"),
+        "verificationEmail": MessageLookupByLibrary.simpleMessage(
+            "Verification of email has been sent to your email, check your email"),
         "verifyAccount":
-            MessageLookupByLibrary.simpleMessage("Verify your account")
+            MessageLookupByLibrary.simpleMessage("Verify your account"),
+        "welcome": MessageLookupByLibrary.simpleMessage("Welcome broo")
       };
 }

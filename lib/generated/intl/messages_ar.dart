@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "authError": MessageLookupByLibrary.simpleMessage(
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
         "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
+        "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
@@ -70,6 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين ."),
         "required": MessageLookupByLibrary.simpleMessage("مطلوب"),
+        "resendEmail": MessageLookupByLibrary.simpleMessage("اعادة الارسال"),
         "resetPass":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور "),
         "resetYoutPassword": MessageLookupByLibrary.simpleMessage(
@@ -77,6 +79,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
             ", أيجب ان يتكون الرفم السري من 8 احرف و رموز و ارقام"),
-        "verifyAccount": MessageLookupByLibrary.simpleMessage("التحقق من حسابك")
+        "verificationEmail": MessageLookupByLibrary.simpleMessage(
+            "تم إرسال تأكيد البريد الإلكتروني إلى بريدك الإلكتروني، تحقق من بريدك الإلكتروني"),
+        "verifyAccount":
+            MessageLookupByLibrary.simpleMessage("التحقق من حسابك"),
+        "welcome": MessageLookupByLibrary.simpleMessage("يا هلا بالغالي")
       };
 }

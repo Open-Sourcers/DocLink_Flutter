@@ -1,5 +1,6 @@
 {
   "language": "ُEnglish",
+  "welcome" : "يا هلا بالغالي",
   "emailHintTxt": " بريدك الالكتروني  ",
   "passwordHintTxt": " كلمة المرور ",
   "loginHere": "سجل من هنا",
@@ -32,5 +33,9 @@
   "beCareful": "! كن  حريص",
   "passwordEqualConfirmPass": "لابد ان تتطابق كلمه المرور مع تاكيد كلمه المرور",
   "required": "مطلوب",
-  "codeWasSentToYourEmail": "الآن يمكنك الحصول على رقم التأكيد من البريد الالكتروني الخاص بك : \n"
+  "codeWasSentToYourEmail": "الآن يمكنك الحصول على رقم التأكيد من البريد الالكتروني الخاص بك : \n",
+  "resendEmail" : "اعادة الارسال",
+  "cancel" : "الغاء",
+  "verificationEmail" : "تم إرسال تأكيد البريد الإلكتروني إلى بريدك الإلكتروني، تحقق من بريدك الإلكتروني"
 }
+

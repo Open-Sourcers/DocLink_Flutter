@@ -1,9 +1,10 @@
 import 'package:doc_link_project/constants.dart';
+import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
-import 'package:doc_link_project/features/auth/data/google_sign_in/google_sign_in_api.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_continue_with_button.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomContinueWithSection extends StatelessWidget {
   const CustomContinueWithSection({
@@ -25,8 +26,8 @@ class CustomContinueWithSection extends StatelessWidget {
           children: [
             CustomContinueWithButton(
               icon: googleIcon,
-              onPressed: () async {
-                await GoogleSignInApi.signInWithGoogle();
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.verificationView);
               },
             ),
             const SizedBox(width: 10),
