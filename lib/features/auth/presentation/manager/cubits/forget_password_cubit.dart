@@ -1,3 +1,4 @@
+import 'package:doc_link_project/features/auth/data/models/forget_password_model.dart';
 import 'package:doc_link_project/features/auth/data/repo/forget_password_repo_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -31,7 +32,7 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
         email: forgetedPasswordEmail.text);
     response.fold(
       (message) => emit(SendOtpToEmailFailure(errorMessage: message)),
-      (success) => emit(SendOtpToEmailSuccess()),
+      (forgetPasswordModel) => emit(SendOtpToEmailSuccess(forgetPasswordModel:forgetPasswordModel)),
     );
   }
 }
