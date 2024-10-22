@@ -81,6 +81,8 @@ class MessageLookup extends MessageLookupByLibrary {
             ", أيجب ان يتكون الرفم السري من 8 احرف و رموز و ارقام"),
         "verificationEmail": MessageLookupByLibrary.simpleMessage(
             "تم إرسال تأكيد البريد الإلكتروني إلى بريدك الإلكتروني، تحقق من بريدك الإلكتروني"),
+        "verification_success": MessageLookupByLibrary.simpleMessage(
+            "يمكنك الآن اضافه كلمة مرور جديده"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("التحقق من حسابك"),
         "welcome": MessageLookupByLibrary.simpleMessage("يا هلا بالغالي")

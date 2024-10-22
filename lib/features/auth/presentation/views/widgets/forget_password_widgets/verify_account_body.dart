@@ -1,9 +1,11 @@
 import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
+import 'package:doc_link_project/features/auth/presentation/manager/cubits/forget_password_cubit.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_description_texts.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/forget_password_widgets/custom_verufy_account_button_bloc_consumer.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pinput/pinput.dart';
 
@@ -50,6 +52,7 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
       },
       onCompleted: (value) {
         isCompleted = true;
+        context.read<ForgetPasswordCubit>().setForgetPasswordOtp(value);
       },
       defaultPinTheme: defaultPinTheme,
       focusedPinTheme: focusedPinTheme,
@@ -57,4 +60,3 @@ class _VerifyAccountViewBodyState extends State<VerifyAccountViewBody> {
     );
   }
 }
-
