@@ -18,3 +18,14 @@ class SendOtpToEmailFailure extends ForgetPasswordState {
   final String errorMessage;
   SendOtpToEmailFailure({required this.errorMessage});
 }
+
+// verify account
+
+class VerifyAccountLoading extends ForgetPasswordState {}
+
+class VerifyAccountSuccess extends ForgetPasswordState {}
+
+class VerifyAccountFailure extends ForgetPasswordState {
+  final String errorMessage;
+  VerifyAccountFailure({required this.errorMessage});
+}
