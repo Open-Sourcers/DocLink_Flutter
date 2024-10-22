@@ -9,7 +9,7 @@ class CustomButton extends StatelessWidget {
     required this.buttonTitle,
     this.backgroundColor = AppColors.commonColor,
     this.textColor = AppColors.white,
-    this.child,  
+    this.child,
     this.isCompleted = true,
   });
   final Function()? onPressed;
@@ -17,23 +17,24 @@ class CustomButton extends StatelessWidget {
   final Color textColor;
   final Widget? child;
   final bool isCompleted;
-    final Color backgroundColor;
+  final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: isCompleted ? onPressed : null,
-      color: backgroundColor ,
+      color: backgroundColor,
       minWidth: MediaQuery.sizeOf(context).width,
       height: 60,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12.0),
-        side: BorderSide(color: isCompleted? textColor : AppColors.black)
-      ),
-      child:child ?? Text(
-        buttonTitle,
-        style:Styless.textSemiBold20.copyWith(color: isCompleted? textColor : AppColors.black),
-      ),
+          borderRadius: BorderRadius.circular(12.0),
+          side: BorderSide(color: isCompleted ? textColor : AppColors.black)),
+      child: child ??
+          Text(
+            buttonTitle,
+            style: Styless.textSemiBold20
+                .copyWith(color: isCompleted ? textColor : AppColors.black),
+          ),
     );
   }
 }

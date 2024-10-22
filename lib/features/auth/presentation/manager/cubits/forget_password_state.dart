@@ -9,9 +9,9 @@ final class ChangeForgetPasswordView extends ForgetPasswordState {}
 class SendOtpToEmailLoading extends ForgetPasswordState {}
 
 class SendOtpToEmailSuccess extends ForgetPasswordState {
-  final ForgetPasswordModel forgetPasswordModel;
+  final AuthModel authModel;
 
-  SendOtpToEmailSuccess({required this.forgetPasswordModel});
+  SendOtpToEmailSuccess({required this.authModel});
 }
 
 class SendOtpToEmailFailure extends ForgetPasswordState {

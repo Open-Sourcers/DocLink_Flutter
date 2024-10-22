@@ -19,7 +19,9 @@ class ForgetPasswordButton extends StatelessWidget {
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(horizontal: 5),
-        alignment:Intl.getCurrentLocale() == 'ar' ?  Alignment.centerLeft:Alignment.centerRight,
+        alignment: Intl.getCurrentLocale() == 'ar'
+            ? Alignment.centerLeft
+            : Alignment.centerRight,
         child: Text(
           S.of(context).forgetPassword,
           style: Styless.textBold14,

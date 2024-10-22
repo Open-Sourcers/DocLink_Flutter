@@ -1,14 +1,16 @@
 // ignore_for_file: prefer_single_quotes
 class AppImages {
   AppImages._();
-  
+
   /// Assets for animationsAnimatedHart
   /// assets/animations/animated_hart.json
-  static const String animationsAnimatedHart = "assets/animations/animated_hart.json";
+  static const String animationsAnimatedHart =
+      "assets/animations/animated_hart.json";
 
   /// Assets for animationsLoadingIcon
   /// assets/animations/loading_icon.json
-  static const String animationsLoadingIcon = "assets/animations/loading_icon.json";
+  static const String animationsLoadingIcon =
+      "assets/animations/loading_icon.json";
 
   /// Assets for imagesAppLogo
   /// assets/images/app_logo.png
@@ -66,4 +68,3 @@ class AppImages {
   /// assets/images/Warning.svg
   static const String imagesWarning = "assets/images/Warning.svg";
 }
-
