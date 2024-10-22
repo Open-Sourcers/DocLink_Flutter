@@ -9,4 +9,5 @@ class ApiKeys {
   static const displayName = 'displayName';
   static const firstName = 'firstName';
   static const lastName = 'lastName';
+  static const otp = 'otp';
 }

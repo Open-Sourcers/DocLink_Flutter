@@ -33,4 +33,25 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
       return left(e.errorModel.message ?? S.of(context).authError);
     }
   }
+
+  @override
+  Future<Either<String, ForgetPasswordModel>> verifyAccount(
+      BuildContext context,
+      {required String email,
+      required String otp}) async {
+    try {
+      final response = await dioConsumer.post(EndPoints.verifyAccount, data: {
+        ApiKeys.email: email,
+        ApiKeys.otp: otp,
+      });
+      ForgetPasswordModel forgetPasswordModel =
+          ForgetPasswordModel.fromJson(response);
+      if (forgetPasswordModel.statusCode == 200) {
+        return right(forgetPasswordModel);
+      }
+      return left(forgetPasswordModel.message ?? S.of(context).authError);
+    } on ServerException catch (e) {
+      return left(e.errorModel.message ?? S.of(context).authError);
+    }
+  }
 }

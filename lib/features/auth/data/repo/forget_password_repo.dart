@@ -7,4 +7,10 @@ abstract class ForgetPasswordRepo {
     BuildContext context, {
     required String email,
   });
+  // verify account
+  Future<Either<String, ForgetPasswordModel>> verifyAccount(
+    BuildContext context, {
+    required String email,
+    required String otp,
+  });
 }
