@@ -23,6 +23,9 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
       final response = await dioConsumer.post(EndPoints.forgetPassword, data: {
         ApiKeys.email: email,
       });
+      if (response == null) {
+        return left(S.of(context).authError);
+      }
       AuthModel authModel = AuthModel.fromJson(response);
       if (authModel.statusCode == 200) {
         return right(authModel);

@@ -21,8 +21,7 @@ class CustomResetPasswordButtonBlocConsumer extends StatelessWidget {
           customBottomToastMessage(context,
               msg: state.errorMessage, type: ToastMessageType.error);
         } else if (state is ResetPasswordSuccess) {
-          //TODO: navigate to successfull view
-          GoRouter.of(context).push(AppRouter.onboarding);
+          GoRouter.of(context).pushReplacement(AppRouter.customSuccessView);
         }
       },
       builder: (context, state) {
