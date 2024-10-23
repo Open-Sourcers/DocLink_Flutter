@@ -57,6 +57,25 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
       },
     );
   }
+
+  // reset password
+  TextEditingController newPassword = TextEditingController();
+  TextEditingController passwordComfirmation = TextEditingController();
+
+  resetPassword(BuildContext context) async {
+    emit(ResetPasswordLoading());
+    var response = await forgetPasswordRepoImpl.resetPassword(context,
+        email: forgetedPasswordEmail.text,
+        token: forgetPasswordToken,
+        password: newPassword.text,
+        passwordComfirmation: passwordComfirmation.text);
+    response.fold(
+      (message) => emit(ResetPasswordFailure(errorMessage: message)),
+      (forgetPasswordModel) {
+        emit(ResetPasswordSuccess());
+      },
+    );
+  }
 }
 
 enum ForgetPasswordEnum { setEmail, verifyAccount, resetPassword }

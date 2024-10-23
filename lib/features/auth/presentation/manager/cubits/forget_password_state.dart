@@ -29,3 +29,12 @@ class VerifyAccountFailure extends ForgetPasswordState {
   final String errorMessage;
   VerifyAccountFailure({required this.errorMessage});
 }
+
+class ResetPasswordLoading extends ForgetPasswordState {}
+
+class ResetPasswordSuccess extends ForgetPasswordState {}
+
+class ResetPasswordFailure extends ForgetPasswordState {
+  final String errorMessage;
+  ResetPasswordFailure({required this.errorMessage});
+}
