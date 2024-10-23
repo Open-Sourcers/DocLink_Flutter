@@ -13,4 +13,12 @@ abstract class ForgetPasswordRepo {
     required String email,
     required String otp,
   });
+  //reset password
+  Future<Either<String, AuthModel>> resetPassword(
+    BuildContext context, {
+    required String email,
+    required String token,
+    required String password,
+    required String passwordComfirmation,
+  });
 }
