@@ -72,9 +72,7 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
         passwordComfirmation: passwordComfirmation.text);
     response.fold(
       (message) => emit(ResetPasswordFailure(errorMessage: message)),
-      (forgetPasswordModel) {
-        emit(ResetPasswordSuccess());
-      },
+      (forgetPasswordModel) => emit(ResetPasswordSuccess()),
     );
   }
 }

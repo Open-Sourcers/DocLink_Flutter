@@ -6,6 +6,7 @@ import 'package:doc_link_project/core/api/dio_consumer.dart';
 import 'package:doc_link_project/core/api/end_points.dart';
 import 'package:doc_link_project/core/error/exception.dart';
 import 'package:doc_link_project/features/auth/data/models/auth_model/auth_model.dart';
+import 'package:doc_link_project/features/auth/data/models/reset_password_model.dart';
 import 'package:doc_link_project/features/auth/data/repo/forget_password_repo.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +52,7 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
   }
 
   @override
-  Future<Either<String, AuthModel>> resetPassword(BuildContext context,
+  Future<Either<String, ResetPasswordModel>> resetPassword(BuildContext context,
       {required String email,
       required String token,
       required String newPassword,
@@ -63,11 +64,13 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
         ApiKeys.newPassword: newPassword,
         ApiKeys.passwordComfirmation: passwordComfirmation,
       });
-      AuthModel authModel = AuthModel.fromJson(response);
-      if (authModel.statusCode == 200) {
-        return right(authModel);
+      ResetPasswordModel resetPasswordModel =
+          ResetPasswordModel.fromJson(response);
+      if (resetPasswordModel.statusCode == 200 && resetPasswordModel.data!) {
+        return right(resetPasswordModel);
       }
-      return left(authModel.message ?? S.of(context).authError);
+      return left(
+          resetPasswordModel.responseMessage ?? S.of(context).authError);
     } on ServerException catch (e) {
       return left(e.errorModel.message ?? S.of(context).authError);
     }

@@ -6,6 +6,7 @@ import 'package:doc_link_project/features/auth/presentation/manager/cubits/forge
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomResetPasswordButtonBlocConsumer extends StatelessWidget {
   const CustomResetPasswordButtonBlocConsumer({
@@ -21,7 +22,7 @@ class CustomResetPasswordButtonBlocConsumer extends StatelessWidget {
               msg: state.errorMessage, type: ToastMessageType.error);
         } else if (state is ResetPasswordSuccess) {
           //TODO: navigate to successfull view
-          Navigator.pushReplacementNamed(context, AppRouter.loginView);
+          GoRouter.of(context).push(AppRouter.onboarding);
         }
       },
       builder: (context, state) {
