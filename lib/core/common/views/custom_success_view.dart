@@ -16,7 +16,7 @@ class CustomSuccessView extends StatefulWidget {
 class _CustomSuccessViewState extends State<CustomSuccessView> {
   void navigationMethod() {
     Timer(
-      const Duration(seconds: 2),
+      const Duration(seconds: 4),
       () {
         GoRouter.of(context).pushReplacement(AppRouter.loginView);
       },
