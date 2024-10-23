@@ -54,13 +54,13 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
   Future<Either<String, AuthModel>> resetPassword(BuildContext context,
       {required String email,
       required String token,
-      required String password,
+      required String newPassword,
       required String passwordComfirmation}) async {
     try {
       final response = await dioConsumer.put(EndPoints.resetPassword, data: {
         ApiKeys.email: email,
         ApiKeys.token: token,
-        ApiKeys.password: password,
+        ApiKeys.newPassword: newPassword,
         ApiKeys.passwordComfirmation: passwordComfirmation,
       });
       AuthModel authModel = AuthModel.fromJson(response);

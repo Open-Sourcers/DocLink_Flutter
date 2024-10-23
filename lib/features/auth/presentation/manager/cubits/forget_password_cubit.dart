@@ -61,13 +61,14 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
   // reset password
   TextEditingController newPassword = TextEditingController();
   TextEditingController passwordComfirmation = TextEditingController();
+  GlobalKey<FormState> resetPasswordFormKey = GlobalKey();
 
   resetPassword(BuildContext context) async {
     emit(ResetPasswordLoading());
     var response = await forgetPasswordRepoImpl.resetPassword(context,
         email: forgetedPasswordEmail.text,
         token: forgetPasswordToken,
-        password: newPassword.text,
+        newPassword: newPassword.text,
         passwordComfirmation: passwordComfirmation.text);
     response.fold(
       (message) => emit(ResetPasswordFailure(errorMessage: message)),

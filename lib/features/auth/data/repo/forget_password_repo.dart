@@ -18,7 +18,7 @@ abstract class ForgetPasswordRepo {
     BuildContext context, {
     required String email,
     required String token,
-    required String password,
+    required String newPassword,
     required String passwordComfirmation,
   });
 }

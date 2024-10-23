@@ -96,7 +96,7 @@ class DioConsumer extends ApiConsumer {
       handelDioException(e);
     }
   }
-  
+
   @override
   Future<dynamic> put(
     String path, {
@@ -115,5 +115,4 @@ class DioConsumer extends ApiConsumer {
       handelDioException(e);
     }
   }
-  
 }

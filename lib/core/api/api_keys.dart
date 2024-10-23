@@ -1,5 +1,6 @@
 class ApiKeys {
   static const password = 'password';
+  static const newPassword = 'newPassword';
   static const passwordComfirmation = 'passwordComfirmation';
   static const email = 'email';
   static const token = 'token';
