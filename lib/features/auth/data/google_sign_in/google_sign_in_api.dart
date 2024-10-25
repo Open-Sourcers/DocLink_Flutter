@@ -1,11 +1,21 @@
 import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleSignInApi {
-  static final user = GoogleSignIn();
+  static const String clientId =
+      "579857235514-2hjss960qjro1kbka6822h52lu2sfhsl.apps.googleusercontent.com";
+  static final user = GoogleSignIn(
+    clientId: clientId,
+    scopes: [
+      'https://www.googleapis.com/auth/userinfo.email',
+      'openid',
+      'https://www.googleapis.com/auth/userinfo.profile',
+    ],
+  );
   static Future<void> signInWithGoogle() async {
     GoogleSignInAccount? googleUser = await user.signIn();
-
+    print(googleUser);
     GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
     print("idToken : ${googleAuth.idToken}");
+    print("AccessToken : ${googleAuth.accessToken}");
   }
 }
