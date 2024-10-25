@@ -78,6 +78,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "size of password greater than 8 char"),
         "verificationEmail": MessageLookupByLibrary.simpleMessage(
             "Verification of email has been sent to your email, check your email"),
+        "verification_success": MessageLookupByLibrary.simpleMessage(
+            "You can now add new password"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("Verify your account"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome broo")

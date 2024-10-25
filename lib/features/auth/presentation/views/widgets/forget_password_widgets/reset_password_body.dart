@@ -1,6 +1,6 @@
-import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_description_texts.dart';
-import 'package:doc_link_project/features/auth/presentation/views/widgets/forget_password_widgets/custom_reset_password_text_fields.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/forget_password_widgets/custom_reset_password_button_bloc_consumer.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/forget_password_widgets/custom_reset_password_form.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -21,12 +21,9 @@ class ResetPasswordViewBody extends StatelessWidget {
             description: S.of(context).plesesResetPass,
           ),
           const SizedBox(height: 110),
-          const CustomResetPasswordTextFields(),
+          const CustomResetPasswordForm(),
           const SizedBox(height: 30),
-          CustomButton(
-            buttonTitle: S.of(context).resetPass,
-            onPressed: () {},
-          ),
+          const CustomResetPasswordButtonBlocConsumer(),
         ],
       ),
     );

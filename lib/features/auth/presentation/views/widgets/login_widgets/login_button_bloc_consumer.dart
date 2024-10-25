@@ -17,7 +17,6 @@ class LoginButtonBlocConsumer extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthCubit, AuthState>(listener: (context, state) {
       if (state is LoginSuccess) {
-        // TODO : navigate to home in future
         showAwesomDialog(context,
             title: "Success",
             desc: "Login done 🥰",

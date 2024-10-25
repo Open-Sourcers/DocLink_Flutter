@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleSignInApi {
@@ -13,9 +14,12 @@ class GoogleSignInApi {
   );
   static Future<void> signInWithGoogle() async {
     GoogleSignInAccount? googleUser = await user.signIn();
-    print(googleUser);
+    if (kDebugMode) {
+      print(googleUser);
+    }
     GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
-    print("idToken : ${googleAuth.idToken}");
-    print("AccessToken : ${googleAuth.accessToken}");
+    if (kDebugMode) {
+      print(googleAuth);
+    }
   }
 }

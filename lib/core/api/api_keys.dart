@@ -1,5 +1,7 @@
 class ApiKeys {
   static const password = 'password';
+  static const newPassword = 'newPassword';
+  static const passwordComfirmation = 'passwordComfirmation';
   static const email = 'email';
   static const token = 'token';
   static const statusCode = 'statusCode';
@@ -9,4 +11,5 @@ class ApiKeys {
   static const displayName = 'displayName';
   static const firstName = 'firstName';
   static const lastName = 'lastName';
+  static const otp = 'otp';
 }

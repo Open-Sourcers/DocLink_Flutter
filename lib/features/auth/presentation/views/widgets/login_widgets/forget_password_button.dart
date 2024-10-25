@@ -14,12 +14,14 @@ class ForgetPasswordButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.forgetPasswordView);
+        GoRouter.of(context).pushReplacement(AppRouter.forgetPasswordView);
       },
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(horizontal: 5),
-        alignment:Intl.getCurrentLocale() == 'ar' ?  Alignment.centerLeft:Alignment.centerRight,
+        alignment: Intl.getCurrentLocale() == 'ar'
+            ? Alignment.centerLeft
+            : Alignment.centerRight,
         child: Text(
           S.of(context).forgetPassword,
           style: Styless.textBold14,

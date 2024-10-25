@@ -429,6 +429,16 @@ class S {
       args: [],
     );
   }
+
+  /// `You can now add new password`
+  String get verification_success {
+    return Intl.message(
+      'You can now add new password',
+      name: 'verification_success',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

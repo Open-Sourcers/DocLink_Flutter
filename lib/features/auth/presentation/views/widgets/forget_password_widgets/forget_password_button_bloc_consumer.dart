@@ -23,9 +23,8 @@ class ForgetPasswordButtonBlocConsumer extends StatelessWidget {
             type: ToastMessageType.success);
       }
       if (state is SendOtpToEmailFailure) {
-        //TODO change msg
         customBottomToastMessage(context,
-            msg: 'state.errorMessage', type: ToastMessageType.error);
+            msg: state.errorMessage, type: ToastMessageType.error);
       }
     }, builder: (context, state) {
       return state is SendOtpToEmailLoading

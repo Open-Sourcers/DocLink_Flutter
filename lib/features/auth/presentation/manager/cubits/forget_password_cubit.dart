@@ -1,4 +1,4 @@
-import 'package:doc_link_project/features/auth/data/models/forget_password_model.dart';
+import 'package:doc_link_project/features/auth/data/models/auth_model/auth_model.dart';
 import 'package:doc_link_project/features/auth/data/repo/forget_password_repo_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,7 +25,6 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
   //forgetPassword-send email
   TextEditingController forgetedPasswordEmail = TextEditingController();
   GlobalKey<FormState> forgetedPasswordFormKey = GlobalKey();
-  //
   String forgetPasswordToken = '';
 
   sendOtpToEmail(BuildContext context) async {
@@ -35,9 +34,45 @@ class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
     response.fold(
       (message) => emit(SendOtpToEmailFailure(errorMessage: message)),
       (forgetPasswordModel) {
-        forgetPasswordToken = forgetPasswordModel.data!;
-        emit(SendOtpToEmailSuccess(forgetPasswordModel: forgetPasswordModel));
+        forgetPasswordToken = forgetPasswordModel.data!.token!;
+        emit(SendOtpToEmailSuccess(authModel: forgetPasswordModel));
       },
+    );
+  }
+
+  // verify account
+  String forgetPasswordOtp = '';
+  setForgetPasswordOtp(String otp) {
+    forgetPasswordOtp = otp;
+  }
+
+  verifyAccount(BuildContext context) async {
+    emit(VerifyAccountLoading());
+    var response = await forgetPasswordRepoImpl.verifyAccount(context,
+        email: forgetedPasswordEmail.text, otp: forgetPasswordOtp);
+    response.fold(
+      (message) => emit(VerifyAccountFailure(errorMessage: message)),
+      (forgetPasswordModel) {
+        emit(VerifyAccountSuccess());
+      },
+    );
+  }
+
+  // reset password
+  TextEditingController newPassword = TextEditingController();
+  TextEditingController passwordComfirmation = TextEditingController();
+  GlobalKey<FormState> resetPasswordFormKey = GlobalKey();
+
+  resetPassword(BuildContext context) async {
+    emit(ResetPasswordLoading());
+    var response = await forgetPasswordRepoImpl.resetPassword(context,
+        email: forgetedPasswordEmail.text,
+        token: forgetPasswordToken,
+        newPassword: newPassword.text,
+        passwordComfirmation: passwordComfirmation.text);
+    response.fold(
+      (message) => emit(ResetPasswordFailure(errorMessage: message)),
+      (forgetPasswordModel) => emit(ResetPasswordSuccess()),
     );
   }
 }

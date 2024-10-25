@@ -9,12 +9,32 @@ final class ChangeForgetPasswordView extends ForgetPasswordState {}
 class SendOtpToEmailLoading extends ForgetPasswordState {}
 
 class SendOtpToEmailSuccess extends ForgetPasswordState {
-  final ForgetPasswordModel forgetPasswordModel;
+  final AuthModel authModel;
 
-  SendOtpToEmailSuccess({required this.forgetPasswordModel});
+  SendOtpToEmailSuccess({required this.authModel});
 }
 
 class SendOtpToEmailFailure extends ForgetPasswordState {
   final String errorMessage;
   SendOtpToEmailFailure({required this.errorMessage});
+}
+
+// verify account
+
+class VerifyAccountLoading extends ForgetPasswordState {}
+
+class VerifyAccountSuccess extends ForgetPasswordState {}
+
+class VerifyAccountFailure extends ForgetPasswordState {
+  final String errorMessage;
+  VerifyAccountFailure({required this.errorMessage});
+}
+
+class ResetPasswordLoading extends ForgetPasswordState {}
+
+class ResetPasswordSuccess extends ForgetPasswordState {}
+
+class ResetPasswordFailure extends ForgetPasswordState {
+  final String errorMessage;
+  ResetPasswordFailure({required this.errorMessage});
 }

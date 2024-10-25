@@ -1,3 +1,4 @@
+import 'package:doc_link_project/core/common/views/custom_success_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/forget_password_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/login_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/register_view.dart';
@@ -12,6 +13,7 @@ abstract class AppRouter {
   static String registerView = '/registerView';
   static String forgetPasswordView = '/forgetPasswordView';
   static String verificationView = '/verificationView';
+  static String customSuccessView = '/customSuccessView';
 
   static final router = GoRouter(
     routes: [
@@ -38,6 +40,10 @@ abstract class AppRouter {
       GoRoute(
         path: verificationView,
         builder: (context, state) => const VerificaitionEmailView(),
+      ),
+      GoRoute(
+        path: customSuccessView,
+        builder: (context, state) => const CustomSuccessView(),
       ),
     ],
   );
