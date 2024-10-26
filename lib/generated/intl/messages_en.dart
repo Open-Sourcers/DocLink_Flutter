@@ -52,20 +52,28 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
+        "help": MessageLookupByLibrary.simpleMessage("Help"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("عربي"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
+        "logOut": MessageLookupByLibrary.simpleMessage("Log Out"),
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),
+        "message": MessageLookupByLibrary.simpleMessage("messages"),
+        "myProf": MessageLookupByLibrary.simpleMessage("My Profile"),
         "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
             "Password and confirm password must be the same."),
         "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
+        "payment": MessageLookupByLibrary.simpleMessage("Payment Method"),
         "pleaseEnterValidemail": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid email adress"),
         "pleaseEnterYouremail": MessageLookupByLibrary.simpleMessage(
             "Please enter your email adress"),
         "plesesResetPass":
             MessageLookupByLibrary.simpleMessage("please reset you password"),
+        "privacy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "prof": MessageLookupByLibrary.simpleMessage("Profile"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "Create an account so you can explore all the existing doctors."),
         "required": MessageLookupByLibrary.simpleMessage("Required"),
@@ -73,6 +81,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetPass": MessageLookupByLibrary.simpleMessage("Reset password"),
         "resetYoutPassword":
             MessageLookupByLibrary.simpleMessage("Reset your password"),
+        "schedule": MessageLookupByLibrary.simpleMessage("Schedule"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
             "size of password greater than 8 char"),

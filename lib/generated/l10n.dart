@@ -439,6 +439,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Profile`
+  String get prof {
+    return Intl.message(
+      'Profile',
+      name: 'prof',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Profile`
+  String get myProf {
+    return Intl.message(
+      'My Profile',
+      name: 'myProf',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Method`
+  String get payment {
+    return Intl.message(
+      'Payment Method',
+      name: 'payment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get privacy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Help`
+  String get help {
+    return Intl.message(
+      'Help',
+      name: 'help',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log Out`
+  String get logOut {
+    return Intl.message(
+      'Log Out',
+      name: 'logOut',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Schedule`
+  String get schedule {
+    return Intl.message(
+      'Schedule',
+      name: 'schedule',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `messages`
+  String get message {
+    return Intl.message(
+      'messages',
+      name: 'message',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

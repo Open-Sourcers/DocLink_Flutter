@@ -1,29 +1,25 @@
 import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
-import 'package:doc_link_project/features/chat/presentation/views/chat_view.dart';
-import 'package:doc_link_project/features/home/presentation/views/home_view.dart';
-import 'package:doc_link_project/features/profile/presentation/views/profile_view.dart';
-import 'package:doc_link_project/features/schedule/presentation/views/schedule_view.dart';
+import 'package:doc_link_project/features/user_screens/chat/presentation/views/chat_view.dart';
+import 'package:doc_link_project/features/user_screens/home/presentation/views/home_view.dart';
+import 'package:doc_link_project/features/user_screens/profile/presentation/views/profile_view.dart';
+import 'package:doc_link_project/features/user_screens/schedule/presentation/views/schedule_view.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 PersistentTabController _controller = PersistentTabController();
 
-class AppBottomNavBar extends StatefulWidget {
+class AppBottomNavBar extends StatelessWidget {
   const AppBottomNavBar({super.key});
 
-  @override
-  State<AppBottomNavBar> createState() => _AppBottomNavBarState();
-}
-
-class _AppBottomNavBarState extends State<AppBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return PersistentTabView(
       context,
       controller: _controller,
       screens: _buildScreens(),
-      items: _buildItems(),
+      items: _buildItems(context),
       backgroundColor: Colors.white,
       decoration: navBarDecorationMethod(),
       navBarStyle: NavBarStyle.style9,
@@ -44,24 +40,24 @@ List<Widget> _buildScreens() {
   ];
 }
 
-List<PersistentBottomNavBarItem> _buildItems() {
+List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
   return [
     PersistentBottomNavBarItem(
-      title: 'Home',
+      title: S.of(context).home,
       textStyle: Styless.textBold14,
       icon: Image.asset(
         AppImages.imagesHomeColored,
       ),
     ),
     PersistentBottomNavBarItem(
-      title: 'Schedule',
+      title: S.of(context).schedule,
       textStyle: Styless.textBold14,
       icon: Image.asset(
         AppImages.imagesCalendarColored,
       ),
     ),
     PersistentBottomNavBarItem(
-      title: 'Message',
+      title: S.of(context).message,
       textStyle: Styless.textBold14,
       icon: const Icon(
         Icons.message_outlined,
@@ -69,7 +65,7 @@ List<PersistentBottomNavBarItem> _buildItems() {
       ),
     ),
     PersistentBottomNavBarItem(
-      title: 'Profile',
+      title: S.of(context).prof,
       textStyle: Styless.textBold14,
       icon: Image.asset(
         AppImages.imagesProfileColored,

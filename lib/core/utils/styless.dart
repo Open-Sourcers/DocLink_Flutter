@@ -100,6 +100,12 @@ abstract class Styless {
     fontFamily: spaceGrotesk,
     color: Color(0xff222b45),
   );
+  static const TextStyle textBold25 = TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
+    fontFamily: spaceGrotesk,
+    color: Color(0xff222b45),
+  );
   static const TextStyle textSemiBold20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w600,

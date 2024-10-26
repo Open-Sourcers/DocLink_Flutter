@@ -26,6 +26,10 @@ class AppImages {
   /// assets/images/calendarColored.png
   static const String imagesCalendarColored = "assets/images/calendarColored.png";
 
+  /// Assets for imagesEdit
+  /// assets/images/edit.png
+  static const String imagesEdit = "assets/images/edit.png";
+
   /// Assets for imagesError
   /// assets/images/Error.svg
   static const String imagesError = "assets/images/Error.svg";
@@ -41,6 +45,10 @@ class AppImages {
   /// Assets for imagesForgggPasssss
   /// assets/images/forgggPasssss.png
   static const String imagesForgggPasssss = "assets/images/forgggPasssss.png";
+
+  /// Assets for imagesHelp
+  /// assets/images/help.png
+  static const String imagesHelp = "assets/images/help.png";
 
   /// Assets for imagesHome2
   /// assets/images/home-2.png
@@ -58,6 +66,10 @@ class AppImages {
   /// assets/images/logo2.jpg
   static const String imagesLogo2 = "assets/images/logo2.jpg";
 
+  /// Assets for imagesLogout
+  /// assets/images/logout.png
+  static const String imagesLogout = "assets/images/logout.png";
+
   /// Assets for imagesMessage
   /// assets/images/message.png
   static const String imagesMessage = "assets/images/message.png";
@@ -74,6 +86,18 @@ class AppImages {
   /// assets/images/passsForg.jpg
   static const String imagesPasssForg = "assets/images/passsForg.jpg";
 
+  /// Assets for imagesPaymentProfSettings
+  /// assets/images/paymentProfSettings.png
+  static const String imagesPaymentProfSettings = "assets/images/paymentProfSettings.png";
+
+  /// Assets for imagesPrivacySettings
+  /// assets/images/privacySettings.png
+  static const String imagesPrivacySettings = "assets/images/privacySettings.png";
+
+  /// Assets for imagesProfImg
+  /// assets/images/profImg.jpg
+  static const String imagesProfImg = "assets/images/profImg.jpg";
+
   /// Assets for imagesProfile
   /// assets/images/profile.png
   static const String imagesProfile = "assets/images/profile.png";
@@ -81,6 +105,14 @@ class AppImages {
   /// Assets for imagesProfileColored
   /// assets/images/profileColored.png
   static const String imagesProfileColored = "assets/images/profileColored.png";
+
+  /// Assets for imagesProfileIconSettings
+  /// assets/images/profileIconSettings.png
+  static const String imagesProfileIconSettings = "assets/images/profileIconSettings.png";
+
+  /// Assets for imagesSettings
+  /// assets/images/settings.png
+  static const String imagesSettings = "assets/images/settings.png";
 
   /// Assets for imagesSisi
   /// assets/images/sisi.jpg
