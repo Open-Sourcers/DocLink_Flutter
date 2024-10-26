@@ -63,8 +63,9 @@ List<PersistentBottomNavBarItem> _buildItems() {
     PersistentBottomNavBarItem(
       title: 'Message',
       textStyle: Styless.textBold14,
-      icon: Image.asset(
-        AppImages.imagesMessage,
+      icon: const Icon(
+        Icons.message_outlined,
+        color: Color(0xff63B4FF),
       ),
     ),
     PersistentBottomNavBarItem(
