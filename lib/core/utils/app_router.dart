@@ -1,9 +1,14 @@
+import 'package:doc_link_project/app_bottom_nav_bar.dart';
 import 'package:doc_link_project/core/common/views/custom_success_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/forget_password_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/login_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/register_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/verificaition_email_view.dart';
+import 'package:doc_link_project/features/chat/presentation/views/chat_view.dart';
+import 'package:doc_link_project/features/home/presentation/views/home_view.dart';
 import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:doc_link_project/features/profile/presentation/views/profile_view.dart';
+import 'package:doc_link_project/features/schedule/presentation/views/schedule_view.dart';
 import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,6 +19,11 @@ abstract class AppRouter {
   static String forgetPasswordView = '/forgetPasswordView';
   static String verificationView = '/verificationView';
   static String customSuccessView = '/customSuccessView';
+  static String appBottomNavBar = '/appBottomNavBar';
+  static String homeView = '/homeView';
+  static String scheduleView = '/scheduleView';
+  static String chatView = '/chatView';
+  static String profileView = '/profileView';
 
   static final router = GoRouter(
     routes: [
@@ -44,6 +54,27 @@ abstract class AppRouter {
       GoRoute(
         path: customSuccessView,
         builder: (context, state) => const CustomSuccessView(),
+      ),
+      GoRoute(
+        path: appBottomNavBar,
+        builder: (context, state) => const AppBottomNavBar(),
+      ),
+      //
+      GoRoute(
+        path: homeView,
+        builder: (context, state) => const HomeView(),
+      ),
+      GoRoute(
+        path: scheduleView,
+        builder: (context, state) => const ScheduleView(),
+      ),
+      GoRoute(
+        path: chatView,
+        builder: (context, state) => const ChatView(),
+      ),
+      GoRoute(
+        path: profileView,
+        builder: (context, state) => const ProfileView(),
       ),
     ],
   );
