@@ -63,4 +63,9 @@ class AuthRepoImpl implements AuthRepo {
       return left(e.errorModel.message ?? S.of(context).authError);
     }
   }
+  
+  @override
+  void logout() {
+    getit<CacheHelper>().removePreference(ApiKeys.token);
+  }
 }

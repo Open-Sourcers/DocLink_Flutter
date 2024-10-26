@@ -21,3 +21,5 @@ class LoginFailure extends AuthState {
 
   LoginFailure({required this.errorMessage});
 }
+
+final class LogoutDone extends AuthState{}
