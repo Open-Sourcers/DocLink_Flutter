@@ -38,17 +38,16 @@
   "cancel": "Cancel",
   "verificationEmail": "Verification of email has been sent to your email, check your email",
   "verification_success": "You can now add new password",
-
-  
-  "prof" : "Profile",
-  "myProf" : "My Profile",
-  "payment" : "Payment Method",
-  "privacy" : "Privacy Policy",
-  "settings" : "Settings",
-  "help" : "Help",
-  "logOut" :  "Log Out",
-
-  "home" : "Home",
-  "schedule" : "Schedule",
-  "message" : "messages"
+  "prof": "Profile",
+  "myProf": "My Profile",
+  "payment": "Payment Method",
+  "privacy": "Privacy Policy",
+  "settings": "Settings",
+  "help": "Help",
+  "logOut": "Log Out",
+  "logOutMsg": "Are you sure you want to log out now?",
+  "close": "Close",
+  "home": "Home",
+  "schedule": "Schedule",
+  "message": "messages"
 }

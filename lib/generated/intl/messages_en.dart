@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "There was an error please try again"),
         "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "close": MessageLookupByLibrary.simpleMessage("Close"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
@@ -57,6 +58,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "language": MessageLookupByLibrary.simpleMessage("عربي"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logOut": MessageLookupByLibrary.simpleMessage("Log Out"),
+        "logOutMsg": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to log out now?"),
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),

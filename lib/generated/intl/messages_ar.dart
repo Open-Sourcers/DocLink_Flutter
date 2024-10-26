@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
         "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
@@ -58,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "language": MessageLookupByLibrary.simpleMessage("ُEnglish"),
         "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير "),
         "logOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+        "logOutMsg": MessageLookupByLibrary.simpleMessage(
+            "هل انت متاكد انك تريد تسجيل الخروج الان"),
         "loginHere": MessageLookupByLibrary.simpleMessage("سجل من هنا"),
         "loginWelcome":
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),

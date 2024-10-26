@@ -1,5 +1,8 @@
 import 'dart:async';
 
+import 'package:doc_link_project/core/api/api_keys.dart';
+import 'package:doc_link_project/core/databases/cache/cache_helper.dart';
+import 'package:doc_link_project/core/services/services_locator.dart';
 import 'package:flutter/material.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
@@ -32,7 +35,12 @@ class _SpashViewState extends State<SpashView> {
     Timer(
       const Duration(seconds: 6),
       () {
-        GoRouter.of(context).pushReplacement(AppRouter.onboarding);
+        var token = getit.get<CacheHelper>().getString(ApiKeys.token);
+        if (token != null) {
+          GoRouter.of(context).pushReplacement(AppRouter.appBottomNavBar);
+        } else {
+          GoRouter.of(context).pushReplacement(AppRouter.onboarding);
+        }
       },
     );
   }

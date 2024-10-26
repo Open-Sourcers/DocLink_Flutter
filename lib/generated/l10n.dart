@@ -510,6 +510,26 @@ class S {
     );
   }
 
+  /// `Are you sure you want to log out now?`
+  String get logOutMsg {
+    return Intl.message(
+      'Are you sure you want to log out now?',
+      name: 'logOutMsg',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Close`
+  String get close {
+    return Intl.message(
+      'Close',
+      name: 'close',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Home`
   String get home {
     return Intl.message(
