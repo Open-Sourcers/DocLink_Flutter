@@ -1,3 +1,5 @@
+import 'package:doc_link_project/constants.dart';
+import 'package:doc_link_project/core/common/widgets/custom_fade_animation.dart';
 import 'package:doc_link_project/features/auth/presentation/manager/cubits/auth_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,7 +25,10 @@ class LoginForm extends StatelessWidget {
           ForgetPasswordButton(),
           SizedBox(height: 20),
           // Sign in button
-          LoginButtonBlocConsumer(),
+          CustomFadeInLeft(
+            duration: animationDuration,
+            child: LoginButtonBlocConsumer(),
+          ),
         ],
       ),
     );

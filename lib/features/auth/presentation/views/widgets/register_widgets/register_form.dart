@@ -1,3 +1,5 @@
+import 'package:doc_link_project/constants.dart';
+import 'package:doc_link_project/core/common/widgets/custom_fade_animation.dart';
 import 'package:doc_link_project/features/auth/presentation/manager/cubits/auth_cubit.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/custom_register_text_field_section.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/register_button_bloc_consumer.dart';
@@ -17,7 +19,10 @@ class RegisterForm extends StatelessWidget {
         children: [
           CustomRegisterTextFieldSection(),
           SizedBox(height: 20),
-          RegisterButtonBlocConsumer(),
+          CustomFadeInLeft(
+            duration: animationDuration,
+            child: RegisterButtonBlocConsumer(),
+          ),
         ],
       ),
     );

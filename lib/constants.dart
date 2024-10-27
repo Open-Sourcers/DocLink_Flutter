@@ -3,6 +3,7 @@ import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
+const int animationDuration = 300;
 const String spaceGrotesk = "SpaceGrotesk";
 
 const Icon faceIcon = Icon(

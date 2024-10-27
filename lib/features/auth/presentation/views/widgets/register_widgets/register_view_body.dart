@@ -1,4 +1,6 @@
+import 'package:doc_link_project/constants.dart';
 import 'package:doc_link_project/core/common/widgets/custom_continue_with_section.dart';
+import 'package:doc_link_project/core/common/widgets/custom_fade_animation.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/function/decoration_app_method.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/create_or_have_account_button.dart';
@@ -23,9 +25,12 @@ class RegisterViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               SizedBox(height: 70.h),
-              CustomDescriptionTexts(
-                headerTxt: S.of(context).createAccount,
-                description: S.of(context).registerDescription,
+              CustomFadeInDown(
+                duration: animationDuration,
+                child: CustomDescriptionTexts(
+                  headerTxt: S.of(context).createAccount,
+                  description: S.of(context).registerDescription,
+                ),
               ),
               const SizedBox(height: 20),
               const RegisterForm(),
