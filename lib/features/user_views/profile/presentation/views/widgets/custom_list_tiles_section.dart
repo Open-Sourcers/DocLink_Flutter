@@ -1,6 +1,6 @@
 import 'package:doc_link_project/core/utils/app_images.dart';
-import 'package:doc_link_project/features/user_screens/profile/presentation/views/widgets/custom_list_tile_widget.dart';
-import 'package:doc_link_project/features/user_screens/profile/presentation/views/widgets/logout_bottom_sheet.dart';
+import 'package:doc_link_project/features/user_views/profile/presentation/views/widgets/custom_list_tile_widget.dart';
+import 'package:doc_link_project/features/user_views/profile/presentation/views/widgets/logout_bottom_sheet.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 

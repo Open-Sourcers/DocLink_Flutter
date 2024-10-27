@@ -1,9 +1,9 @@
 import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
-import 'package:doc_link_project/features/user_screens/chat/presentation/views/chat_view.dart';
-import 'package:doc_link_project/features/user_screens/home/presentation/views/home_view.dart';
-import 'package:doc_link_project/features/user_screens/profile/presentation/views/profile_view.dart';
-import 'package:doc_link_project/features/user_screens/schedule/presentation/views/schedule_view.dart';
+import 'package:doc_link_project/features/user_views/chat/presentation/views/chat_view.dart';
+import 'package:doc_link_project/features/user_views/home/presentation/views/home_view.dart';
+import 'package:doc_link_project/features/user_views/profile/presentation/views/profile_view.dart';
+import 'package:doc_link_project/features/user_views/schedule/presentation/views/schedule_view.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';

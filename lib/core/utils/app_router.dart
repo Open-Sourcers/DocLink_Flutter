@@ -4,11 +4,11 @@ import 'package:doc_link_project/features/auth/presentation/views/forget_passwor
 import 'package:doc_link_project/features/auth/presentation/views/login_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/register_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/verificaition_email_view.dart';
-import 'package:doc_link_project/features/user_screens/chat/presentation/views/chat_view.dart';
-import 'package:doc_link_project/features/user_screens/home/presentation/views/home_view.dart';
+import 'package:doc_link_project/features/user_views/chat/presentation/views/chat_view.dart';
+import 'package:doc_link_project/features/user_views/home/presentation/views/home_view.dart';
 import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
-import 'package:doc_link_project/features/user_screens/profile/presentation/views/profile_view.dart';
-import 'package:doc_link_project/features/user_screens/schedule/presentation/views/schedule_view.dart';
+import 'package:doc_link_project/features/user_views/profile/presentation/views/profile_view.dart';
+import 'package:doc_link_project/features/user_views/schedule/presentation/views/schedule_view.dart';
 import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 

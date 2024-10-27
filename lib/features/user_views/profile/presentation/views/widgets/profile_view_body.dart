@@ -1,5 +1,5 @@
 import 'package:doc_link_project/core/utils/styless.dart';
-import 'package:doc_link_project/features/user_screens/profile/presentation/views/widgets/custom_list_tiles_section.dart';
+import 'package:doc_link_project/features/user_views/profile/presentation/views/widgets/custom_list_tiles_section.dart';
 import 'package:flutter/material.dart';
 import 'custom_profile_image_widget.dart';
 
