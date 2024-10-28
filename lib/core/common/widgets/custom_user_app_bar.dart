@@ -14,5 +14,6 @@ AppBar customUserAppBar(
     backgroundColor: AppColors.white,
     flexibleSpace: Container(color: AppColors.white),
     automaticallyImplyLeading: showLeadingIcon,
+    leading: showLeadingIcon ? const CustomArrowBackIconButton() : null,
   );
 }
