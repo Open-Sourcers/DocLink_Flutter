@@ -50,5 +50,7 @@
   "close": "Close",
   "home": "Home",
   "schedule": "Schedule",
-  "message": "messages"
+  "message": "messages",
+  "haveProblem": "Do you have a problem?",
+  "findSuitableSpecialists": "Find suitable specialists here.."
 }

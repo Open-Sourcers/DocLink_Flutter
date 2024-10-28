@@ -46,6 +46,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter password"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(
             "Enter valid password \n password should contain at least one upper , lower case , number , special character"),
+        "findSuitableSpecialists": MessageLookupByLibrary.simpleMessage(
+            "Find suitable specialists here.."),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Forgot password ?"),
@@ -53,6 +55,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
+        "haveProblem":
+            MessageLookupByLibrary.simpleMessage("Do you have a problem?"),
         "help": MessageLookupByLibrary.simpleMessage("Help"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("عربي"),

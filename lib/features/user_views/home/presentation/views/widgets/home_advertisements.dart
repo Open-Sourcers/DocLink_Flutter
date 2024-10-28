@@ -11,7 +11,7 @@ class HomeAdvertisementsSection extends StatelessWidget {
     return SizedBox(
         height: MediaQuery.sizeOf(context).height * 0.5,
         width: double.infinity,
-        child: Flexible(
+        child: FittedBox(
             child: Image.asset(
           AppImages.imagesAdvertisementCovid19,
           fit: BoxFit.fill,

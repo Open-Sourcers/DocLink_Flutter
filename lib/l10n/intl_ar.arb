@@ -50,5 +50,7 @@
   "close": "إغلاق",
   "home": "الرئيسية",
   "schedule": "المواعيد",
-  "message": "الرسائل"
+  "message": "الرسائل",
+  "haveProblem": "هل لديك مشكلة؟",
+  "findSuitableSpecialists": "ابحث عن المتخصصين المناسبين هنا"
 }

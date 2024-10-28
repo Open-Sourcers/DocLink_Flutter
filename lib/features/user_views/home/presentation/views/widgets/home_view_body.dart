@@ -1,4 +1,5 @@
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/home_advertisements.dart';
+import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/search_about_siutable_doctor_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -6,13 +7,11 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(16.0),
-      child: Column(
-        children: [
-          HomeAdvertisementsSection(),
-        ],
-      ),
+    return const Column(
+      children: [
+        HomeAdvertisementsSection(),
+        SearchAboutSuitableDoctorSection(),
+      ],
     );
   }
 }

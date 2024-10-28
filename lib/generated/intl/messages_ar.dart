@@ -47,6 +47,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك ادخل الرقم السري"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(
             " رقم سري غير مقبول ,  يجب ان يتكون الرفم السري من احرف و رموز و ارقام"),
+        "findSuitableSpecialists": MessageLookupByLibrary.simpleMessage(
+            "ابحث عن المتخصصين المناسبين هنا"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول "),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
@@ -54,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل "),
+        "haveProblem": MessageLookupByLibrary.simpleMessage("هل لديك مشكلة؟"),
         "help": MessageLookupByLibrary.simpleMessage("المساعدة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("ُEnglish"),
