@@ -1,6 +1,4 @@
-import 'package:doc_link_project/core/utils/app_colors.dart';
-import 'package:doc_link_project/core/utils/styless.dart';
-import 'package:doc_link_project/generated/l10n.dart';
+import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/home_advertisements.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -11,7 +9,9 @@ class HomeViewBody extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.all(16.0),
       child: Column(
-        children: [],
+        children: [
+          HomeAdvertisementsSection(),
+        ],
       ),
     );
   }

@@ -14,6 +14,10 @@ class AppImages {
   /// assets/animations/loading_icon.json
   static const String animationsLoadingIcon = "assets/animations/loading_icon.json";
 
+  /// Assets for imagesAdvertisementCovid19
+  /// assets/images/advertisement_covid_19.png
+  static const String imagesAdvertisementCovid19 = "assets/images/advertisement_covid_19.png";
+
   /// Assets for imagesAppLogo
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
