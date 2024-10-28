@@ -1,6 +1,7 @@
 {
   "language": "عربي",
   "welcome": "Welcome broo",
+  "welcomeUse": "Welcome",
   "emailHintTxt": "Email",
   "passwordHintTxt": "Password",
   "loginHere": "Login here",

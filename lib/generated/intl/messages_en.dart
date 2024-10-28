@@ -95,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "You can now add new password"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("Verify your account"),
-        "welcome": MessageLookupByLibrary.simpleMessage("Welcome broo")
+        "welcome": MessageLookupByLibrary.simpleMessage("Welcome broo"),
+        "welcomeUse": MessageLookupByLibrary.simpleMessage("Welcome")
       };
 }

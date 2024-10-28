@@ -70,6 +70,16 @@ class S {
     );
   }
 
+  /// `Welcome`
+  String get welcomeUse {
+    return Intl.message(
+      'Welcome',
+      name: 'welcomeUse',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Email`
   String get emailHintTxt {
     return Intl.message(

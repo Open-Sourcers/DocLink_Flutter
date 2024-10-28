@@ -98,6 +98,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "يمكنك الآن اضافه كلمة مرور جديده"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("التحقق من حسابك"),
-        "welcome": MessageLookupByLibrary.simpleMessage("يا هلا بالغالي")
+        "welcome": MessageLookupByLibrary.simpleMessage("يا هلا بالغالي"),
+        "welcomeUse": MessageLookupByLibrary.simpleMessage("مرحباً ")
       };
 }
