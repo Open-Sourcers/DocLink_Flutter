@@ -10,19 +10,17 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: customUserAppBar(
-          context,
-          title: Text(
-            "${S.of(context).welcomeUse} Mahmoud",
-            style: Styless.textBold18.copyWith(
-              color: AppColors.black,
-            ),
+    return Scaffold(
+      appBar: customUserAppBar(
+        context,
+        title: Text(
+          "${S.of(context).welcomeUse} Mahmoud",
+          style: Styless.textBold18.copyWith(
+            color: AppColors.black,
           ),
         ),
-        body: const HomeViewBody(),
       ),
+      body: const HomeViewBody(),
     );
   }
 }
