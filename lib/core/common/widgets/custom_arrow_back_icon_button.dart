@@ -6,13 +6,11 @@ class CustomArrowBackIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: (){
+    return CustomIconButtonContainer(
+      child: const Icon(Icons.arrow_back),
+      onTap: () {
         Navigator.pop(context);
       },
-      child: const CustomIconButtonContainer(
-        child: Icon(Icons.arrow_back),
-      ),
     );
   }
 }

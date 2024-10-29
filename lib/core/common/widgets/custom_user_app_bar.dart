@@ -7,6 +7,7 @@ AppBar customUserAppBar(
   Widget? title,
   bool? centerTitle,
   bool showLeadingIcon = false,
+  List<Widget>? actions,
 }) {
   return AppBar(
     title: title,
@@ -15,5 +16,6 @@ AppBar customUserAppBar(
     flexibleSpace: Container(color: AppColors.white),
     automaticallyImplyLeading: showLeadingIcon,
     leading: showLeadingIcon ? const CustomArrowBackIconButton() : null,
+    actions: actions,
   );
 }

@@ -38,6 +38,10 @@ class AppImages {
   /// assets/images/Error.svg
   static const String imagesError = "assets/images/Error.svg";
 
+  /// Assets for imagesFilterSearchIcon
+  /// assets/images/filterSearchIcon.svg
+  static const String imagesFilterSearchIcon = "assets/images/filterSearchIcon.svg";
+
   /// Assets for imagesForgPass
   /// assets/images/forgPass.jpg
   static const String imagesForgPass = "assets/images/forgPass.jpg";
