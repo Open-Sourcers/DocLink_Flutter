@@ -52,5 +52,7 @@
   "schedule": "Schedule",
   "message": "messages",
   "haveProblem": "Do you have a problem?",
-  "findSuitableSpecialists": "Find suitable specialists here.."
+  "findSuitableSpecialists": "Find suitable specialists here..",
+  "search": "Search",
+  "doctors": "Doctors"
 }

@@ -52,5 +52,7 @@
   "schedule": "المواعيد",
   "message": "الرسائل",
   "haveProblem": "هل لديك مشكلة؟",
-  "findSuitableSpecialists": "ابحث عن المتخصصين المناسبين هنا"
+  "findSuitableSpecialists": "ابحث عن المتخصصين المناسبين هنا",
+  "search": "ابحث",
+  "doctors": "الأطباء"
 }

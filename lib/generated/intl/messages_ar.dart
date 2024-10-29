@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("أنشئ حساب جديد"),
+        "doctors": MessageLookupByLibrary.simpleMessage("الأطباء"),
         "emailHintTxt":
             MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني  "),
         "emailToReset": MessageLookupByLibrary.simpleMessage(
@@ -91,6 +92,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetYoutPassword": MessageLookupByLibrary.simpleMessage(
             "إعادة تعيين كلمة المرور الخاصة بك"),
         "schedule": MessageLookupByLibrary.simpleMessage("المواعيد"),
+        "search": MessageLookupByLibrary.simpleMessage("ابحث"),
         "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(

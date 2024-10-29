@@ -2,6 +2,8 @@ import 'package:doc_link_project/core/common/widgets/custom_icon_button_containe
 import 'package:doc_link_project/core/common/widgets/custom_user_app_bar.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_images.dart';
+import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/all_doctors_view_body.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -15,7 +17,7 @@ class AllDoctorsView extends StatelessWidget {
       appBar: customUserAppBar(
         context,
         showLeadingIcon: true,
-        title: const Text('Doctors'),
+        title: Text(S.of(context).doctors),
         centerTitle: true,
         actions: [
           CustomIconButtonContainer(
@@ -23,6 +25,7 @@ class AllDoctorsView extends StatelessWidget {
           )
         ],
       ),
+      body: const AllDoctorsViewBody(),
     );
   }
 }
