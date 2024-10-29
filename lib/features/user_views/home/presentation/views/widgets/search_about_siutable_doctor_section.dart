@@ -18,7 +18,7 @@ class SearchAboutSuitableDoctorSection extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 18),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        color: const Color.fromARGB(255, 232, 240, 255),
+        color: AppColors.grey200,
       ),
       child: Center(
         child: ListTile(
