@@ -1,4 +1,4 @@
-import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/custom_specialty_card.dart';
+import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/all_specialties_section.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/home_advertisements.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/search_about_siutable_doctor_section.dart';
 import 'package:flutter/material.dart';
@@ -8,13 +8,15 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        HomeAdvertisementsSection(),
-        SearchAboutSuitableDoctorSection(),
-        SizedBox(height: 20),
-        CustomSpecialtyCard(),
-      ],
+    return const SingleChildScrollView(
+      child: Column(
+        children: [
+          HomeAdvertisementsSection(),
+          SearchAboutSuitableDoctorSection(),
+          SizedBox(height: 20),
+          AllSpecialtiesSection(),
+        ],
+      ),
     );
   }
 }
