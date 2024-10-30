@@ -10,12 +10,17 @@ class CustomDoctorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(8),
-      decoration: const BoxDecoration(color: AppColors.grey100),
+      decoration: BoxDecoration(
+        color: AppColors.grey100,
+        borderRadius: BorderRadius.circular(18),
+      ),
       child: Column(
         children: [
-          const CircleAvatar(
-            radius: 40,
-            backgroundImage: AssetImage(AppImages.imagesProfImg),
+          const Expanded(
+            child: CircleAvatar(
+              radius: 40,
+              backgroundImage: AssetImage(AppImages.imagesProfImg),
+            ),
           ),
           Text(
             "Dr/ Mahmoud",
