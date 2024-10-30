@@ -38,6 +38,10 @@ class AppImages {
   /// assets/images/Error.svg
   static const String imagesError = "assets/images/Error.svg";
 
+  /// Assets for imagesExperienceYears
+  /// assets/images/experience_years.svg
+  static const String imagesExperienceYears = "assets/images/experience_years.svg";
+
   /// Assets for imagesFilterSearchIcon
   /// assets/images/filterSearchIcon.svg
   static const String imagesFilterSearchIcon = "assets/images/filterSearchIcon.svg";
@@ -94,6 +98,10 @@ class AppImages {
   /// assets/images/passsForg.jpg
   static const String imagesPasssForg = "assets/images/passsForg.jpg";
 
+  /// Assets for imagesPatients1000
+  /// assets/images/patients_1000.svg
+  static const String imagesPatients1000 = "assets/images/patients_1000.svg";
+
   /// Assets for imagesPaymentProfSettings
   /// assets/images/paymentProfSettings.png
   static const String imagesPaymentProfSettings = "assets/images/paymentProfSettings.png";
@@ -117,6 +125,10 @@ class AppImages {
   /// Assets for imagesProfileIconSettings
   /// assets/images/profileIconSettings.png
   static const String imagesProfileIconSettings = "assets/images/profileIconSettings.png";
+
+  /// Assets for imagesRatingStare
+  /// assets/images/rating_stare.svg
+  static const String imagesRatingStare = "assets/images/rating_stare.svg";
 
   /// Assets for imagesSettings
   /// assets/images/settings.png
