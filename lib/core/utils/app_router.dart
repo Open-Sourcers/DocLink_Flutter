@@ -5,6 +5,7 @@ import 'package:doc_link_project/features/auth/presentation/views/login_view.dar
 import 'package:doc_link_project/features/auth/presentation/views/register_view.dart';
 import 'package:doc_link_project/features/auth/presentation/views/verificaition_email_view.dart';
 import 'package:doc_link_project/features/user_views/chat/presentation/views/chat_view.dart';
+import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/doctor_details_view.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/all_doctors_view.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/home_view.dart';
 import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
@@ -26,6 +27,7 @@ abstract class AppRouter {
   static String chatView = '/chatView';
   static String profileView = '/profileView';
   static String allDoctorView = '/allDoctorView';
+  static String doctorDetailsView = '/doctorDetailsView';
 
   static final router = GoRouter(
     routes: [
@@ -81,6 +83,10 @@ abstract class AppRouter {
       GoRoute(
         path: allDoctorView,
         builder: (context, state) => const AllDoctorsView(),
+      ),
+      GoRoute(
+        path: doctorDetailsView,
+        builder: (context, state) => const DoctorDetailsView(),
       ),
     ],
   );
