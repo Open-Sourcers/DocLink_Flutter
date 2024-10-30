@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DoctorViewBody extends StatelessWidget {
-  const DoctorViewBody({super.key});
+class DoctorDetailsViewBody extends StatelessWidget {
+  const DoctorDetailsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
