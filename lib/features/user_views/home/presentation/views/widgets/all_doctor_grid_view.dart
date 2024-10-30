@@ -11,6 +11,8 @@ class AllDoctorsGridView extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 12, left: 12, bottom: 12),
       child: GridView.builder(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 10,
