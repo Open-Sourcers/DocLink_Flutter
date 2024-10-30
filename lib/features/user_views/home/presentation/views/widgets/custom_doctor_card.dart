@@ -1,5 +1,5 @@
+import 'package:doc_link_project/core/common/widgets/custom_circle_avatar_image.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
-import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
@@ -22,12 +22,7 @@ class CustomDoctorCard extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const Expanded(
-              child: CircleAvatar(
-                radius: 40,
-                backgroundImage: AssetImage(AppImages.imagesProfImg),
-              ),
-            ),
+            const Expanded(child: CustomCircleAvatarImage(radius: 40)),
             Text(
               "Dr/ Mahmoud",
               style: Styless.textBold18.copyWith(color: AppColors.black),
