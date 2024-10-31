@@ -22,6 +22,10 @@ class AppImages {
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
 
+  /// Assets for imagesAudioCallIcon
+  /// assets/images/audio_call_icon.svg
+  static const String imagesAudioCallIcon = "assets/images/audio_call_icon.svg";
+
   /// Assets for imagesCalendar2
   /// assets/images/calendar-2.png
   static const String imagesCalendar2 = "assets/images/calendar-2.png";
@@ -86,6 +90,10 @@ class AppImages {
   /// assets/images/message.png
   static const String imagesMessage = "assets/images/message.png";
 
+  /// Assets for imagesMessagingIcon
+  /// assets/images/messaging_icon.svg
+  static const String imagesMessagingIcon = "assets/images/messaging_icon.svg";
+
   /// Assets for imagesObjects
   /// assets/images/objects.png
   static const String imagesObjects = "assets/images/objects.png";
@@ -149,6 +157,10 @@ class AppImages {
   /// Assets for imagesVerify
   /// assets/images/verify.png
   static const String imagesVerify = "assets/images/verify.png";
+
+  /// Assets for imagesVideoCallIcon
+  /// assets/images/video_call_icon.svg
+  static const String imagesVideoCallIcon = "assets/images/video_call_icon.svg";
 
   /// Assets for imagesWarning
   /// assets/images/Warning.svg

@@ -1,4 +1,5 @@
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/about_doctor_section.dart';
+import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/communication_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_details_header_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_patients_and_experience_and_ratings.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/working_time_section.dart';
@@ -26,7 +27,9 @@ class DoctorDetailsViewBody extends StatelessWidget {
             ),
             WorkingTimeSection(
               time: 'Mon - Sat (08:30 AM - 09:00 PM)',
-            )
+            ),
+            CommunicationSection(),
+            SizedBox(height: 20),
           ],
         ),
       ),
