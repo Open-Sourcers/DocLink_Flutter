@@ -19,19 +19,19 @@ class CommunicationSectionItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.only(top: 12.0),
-        child: ListTile(
-          contentPadding: EdgeInsets.zero,
-          title: Text(
-            title,
-            style: Styless.textBold18.copyWith(color: AppColors.black),
-          ),
-          subtitle: Text(
-            subtitle,
-            style: Styless.textRegular16,
-          ),
-          leading: Expanded(child: SvgPicture.asset(leadingImage)),
+      child: ListTile(
+        contentPadding: EdgeInsets.zero,
+        title: Text(
+          title,
+          style: Styless.textBold18.copyWith(color: AppColors.black),
+        ),
+        subtitle: Text(
+          subtitle,
+          style: Styless.textRegular16,
+        ),
+        leading: SvgPicture.asset(
+          leadingImage,
+          fit: BoxFit.fill,
         ),
       ),
     );

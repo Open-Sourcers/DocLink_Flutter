@@ -11,10 +11,10 @@ class DoctorDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 18),
-        width: double.infinity,
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 18),
+      width: double.infinity,
+      child: SingleChildScrollView(
         child: Column(
           children: [
             const DoctorDetailsHeaderSecatin(),
