@@ -7,18 +7,15 @@ class AboutDoctorSection extends StatelessWidget {
   final String desc;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(18.0),
-      child: ListTile(
-        contentPadding: EdgeInsets.zero,
-        title: Text(
-          "About Doctor",
-          style: Styless.textBold18.copyWith(color: AppColors.black),
-        ),
-        subtitle: Padding(
-          padding: const EdgeInsets.only(top: 12.0),
-          child: Text(desc, style: Styless.textRegular16),
-        ),
+    return ListTile(
+      contentPadding: EdgeInsets.zero,
+      title: Text(
+        "About Doctor",
+        style: Styless.textBold18.copyWith(color: AppColors.black),
+      ),
+      subtitle: Padding(
+        padding: const EdgeInsets.only(top: 12.0),
+        child: Text(desc, style: Styless.textRegular16),
       ),
     );
   }

@@ -20,7 +20,6 @@ class DoctorPatientsAndExperienceAndRatings extends StatelessWidget {
       width: double.infinity,
       height: 130,
       alignment: Alignment.topCenter,
-      margin: const EdgeInsets.all(12),
       decoration: const BoxDecoration(color: AppColors.grey100),
       child: Row(
         children: [

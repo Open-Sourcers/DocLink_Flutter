@@ -1,3 +1,4 @@
+import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/about_doctor_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/communication_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_details_header_section.dart';
@@ -10,26 +11,29 @@ class DoctorDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: SizedBox(
+    return SingleChildScrollView(
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 18),
         width: double.infinity,
         child: Column(
           children: [
-            DoctorDetailsHeaderSecatin(),
-            DoctorPatientsAndExperienceAndRatings(
+            const DoctorDetailsHeaderSecatin(),
+            const DoctorPatientsAndExperienceAndRatings(
               patientsNum: 1000,
               experienceYearsNum: 10,
               ratingsNum: 4.5,
             ),
-            AboutDoctorSection(
+            const AboutDoctorSection(
               desc:
                   'Dr. Bellamy Nicholas is a top specialist at London Bridge Hospital at London. He has achieved several awards and recognition for is contribution and service in his own field. He is available for private consultation. ',
             ),
-            WorkingTimeSection(
+            const WorkingTimeSection(
               time: 'Mon - Sat (08:30 AM - 09:00 PM)',
             ),
-            CommunicationSection(),
-            SizedBox(height: 20),
+            const CommunicationSection(),
+            const SizedBox(height: 30),
+            CustomButton(onPressed: () {}, buttonTitle: "Book Appointment"),
+            const SizedBox(height: 20),
           ],
         ),
       ),
