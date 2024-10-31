@@ -70,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
         "message": MessageLookupByLibrary.simpleMessage("الرسائل"),
         "myProf": MessageLookupByLibrary.simpleMessage("ملفي الشخصي"),
+        "newAppointment":
+            MessageLookupByLibrary.simpleMessage("New Appointment"),
         "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
             "لابد ان تتطابق كلمه المرور مع تاكيد كلمه المرور"),
         "passwordHintTxt":

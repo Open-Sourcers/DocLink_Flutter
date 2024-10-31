@@ -609,6 +609,16 @@ class S {
       args: [],
     );
   }
+
+  /// `New Appointment`
+  String get newAppointment {
+    return Intl.message(
+      'New Appointment',
+      name: 'newAppointment',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

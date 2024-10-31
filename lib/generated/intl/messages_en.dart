@@ -70,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome back you’ve\nbeen missed!"),
         "message": MessageLookupByLibrary.simpleMessage("messages"),
         "myProf": MessageLookupByLibrary.simpleMessage("My Profile"),
+        "newAppointment":
+            MessageLookupByLibrary.simpleMessage("New Appointment"),
         "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
             "Password and confirm password must be the same."),
         "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),

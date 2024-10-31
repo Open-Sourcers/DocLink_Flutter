@@ -9,6 +9,7 @@ import 'package:doc_link_project/features/user_views/doctor_details/presentation
 import 'package:doc_link_project/features/user_views/home/presentation/views/all_doctors_view.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/home_view.dart';
 import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/new_appointment_view.dart';
 import 'package:doc_link_project/features/user_views/profile/presentation/views/profile_view.dart';
 import 'package:doc_link_project/features/user_views/schedule/presentation/views/schedule_view.dart';
 import 'package:doc_link_project/features/splash/presentation/views/splash_view.dart';
@@ -28,6 +29,7 @@ abstract class AppRouter {
   static String profileView = '/profileView';
   static String allDoctorView = '/allDoctorView';
   static String doctorDetailsView = '/doctorDetailsView';
+  static String newAppointmentView = '/newAppointmentView';
 
   static final router = GoRouter(
     routes: [
@@ -87,6 +89,10 @@ abstract class AppRouter {
       GoRoute(
         path: doctorDetailsView,
         builder: (context, state) => const DoctorDetailsView(),
+      ),
+      GoRoute(
+        path: newAppointmentView,
+        builder: (context, state) => const NewAppointmentView(),
       ),
     ],
   );

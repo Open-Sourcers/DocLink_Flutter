@@ -1,10 +1,12 @@
 import 'package:doc_link_project/core/common/widgets/custom_button.dart';
+import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/about_doctor_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/communication_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_details_header_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_patients_and_experience_and_ratings.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/working_time_section.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class DoctorDetailsViewBody extends StatelessWidget {
   const DoctorDetailsViewBody({super.key});
@@ -32,7 +34,12 @@ class DoctorDetailsViewBody extends StatelessWidget {
             ),
             const CommunicationSection(),
             const SizedBox(height: 30),
-            CustomButton(onPressed: () {}, buttonTitle: "Book Appointment"),
+            CustomButton(
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.newAppointmentView);
+              },
+              buttonTitle: "Book Appointment",
+            ),
             const SizedBox(height: 20),
           ],
         ),
