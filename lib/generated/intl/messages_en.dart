@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
+        "age": MessageLookupByLibrary.simpleMessage("Agea"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "There was an error please try again"),
         "availableTime": MessageLookupByLibrary.simpleMessage("Available Time"),
@@ -55,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forgot password ?"),
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
+        "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
         "haveProblem":
@@ -76,6 +78,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
             "Password and confirm password must be the same."),
         "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
+        "patientDetails":
+            MessageLookupByLibrary.simpleMessage("Patient Details"),
         "payment": MessageLookupByLibrary.simpleMessage("Payment Method"),
         "pleaseEnterValidemail": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid email adress"),

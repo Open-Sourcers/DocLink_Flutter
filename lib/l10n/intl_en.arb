@@ -1,6 +1,7 @@
 {
   "language": "عربي",
   "welcome": "Welcome broo",
+  "age": "Agea",
   "welcomeUse": "Welcome",
   "emailHintTxt": "Email",
   "passwordHintTxt": "Password",
@@ -15,6 +16,7 @@
   "registerDescription": "Create an account so you can explore all the existing doctors.",
   "firstName": "First Name",
   "lastName": "Last Name",
+  "fullName": "Full Name",
   "SignUp": "Sign up",
   "haveAccount": "Already have an account",
   "verifyAccount": "Verify your account",
@@ -56,5 +58,6 @@
   "search": "Search",
   "doctors": "Doctors",
   "newAppointment": "New Appointment",
-  "availableTime": "Available Time"
+  "availableTime": "Available Time",
+  "patientDetails": "Patient Details"
 }

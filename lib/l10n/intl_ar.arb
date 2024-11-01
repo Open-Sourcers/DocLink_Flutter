@@ -1,6 +1,7 @@
 {
   "language": "ُEnglish",
   "welcome": "يا هلا بالغالي",
+  "age": "العمر",
   "welcomeUse": "مرحباً ",
   "emailHintTxt": " بريدك الالكتروني  ",
   "passwordHintTxt": " كلمة المرور ",
@@ -15,6 +16,7 @@
   "registerDescription": "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين .",
   "firstName": "الاسم الاول ",
   "lastName": "الاسم الأخير ",
+  "fullName": "الاسم الكامل",
   "SignUp": "تسجيل",
   "haveAccount": "لديك حساب بالفعل ",
   "verifyAccount": "التحقق من حسابك",
@@ -56,5 +58,6 @@
   "search": "ابحث",
   "doctors": "الأطباء",
   "newAppointment": "حجز جدبد",
-  "availableTime": "الوقت المتاح"
+  "availableTime": "الوقت المتاح",
+  "patientDetails": "تفاصيل المريض"
 }

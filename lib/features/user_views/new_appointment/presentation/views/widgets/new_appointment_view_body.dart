@@ -1,4 +1,5 @@
 import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/widgets/new_appointment_time.dart';
+import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/widgets/patient_details_section.dart';
 import 'package:flutter/material.dart';
 
 class NewAppointmentViewBody extends StatelessWidget {
@@ -9,6 +10,8 @@ class NewAppointmentViewBody extends StatelessWidget {
     return const Column(
       children: [
         NewAppointmentTime(),
+        SizedBox(height: 20),
+        PatientDetailsSection(),
       ],
     );
   }

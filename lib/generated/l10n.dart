@@ -70,6 +70,16 @@ class S {
     );
   }
 
+  /// `Agea`
+  String get age {
+    return Intl.message(
+      'Agea',
+      name: 'age',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Welcome`
   String get welcomeUse {
     return Intl.message(
@@ -205,6 +215,16 @@ class S {
     return Intl.message(
       'Last Name',
       name: 'lastName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Name`
+  String get fullName {
+    return Intl.message(
+      'Full Name',
+      name: 'fullName',
       desc: '',
       args: [],
     );
@@ -625,6 +645,16 @@ class S {
     return Intl.message(
       'Available Time',
       name: 'availableTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patient Details`
+  String get patientDetails {
+    return Intl.message(
+      'Patient Details',
+      name: 'patientDetails',
       desc: '',
       args: [],
     );

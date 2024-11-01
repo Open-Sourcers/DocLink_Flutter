@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "age": MessageLookupByLibrary.simpleMessage("العمر"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
         "availableTime": MessageLookupByLibrary.simpleMessage("الوقت المتاح"),
@@ -56,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
+        "fullName": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل "),
         "haveProblem": MessageLookupByLibrary.simpleMessage("هل لديك مشكلة؟"),
@@ -76,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "لابد ان تتطابق كلمه المرور مع تاكيد كلمه المرور"),
         "passwordHintTxt":
             MessageLookupByLibrary.simpleMessage(" كلمة المرور "),
+        "patientDetails": MessageLookupByLibrary.simpleMessage("تفاصيل المريض"),
         "payment": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
         "pleaseEnterValidemail":
             MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني غير صحيح"),
