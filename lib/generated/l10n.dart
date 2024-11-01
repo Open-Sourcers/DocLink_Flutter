@@ -640,6 +640,16 @@ class S {
     );
   }
 
+  /// `Set Appointment`
+  String get setAppointment {
+    return Intl.message(
+      'Set Appointment',
+      name: 'setAppointment',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Available Time`
   String get availableTime {
     return Intl.message(

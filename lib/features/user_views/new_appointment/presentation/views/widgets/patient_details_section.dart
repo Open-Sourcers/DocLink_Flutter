@@ -1,3 +1,4 @@
+import 'package:doc_link_project/core/common/widgets/custom_button.dart';
 import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
@@ -49,6 +50,11 @@ class PatientDetailsSection extends StatelessWidget {
           const PatientGender(),
           const SizedBox(height: 20),
           const WriteYourProblemSection(),
+          const SizedBox(height: 20),
+          CustomButton(
+            onPressed: () {},
+            buttonTitle: S.of(context).setAppointment,
+          ),
           const SizedBox(height: 20),
         ],
       ),

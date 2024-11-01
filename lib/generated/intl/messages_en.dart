@@ -101,6 +101,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Reset your password"),
         "schedule": MessageLookupByLibrary.simpleMessage("Schedule"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "setAppointment":
+            MessageLookupByLibrary.simpleMessage("Set Appointment"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(

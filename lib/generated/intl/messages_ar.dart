@@ -101,6 +101,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "إعادة تعيين كلمة المرور الخاصة بك"),
         "schedule": MessageLookupByLibrary.simpleMessage("المواعيد"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث"),
+        "setAppointment": MessageLookupByLibrary.simpleMessage("احجز الان"),
         "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(

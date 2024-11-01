@@ -58,6 +58,7 @@
   "search": "Search",
   "doctors": "Doctors",
   "newAppointment": "New Appointment",
+  "setAppointment": "Set Appointment",
   "availableTime": "Available Time",
   "patientDetails": "Patient Details",
   "gender": "Gender",
