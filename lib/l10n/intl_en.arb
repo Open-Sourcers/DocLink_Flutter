@@ -79,5 +79,8 @@
   "videoCall": "Video Call",
   "seeDoctor": "See your doctor live.",
   "bookAppoinment": "Book Appointment",
-  "specialties": "Specialties"
+  "specialties": "Specialties",
+  "upcoming": "Upcoming",
+  "completed": "Completed",
+  "canceled": "Canceled"
 }

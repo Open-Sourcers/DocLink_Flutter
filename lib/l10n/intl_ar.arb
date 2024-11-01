@@ -79,5 +79,8 @@
   "videoCall": "مكالمة فيديو",
   "seeDoctor": "قم بزيارة طبيبك مباشرة.",
   "bookAppoinment": "حجز موعد",
-  "specialties": "التخصصات"
+  "specialties": "التخصصات",
+  "upcoming": "Upcoming",
+  "completed": "مكتمل",
+  "canceled": "مرفوض"
 }

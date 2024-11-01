@@ -35,6 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "callDoctor":
             MessageLookupByLibrary.simpleMessage("Call your doctor directly."),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "canceled": MessageLookupByLibrary.simpleMessage("Canceled"),
         "chatMe":
             MessageLookupByLibrary.simpleMessage("Chat me up , share photo."),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
@@ -44,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Now , You can get the code (******) form your email :\n "),
         "communications":
             MessageLookupByLibrary.simpleMessage("Communications"),
+        "completed": MessageLookupByLibrary.simpleMessage("Completed"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm password"),
         "continueWith":
@@ -124,6 +126,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
             "size of password greater than 8 char"),
         "specialties": MessageLookupByLibrary.simpleMessage("Specialties"),
+        "upcoming": MessageLookupByLibrary.simpleMessage("Upcoming"),
         "verificationEmail": MessageLookupByLibrary.simpleMessage(
             "Verification of email has been sent to your email, check your email"),
         "verification_success": MessageLookupByLibrary.simpleMessage(

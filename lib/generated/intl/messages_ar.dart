@@ -34,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "callDoctor":
             MessageLookupByLibrary.simpleMessage("اتصل بطبيبك مباشرة."),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "canceled": MessageLookupByLibrary.simpleMessage("مرفوض"),
         "chatMe":
             MessageLookupByLibrary.simpleMessage("تحدث معي، شارك الصورة."),
         "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
@@ -42,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
             "الآن يمكنك الحصول على رقم التأكيد من البريد الالكتروني الخاص بك : \n"),
         "communications": MessageLookupByLibrary.simpleMessage("الاتصالات"),
+        "completed": MessageLookupByLibrary.simpleMessage("مكتمل"),
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "confirmPass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
@@ -121,6 +123,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
             ", أيجب ان يتكون الرفم السري من 8 احرف و رموز و ارقام"),
         "specialties": MessageLookupByLibrary.simpleMessage("التخصصات"),
+        "upcoming": MessageLookupByLibrary.simpleMessage("Upcoming"),
         "verificationEmail": MessageLookupByLibrary.simpleMessage(
             "تم إرسال تأكيد البريد الإلكتروني إلى بريدك الإلكتروني، تحقق من بريدك الإلكتروني"),
         "verification_success": MessageLookupByLibrary.simpleMessage(
