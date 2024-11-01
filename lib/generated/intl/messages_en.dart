@@ -23,17 +23,27 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
+        "aboutDoctor": MessageLookupByLibrary.simpleMessage("About Doctor"),
         "age": MessageLookupByLibrary.simpleMessage("Agea"),
+        "audioCall": MessageLookupByLibrary.simpleMessage("Audio Call"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "There was an error please try again"),
         "availableTime": MessageLookupByLibrary.simpleMessage("Available Time"),
         "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
+        "bookAppoinment":
+            MessageLookupByLibrary.simpleMessage("Book Appointment"),
+        "callDoctor":
+            MessageLookupByLibrary.simpleMessage("Call your doctor directly."),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "chatMe":
+            MessageLookupByLibrary.simpleMessage("Chat me up , share photo."),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "Please enter 6 digits code that sent to "),
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
             "Now , You can get the code (******) form your email :\n "),
+        "communications":
+            MessageLookupByLibrary.simpleMessage("Communications"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPass": MessageLookupByLibrary.simpleMessage("Confirm password"),
         "continueWith":
@@ -49,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter password"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(
             "Enter valid password \n password should contain at least one upper , lower case , number , special character"),
+        "experience": MessageLookupByLibrary.simpleMessage("Experience"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "findSuitableSpecialists": MessageLookupByLibrary.simpleMessage(
             "Find suitable specialists here.."),
@@ -75,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome back you’ve\nbeen missed!"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "message": MessageLookupByLibrary.simpleMessage("messages"),
+        "messaging": MessageLookupByLibrary.simpleMessage("Messaging"),
         "myProf": MessageLookupByLibrary.simpleMessage("My Profile"),
         "newAppointment":
             MessageLookupByLibrary.simpleMessage("New Appointment"),
@@ -83,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordHintTxt": MessageLookupByLibrary.simpleMessage("Password"),
         "patientDetails":
             MessageLookupByLibrary.simpleMessage("Patient Details"),
+        "patients": MessageLookupByLibrary.simpleMessage("Patients"),
         "payment": MessageLookupByLibrary.simpleMessage("Payment Method"),
         "pleaseEnterValidemail": MessageLookupByLibrary.simpleMessage(
             "Please enter a valid email adress"),
@@ -92,6 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("please reset you password"),
         "privacy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "prof": MessageLookupByLibrary.simpleMessage("Profile"),
+        "rating": MessageLookupByLibrary.simpleMessage("Rating"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "Create an account so you can explore all the existing doctors."),
         "required": MessageLookupByLibrary.simpleMessage("Required"),
@@ -101,6 +115,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Reset your password"),
         "schedule": MessageLookupByLibrary.simpleMessage("Schedule"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "seeDoctor":
+            MessageLookupByLibrary.simpleMessage("See your doctor live."),
         "setAppointment":
             MessageLookupByLibrary.simpleMessage("Set Appointment"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
@@ -113,9 +129,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "You can now add new password"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("Verify your account"),
+        "videoCall": MessageLookupByLibrary.simpleMessage("Video Call"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome broo"),
         "welcomeUse": MessageLookupByLibrary.simpleMessage("Welcome"),
+        "workingTime": MessageLookupByLibrary.simpleMessage("Working Time"),
         "writeYourProblems":
-            MessageLookupByLibrary.simpleMessage("Write Your Problems")
+            MessageLookupByLibrary.simpleMessage("Write Your Problems"),
+        "yrs": MessageLookupByLibrary.simpleMessage("Yrs")
       };
 }

@@ -1,6 +1,7 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -26,19 +27,19 @@ class DoctorPatientsAndExperienceAndRatings extends StatelessWidget {
           DoctorPatientsAndExperienceAndRatingsCard(
             image: AppImages.imagesPatients1000,
             title: '$patientsNum+',
-            subtitle: 'Patients',
+            subtitle: S.of(context).patients,
           ),
           const SizedBox(width: 3),
           DoctorPatientsAndExperienceAndRatingsCard(
             image: AppImages.imagesExperienceYears,
-            title: '$experienceYearsNum Yrs',
-            subtitle: 'Experience',
+            title: '$experienceYearsNum ${S.of(context).yrs}',
+            subtitle: S.of(context).experience,
           ),
           const SizedBox(width: 3),
           DoctorPatientsAndExperienceAndRatingsCard(
             image: AppImages.imagesRatingStare,
             title: ratingsNum.toString(),
-            subtitle: 'Ratings',
+            subtitle: S.of(context).rating,
           ),
         ],
       ),

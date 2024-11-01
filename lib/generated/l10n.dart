@@ -709,6 +709,146 @@ class S {
       args: [],
     );
   }
+
+  /// `Yrs`
+  String get yrs {
+    return Intl.message(
+      'Yrs',
+      name: 'yrs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rating`
+  String get rating {
+    return Intl.message(
+      'Rating',
+      name: 'rating',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patients`
+  String get patients {
+    return Intl.message(
+      'Patients',
+      name: 'patients',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Experience`
+  String get experience {
+    return Intl.message(
+      'Experience',
+      name: 'experience',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About Doctor`
+  String get aboutDoctor {
+    return Intl.message(
+      'About Doctor',
+      name: 'aboutDoctor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Working Time`
+  String get workingTime {
+    return Intl.message(
+      'Working Time',
+      name: 'workingTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Communications`
+  String get communications {
+    return Intl.message(
+      'Communications',
+      name: 'communications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Messaging`
+  String get messaging {
+    return Intl.message(
+      'Messaging',
+      name: 'messaging',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chat me up , share photo.`
+  String get chatMe {
+    return Intl.message(
+      'Chat me up , share photo.',
+      name: 'chatMe',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Audio Call`
+  String get audioCall {
+    return Intl.message(
+      'Audio Call',
+      name: 'audioCall',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Call your doctor directly.`
+  String get callDoctor {
+    return Intl.message(
+      'Call your doctor directly.',
+      name: 'callDoctor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Video Call`
+  String get videoCall {
+    return Intl.message(
+      'Video Call',
+      name: 'videoCall',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See your doctor live.`
+  String get seeDoctor {
+    return Intl.message(
+      'See your doctor live.',
+      name: 'seeDoctor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book Appointment`
+  String get bookAppoinment {
+    return Intl.message(
+      'Book Appointment',
+      name: 'bookAppoinment',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

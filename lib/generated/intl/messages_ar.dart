@@ -23,17 +23,25 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "aboutDoctor": MessageLookupByLibrary.simpleMessage("نبذه عن الطبيب"),
         "age": MessageLookupByLibrary.simpleMessage("العمر"),
+        "audioCall": MessageLookupByLibrary.simpleMessage("مكالمة صوتية"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
         "availableTime": MessageLookupByLibrary.simpleMessage("الوقت المتاح"),
         "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
+        "bookAppoinment": MessageLookupByLibrary.simpleMessage("حجز موعد"),
+        "callDoctor":
+            MessageLookupByLibrary.simpleMessage("اتصل بطبيبك مباشرة."),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "chatMe":
+            MessageLookupByLibrary.simpleMessage("تحدث معي، شارك الصورة."),
         "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
         "codeVerify": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز المكون من 6 أرقام المرسل إلى "),
         "codeWasSentToYourEmail": MessageLookupByLibrary.simpleMessage(
             "الآن يمكنك الحصول على رقم التأكيد من البريد الالكتروني الخاص بك : \n"),
+        "communications": MessageLookupByLibrary.simpleMessage("الاتصالات"),
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "confirmPass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
@@ -50,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك ادخل الرقم السري"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(
             " رقم سري غير مقبول ,  يجب ان يتكون الرفم السري من احرف و رموز و ارقام"),
+        "experience": MessageLookupByLibrary.simpleMessage("خبره"),
         "female": MessageLookupByLibrary.simpleMessage("انثي"),
         "findSuitableSpecialists": MessageLookupByLibrary.simpleMessage(
             "ابحث عن المتخصصين المناسبين هنا"),
@@ -75,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "message": MessageLookupByLibrary.simpleMessage("الرسائل"),
+        "messaging": MessageLookupByLibrary.simpleMessage("الرسائل"),
         "myProf": MessageLookupByLibrary.simpleMessage("ملفي الشخصي"),
         "newAppointment": MessageLookupByLibrary.simpleMessage("حجز جدبد"),
         "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
@@ -82,6 +92,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordHintTxt":
             MessageLookupByLibrary.simpleMessage(" كلمة المرور "),
         "patientDetails": MessageLookupByLibrary.simpleMessage("تفاصيل المريض"),
+        "patients": MessageLookupByLibrary.simpleMessage("مريض"),
         "payment": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
         "pleaseEnterValidemail":
             MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني غير صحيح"),
@@ -91,6 +102,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "الرجاء إعادة تعيين كلمة المرور الخاصة بك"),
         "privacy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "prof": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "rating": MessageLookupByLibrary.simpleMessage("التقييم"),
         "registerDescription": MessageLookupByLibrary.simpleMessage(
             "أنشئ حساب لكي تتمكن من استكشاف كل الأطباء الموجودين ."),
         "required": MessageLookupByLibrary.simpleMessage("مطلوب"),
@@ -101,6 +113,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "إعادة تعيين كلمة المرور الخاصة بك"),
         "schedule": MessageLookupByLibrary.simpleMessage("المواعيد"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث"),
+        "seeDoctor":
+            MessageLookupByLibrary.simpleMessage("قم بزيارة طبيبك مباشرة."),
         "setAppointment": MessageLookupByLibrary.simpleMessage("احجز الان"),
         "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
@@ -112,9 +126,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "يمكنك الآن اضافه كلمة مرور جديده"),
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("التحقق من حسابك"),
+        "videoCall": MessageLookupByLibrary.simpleMessage("مكالمة فيديو"),
         "welcome": MessageLookupByLibrary.simpleMessage("يا هلا بالغالي"),
         "welcomeUse": MessageLookupByLibrary.simpleMessage("مرحباً "),
+        "workingTime": MessageLookupByLibrary.simpleMessage("اوقات العمل"),
         "writeYourProblems":
-            MessageLookupByLibrary.simpleMessage("اذكر المشاكل التي تواجهك")
+            MessageLookupByLibrary.simpleMessage("اذكر المشاكل التي تواجهك"),
+        "yrs": MessageLookupByLibrary.simpleMessage("سنين")
       };
 }

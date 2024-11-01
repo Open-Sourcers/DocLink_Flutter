@@ -64,5 +64,19 @@
   "gender": "الجنس / النوع",
   "male": "ذكر",
   "female": "انثي",
-  "writeYourProblems": "اذكر المشاكل التي تواجهك"
+  "writeYourProblems": "اذكر المشاكل التي تواجهك",
+  "yrs": "سنين",
+  "rating": "التقييم",
+  "patients": "مريض",
+  "experience": "خبره",
+  "aboutDoctor": "نبذه عن الطبيب",
+  "workingTime": "اوقات العمل",
+  "communications": "الاتصالات",
+  "messaging": "الرسائل",
+  "chatMe": "تحدث معي، شارك الصورة.",
+  "audioCall": "مكالمة صوتية",
+  "callDoctor": "اتصل بطبيبك مباشرة.",
+  "videoCall": "مكالمة فيديو",
+  "seeDoctor": "قم بزيارة طبيبك مباشرة.",
+  "bookAppoinment": "حجز موعد"
 }

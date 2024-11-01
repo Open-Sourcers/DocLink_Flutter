@@ -1,5 +1,6 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class WorkingTimeSection extends StatelessWidget {
@@ -10,7 +11,7 @@ class WorkingTimeSection extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       title: Text(
-        "Working Time",
+        S.of(context).workingTime,
         style: Styless.textBold18.copyWith(color: AppColors.black),
       ),
       subtitle: Padding(

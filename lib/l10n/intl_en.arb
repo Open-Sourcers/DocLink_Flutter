@@ -64,5 +64,19 @@
   "gender": "Gender",
   "male": "Male",
   "female": "Female",
-  "writeYourProblems": "Write Your Problems"
+  "writeYourProblems": "Write Your Problems",
+  "yrs": "Yrs",
+  "rating": "Rating",
+  "patients": "Patients",
+  "experience": "Experience",
+  "aboutDoctor": "About Doctor",
+  "workingTime": "Working Time",
+  "communications": "Communications",
+  "messaging": "Messaging",
+  "chatMe": "Chat me up , share photo.",
+  "audioCall": "Audio Call",
+  "callDoctor": "Call your doctor directly.",
+  "videoCall": "Video Call",
+  "seeDoctor": "See your doctor live.",
+  "bookAppoinment": "Book Appointment"
 }
