@@ -50,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك ادخل الرقم السري"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(
             " رقم سري غير مقبول ,  يجب ان يتكون الرفم السري من احرف و رموز و ارقام"),
+        "female": MessageLookupByLibrary.simpleMessage("انثي"),
         "findSuitableSpecialists": MessageLookupByLibrary.simpleMessage(
             "ابحث عن المتخصصين المناسبين هنا"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول "),
@@ -58,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور ؟"),
         "fullName": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
+        "gender": MessageLookupByLibrary.simpleMessage("الجنس / النوع"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل "),
         "haveProblem": MessageLookupByLibrary.simpleMessage("هل لديك مشكلة؟"),
@@ -71,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginHere": MessageLookupByLibrary.simpleMessage("سجل من هنا"),
         "loginWelcome":
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
+        "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "message": MessageLookupByLibrary.simpleMessage("الرسائل"),
         "myProf": MessageLookupByLibrary.simpleMessage("ملفي الشخصي"),
         "newAppointment": MessageLookupByLibrary.simpleMessage("حجز جدبد"),

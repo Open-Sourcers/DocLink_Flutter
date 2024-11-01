@@ -59,5 +59,8 @@
   "doctors": "الأطباء",
   "newAppointment": "حجز جدبد",
   "availableTime": "الوقت المتاح",
-  "patientDetails": "تفاصيل المريض"
+  "patientDetails": "تفاصيل المريض",
+  "gender": "الجنس / النوع",
+  "male": "ذكر",
+  "female": "انثي"
 }

@@ -49,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter password"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(
             "Enter valid password \n password should contain at least one upper , lower case , number , special character"),
+        "female": MessageLookupByLibrary.simpleMessage("Female"),
         "findSuitableSpecialists": MessageLookupByLibrary.simpleMessage(
             "Find suitable specialists here.."),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
@@ -57,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetYourPassword":
             MessageLookupByLibrary.simpleMessage("Forgot your password ? "),
         "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "gender": MessageLookupByLibrary.simpleMessage("Gender"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
         "haveProblem":
@@ -71,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginHere": MessageLookupByLibrary.simpleMessage("Login here"),
         "loginWelcome": MessageLookupByLibrary.simpleMessage(
             "Welcome back you’ve\nbeen missed!"),
+        "male": MessageLookupByLibrary.simpleMessage("Male"),
         "message": MessageLookupByLibrary.simpleMessage("messages"),
         "myProf": MessageLookupByLibrary.simpleMessage("My Profile"),
         "newAppointment":
