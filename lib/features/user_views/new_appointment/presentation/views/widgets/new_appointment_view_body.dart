@@ -7,12 +7,14 @@ class NewAppointmentViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        NewAppointmentTime(),
-        SizedBox(height: 20),
-        PatientDetailsSection(),
-      ],
+    return const SingleChildScrollView(
+      child: Column(
+        children: [
+          NewAppointmentTime(),
+          SizedBox(height: 20),
+          PatientDetailsSection(),
+        ],
+      ),
     );
   }
 }

@@ -62,5 +62,6 @@
   "patientDetails": "تفاصيل المريض",
   "gender": "الجنس / النوع",
   "male": "ذكر",
-  "female": "انثي"
+  "female": "انثي",
+  "writeYourProblems": "اذكر المشاكل التي تواجهك"
 }

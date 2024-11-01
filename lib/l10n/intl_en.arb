@@ -62,5 +62,6 @@
   "patientDetails": "Patient Details",
   "gender": "Gender",
   "male": "Male",
-  "female": "Female"
+  "female": "Female",
+  "writeYourProblems": "Write Your Problems"
 }

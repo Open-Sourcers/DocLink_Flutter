@@ -112,6 +112,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "verifyAccount":
             MessageLookupByLibrary.simpleMessage("Verify your account"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome broo"),
-        "welcomeUse": MessageLookupByLibrary.simpleMessage("Welcome")
+        "welcomeUse": MessageLookupByLibrary.simpleMessage("Welcome"),
+        "writeYourProblems":
+            MessageLookupByLibrary.simpleMessage("Write Your Problems")
       };
 }
