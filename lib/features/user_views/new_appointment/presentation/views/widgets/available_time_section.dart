@@ -9,15 +9,21 @@ class AvailableTimeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          S.of(context).availableTime,
-          style: Styless.textBold18.copyWith(color: AppColors.black),
-        ),
-        const SizedBox(height: 10),
-        const AvailableTimeGridView(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 18.0),
+      child: Column(
+        children: [
+          SizedBox(
+            width: double.infinity,
+            child: Text(
+              S.of(context).availableTime,
+              style: Styless.textBold18.copyWith(color: AppColors.black),
+            ),
+          ),
+          const SizedBox(height: 10),
+          const AvailableTimeGridView(),
+        ],
+      ),
     );
   }
 }

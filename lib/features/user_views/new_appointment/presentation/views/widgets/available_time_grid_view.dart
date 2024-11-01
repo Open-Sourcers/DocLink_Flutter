@@ -25,8 +25,6 @@ class _AvailableTimeGridViewState extends State<AvailableTimeGridView> {
       itemBuilder: (context, index) => AvailableTimeItem(
         onTap: () {
           currentIndex = index;
-          print(index);
-          print('******************************');
           setState(() {});
         },
         time: "09:42 AM",
