@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "There was an error please try again"),
+        "availableTime": MessageLookupByLibrary.simpleMessage("Available Time"),
         "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),

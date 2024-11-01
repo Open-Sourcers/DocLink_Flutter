@@ -619,6 +619,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Available Time`
+  String get availableTime {
+    return Intl.message(
+      'Available Time',
+      name: 'availableTime',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

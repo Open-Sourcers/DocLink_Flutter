@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "authError": MessageLookupByLibrary.simpleMessage(
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
+        "availableTime": MessageLookupByLibrary.simpleMessage("الوقت المتاح"),
         "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
@@ -70,8 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("مرحباً بعودتك! لقد افتقدناك"),
         "message": MessageLookupByLibrary.simpleMessage("الرسائل"),
         "myProf": MessageLookupByLibrary.simpleMessage("ملفي الشخصي"),
-        "newAppointment":
-            MessageLookupByLibrary.simpleMessage("New Appointment"),
+        "newAppointment": MessageLookupByLibrary.simpleMessage("حجز جدبد"),
         "passwordEqualConfirmPass": MessageLookupByLibrary.simpleMessage(
             "لابد ان تتطابق كلمه المرور مع تاكيد كلمه المرور"),
         "passwordHintTxt":

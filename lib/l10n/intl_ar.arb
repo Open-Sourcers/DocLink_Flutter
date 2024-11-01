@@ -55,5 +55,6 @@
   "findSuitableSpecialists": "ابحث عن المتخصصين المناسبين هنا",
   "search": "ابحث",
   "doctors": "الأطباء",
-  "newAppointment": "New Appointment"
+  "newAppointment": "حجز جدبد",
+  "availableTime": "الوقت المتاح"
 }

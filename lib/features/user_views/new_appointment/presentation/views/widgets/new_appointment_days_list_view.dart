@@ -34,7 +34,7 @@ class _NewAppointmentDaysListViewState
               },
               day: index + 1,
               month: monthes[index % 7],
-              isActive: currentDay != index,
+              isActive: currentDay == index,
             ),
           );
         },

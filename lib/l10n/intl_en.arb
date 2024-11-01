@@ -55,5 +55,6 @@
   "findSuitableSpecialists": "Find suitable specialists here..",
   "search": "Search",
   "doctors": "Doctors",
-  "newAppointment": "New Appointment"
+  "newAppointment": "New Appointment",
+  "availableTime": "Available Time"
 }

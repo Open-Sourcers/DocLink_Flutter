@@ -23,7 +23,7 @@ class CustomDayCard extends StatelessWidget {
         child: AnimatedContainer(
           duration: const Duration(microseconds: 300),
           decoration: BoxDecoration(
-            color: isActive ? AppColors.grey100 : AppColors.commonColor,
+            color: isActive ? AppColors.commonColor : AppColors.grey100,
             borderRadius: BorderRadius.circular(12),
             border: Border.all(width: 1, color: AppColors.grey200),
           ),
@@ -33,13 +33,13 @@ class CustomDayCard extends StatelessWidget {
               Text(
                 day.toString(),
                 style: Styless.textBold25.copyWith(
-                  color: isActive ? AppColors.black : AppColors.white,
+                  color: isActive ? AppColors.white : AppColors.black,
                 ),
               ),
               Text(
                 month,
                 style: Styless.textSemiBold15.copyWith(
-                  color: isActive ? AppColors.black : AppColors.white,
+                  color: isActive ? AppColors.white : AppColors.black,
                 ),
               ),
             ],
