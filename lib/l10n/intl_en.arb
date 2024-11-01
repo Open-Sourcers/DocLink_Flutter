@@ -78,5 +78,6 @@
   "callDoctor": "Call your doctor directly.",
   "videoCall": "Video Call",
   "seeDoctor": "See your doctor live.",
-  "bookAppoinment": "Book Appointment"
+  "bookAppoinment": "Book Appointment",
+  "specialties": "Specialties"
 }

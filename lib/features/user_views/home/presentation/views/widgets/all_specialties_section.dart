@@ -1,6 +1,7 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/all_specialties_list_view.dart';
+import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class AllSpecialtiesSection extends StatelessWidget {
@@ -14,7 +15,7 @@ class AllSpecialtiesSection extends StatelessWidget {
           margin: const EdgeInsets.symmetric(horizontal: 18),
           width: double.infinity,
           child: Text(
-            'Specialty 😀',
+            '${S.of(context).specialties} 🐽👀',
             style: Styless.textBold18.copyWith(color: AppColors.black),
           ),
         ),

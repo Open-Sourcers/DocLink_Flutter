@@ -120,6 +120,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sizeOfPassword": MessageLookupByLibrary.simpleMessage(
             ", أيجب ان يتكون الرفم السري من 8 احرف و رموز و ارقام"),
+        "specialties": MessageLookupByLibrary.simpleMessage("التخصصات"),
         "verificationEmail": MessageLookupByLibrary.simpleMessage(
             "تم إرسال تأكيد البريد الإلكتروني إلى بريدك الإلكتروني، تحقق من بريدك الإلكتروني"),
         "verification_success": MessageLookupByLibrary.simpleMessage(
