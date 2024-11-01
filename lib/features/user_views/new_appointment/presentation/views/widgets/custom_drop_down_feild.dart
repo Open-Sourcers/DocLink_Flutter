@@ -21,38 +21,41 @@ class _CustomDropDownFeildState extends State<CustomDropDownFeild> {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButtonHideUnderline(
-      child: DropdownButton2<String>(
-        isExpanded: true,
-        hint: const Text(
-          'Select Item',
-          style: Styless.textRegular14,
-        ),
-        items: items
-            .map((String item) => DropdownMenuItem<String>(
-                  value: item,
-                  child: Text(item, style: Styless.textSemiBold15),
-                ))
-            .toList(),
-        value: selectedValue,
-        onChanged: (String? value) {
-          setState(() {
-            selectedValue = value;
-          });
-        },
-        buttonStyleData: ButtonStyleData(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          elevation: 1,
-          decoration: BoxDecoration(
-            color: AppColors.white,
-            border: Border.all(width: 1, color: AppColors.grey),
-            borderRadius: BorderRadius.circular(12),
+    return ListTile(
+      leading: DropdownButtonHideUnderline(
+        child: DropdownButton2<String>(
+          alignment: Alignment.centerLeft,
+          isExpanded: false,
+          hint: const Text(
+            'Select Item',
+            style: Styless.textRegular14,
           ),
-          height: 40,
-          width: 140,
-        ),
-        menuItemStyleData: const MenuItemStyleData(
-          height: 40,
+          items: items
+              .map((String item) => DropdownMenuItem<String>(
+                    value: item,
+                    child: Text(item, style: Styless.textSemiBold15),
+                  ))
+              .toList(),
+          value: selectedValue,
+          onChanged: (String? value) {
+            setState(() {
+              selectedValue = value;
+            });
+          },
+          buttonStyleData: ButtonStyleData(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            elevation: 1,
+            decoration: BoxDecoration(
+              color: AppColors.white,
+              border: Border.all(width: 1, color: AppColors.grey),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            height: 40,
+            width: 140,
+          ),
+          menuItemStyleData: const MenuItemStyleData(
+            height: 40,
+          ),
         ),
       ),
     );

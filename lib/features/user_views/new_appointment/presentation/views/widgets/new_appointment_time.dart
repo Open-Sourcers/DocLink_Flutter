@@ -1,6 +1,5 @@
-import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/widgets/active_day_card.dart';
-import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/widgets/in_active_day_card.dart';
 import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/widgets/custom_drop_down_feild.dart';
+import 'package:doc_link_project/features/user_views/new_appointment/presentation/views/widgets/new_appointment_days_list_view.dart';
 import 'package:flutter/material.dart';
 
 class NewAppointmentTime extends StatelessWidget {
@@ -11,8 +10,8 @@ class NewAppointmentTime extends StatelessWidget {
     return const Column(
       children: [
         CustomDropDownFeild(),
-        InActiveDayCard(day: 16, month: 'Mar'),
-        ActiveDayCard(day: 16, month: 'Mar'),
+        SizedBox(height: 20),
+        NewAppointmentDaysListView(),
       ],
     );
   }
