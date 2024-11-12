@@ -23,27 +23,13 @@ class PatientDetailsSection extends StatelessWidget {
               style: Styless.textBold18.copyWith(color: AppColors.black),
             ),
           ),
-          const SizedBox(height: 20),
-          SizedBox(
-            width: double.infinity,
-            child: Text(
-              S.of(context).fullName,
-              style: Styless.textSemiBold15.copyWith(color: AppColors.black),
-            ),
+          const SizedBox(height: 10),
+          CustomTextFormField(
+            hintTxt: S.of(context).fullName,
           ),
-          const CustomTextFormField(
-            hintTxt: '',
-          ),
-          const SizedBox(height: 20),
-          SizedBox(
-            width: double.infinity,
-            child: Text(
-              S.of(context).age,
-              style: Styless.textSemiBold15.copyWith(color: AppColors.black),
-            ),
-          ),
-          const CustomTextFormField(
-            hintTxt: '',
+          const SizedBox(height: 10),
+          CustomTextFormField(
+            hintTxt: S.of(context).age,
             keyboardType: TextInputType.number,
           ),
           const SizedBox(height: 20),

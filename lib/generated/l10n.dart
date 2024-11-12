@@ -70,10 +70,10 @@ class S {
     );
   }
 
-  /// `Agea`
+  /// `Age`
   String get age {
     return Intl.message(
-      'Agea',
+      'Age',
       name: 'age',
       desc: '',
       args: [],

@@ -21,7 +21,7 @@ class _PatientGenderState extends State<PatientGender> {
           width: double.infinity,
           child: Text(
             S.of(context).gender,
-            style: Styless.textSemiBold15.copyWith(color: AppColors.black),
+            style: Styless.textBold18.copyWith(color: AppColors.black),
           ),
         ),
         const SizedBox(height: 10),

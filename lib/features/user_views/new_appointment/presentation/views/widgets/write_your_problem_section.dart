@@ -15,9 +15,10 @@ class WriteYourProblemSection extends StatelessWidget {
           width: double.infinity,
           child: Text(
             S.of(context).writeYourProblems,
-            style: Styless.textSemiBold15.copyWith(color: AppColors.black),
+            style: Styless.textBold18.copyWith(color: AppColors.black),
           ),
         ),
+        const SizedBox(height: 10),
         CustomTextFormField(
           hintTxt: S.of(context).writeYourProblems,
           maxLines: 8,
