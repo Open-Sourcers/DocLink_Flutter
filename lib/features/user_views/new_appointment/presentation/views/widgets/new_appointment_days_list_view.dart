@@ -11,9 +11,9 @@ class NewAppointmentDaysListView extends StatefulWidget {
 
 class _NewAppointmentDaysListViewState
     extends State<NewAppointmentDaysListView> {
-  final List monthes = ["Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat.", "Sun."];
+  final List monthes = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   int currentDay = 0;
-  int dayNum = 30;
+  int dayNum = 7;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -25,7 +25,7 @@ class _NewAppointmentDaysListViewState
           return Padding(
             padding: EdgeInsets.only(
               left: index == 0 ? 18 : 0,
-              right: index == dayNum - 1 ? 0 : 18,
+              right: index == dayNum ? 0 : 18,
             ),
             child: CustomDayCard(
               onTap: () {

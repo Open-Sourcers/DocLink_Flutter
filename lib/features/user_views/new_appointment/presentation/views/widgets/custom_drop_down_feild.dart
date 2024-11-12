@@ -22,10 +22,11 @@ class _CustomDropDownFeildState extends State<CustomDropDownFeild> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: const EdgeInsets.only(left: 18.0),
       leading: DropdownButtonHideUnderline(
         child: DropdownButton2<String>(
           alignment: Alignment.centerLeft,
-          isExpanded: false,
+          isExpanded: true,
           hint: const Text(
             'Select Item',
             style: Styless.textRegular14,
