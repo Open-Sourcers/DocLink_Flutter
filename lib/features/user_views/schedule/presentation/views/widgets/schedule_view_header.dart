@@ -29,6 +29,7 @@ class _SchedualeViewHeaderState extends State<SchedualeViewHeader> {
               textColor: currentItem == 0 ? AppColors.white : AppColors.black,
             ),
           ),
+          const SizedBox(width: 8),
           Expanded(
             child: CustomButton(
               onPressed: () {
@@ -41,6 +42,7 @@ class _SchedualeViewHeaderState extends State<SchedualeViewHeader> {
               textColor: currentItem == 1 ? AppColors.white : AppColors.black,
             ),
           ),
+          const SizedBox(width: 8),
           Expanded(
             child: CustomButton(
               onPressed: () {

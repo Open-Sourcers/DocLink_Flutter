@@ -6,10 +6,14 @@ class ScheduleViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SchedualeViewHeader(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.all(18.0),
+      child: Column(
+        children: [
+          SchedualeViewHeader(),
+          SizedBox(height: 40),
+        ],
+      ),
     );
   }
 }

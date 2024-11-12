@@ -10,7 +10,7 @@ class CustomVerticalContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
       decoration: BoxDecoration(
         color: AppColors.grey100,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(42),
       ),
       child: child,
     );
