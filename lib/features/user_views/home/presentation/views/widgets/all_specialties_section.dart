@@ -15,7 +15,7 @@ class AllSpecialtiesSection extends StatelessWidget {
           margin: const EdgeInsets.symmetric(horizontal: 18),
           width: double.infinity,
           child: Text(
-            '${S.of(context).specialties} 🐽👀',
+            '${S.of(context).specialties} 👀',
             style: Styless.textBold18.copyWith(color: AppColors.black),
           ),
         ),
