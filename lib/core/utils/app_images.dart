@@ -34,6 +34,14 @@ class AppImages {
   /// assets/images/calendarColored.png
   static const String imagesCalendarColored = "assets/images/calendarColored.png";
 
+  /// Assets for imagesCalendarSvg
+  /// assets/images/calendar_svg.svg
+  static const String imagesCalendarSvg = "assets/images/calendar_svg.svg";
+
+  /// Assets for imagesClock
+  /// assets/images/clock.svg
+  static const String imagesClock = "assets/images/clock.svg";
+
   /// Assets for imagesEdit
   /// assets/images/edit.png
   static const String imagesEdit = "assets/images/edit.png";
