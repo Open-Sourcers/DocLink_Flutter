@@ -11,6 +11,7 @@ class CustomButton extends StatelessWidget {
     this.textColor = AppColors.white,
     this.child,
     this.isCompleted = true,
+    this.borderRadius,
   });
   final Function()? onPressed;
   final String buttonTitle;
@@ -18,6 +19,7 @@ class CustomButton extends StatelessWidget {
   final Widget? child;
   final bool isCompleted;
   final Color backgroundColor;
+  final BorderRadiusGeometry? borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +29,7 @@ class CustomButton extends StatelessWidget {
       minWidth: MediaQuery.sizeOf(context).width,
       height: 60,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12.0),
-        // side: BorderSide(color: isCompleted ? textColor : AppColors.black),
+        borderRadius: borderRadius ?? BorderRadius.circular(12.0),
       ),
       child: child ??
           FittedBox(

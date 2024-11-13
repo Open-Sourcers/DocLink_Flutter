@@ -3,8 +3,8 @@ import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 
-class CustomSchedualeDoctorItemHeader extends StatelessWidget {
-  const CustomSchedualeDoctorItemHeader({
+class CustomScheduleDoctorItemHeader extends StatelessWidget {
+  const CustomScheduleDoctorItemHeader({
     super.key,
   });
 
