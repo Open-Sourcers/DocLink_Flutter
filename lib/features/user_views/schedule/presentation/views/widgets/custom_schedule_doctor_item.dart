@@ -10,7 +10,7 @@ import 'package:doc_link_project/core/utils/app_colors.dart';
 class CustomScheduleDoctorItem extends StatelessWidget {
   const CustomScheduleDoctorItem({
     super.key,
-    this.scheduleType = ScheduleType.canceled,
+    required this.scheduleType,
   });
   final ScheduleType scheduleType;
 
