@@ -23,14 +23,8 @@ class OnboardingViewBody extends StatelessWidget {
             const SizedBox(width: 25),
             Image.asset(AppImages.imagesOnboarding),
             const SizedBox(height: 30),
-            Text(
-              S.of(context).welcome,
-              style: Styless.textSemiBold35,
-            ),
-            const Text(
-              'DocLink App',
-              style: Styless.textRegular14,
-            ),
+            Text(S.of(context).welcome, style: Styless.textSemiBold35),
+            const Text('DocLink App', style: Styless.textRegular14),
             Row(
               children: [
                 Expanded(
