@@ -17,6 +17,7 @@ class CustomScheduleDoctorItemButtons extends StatelessWidget {
               backgroundColor: AppColors.white,
               textColor: AppColors.commonColor,
               onPressed: () {},
+              height: 40,
               buttonTitle: "Cancel",
             ),
           ),
@@ -25,7 +26,8 @@ class CustomScheduleDoctorItemButtons extends StatelessWidget {
             child: CustomButton(
               borderRadius: BorderRadius.circular(50),
               onPressed: () {},
-              buttonTitle: "Rescheduale",
+              height: 40,
+              buttonTitle: "Reschedule",
             ),
           ),
         ],

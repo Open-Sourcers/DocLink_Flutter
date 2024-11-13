@@ -1,3 +1,5 @@
+import 'package:doc_link_project/features/user_views/schedule/presentation/enums/schedule_type.dart';
+import 'package:doc_link_project/features/user_views/schedule/presentation/views/widgets/schedule_list_view.dart';
 import 'package:flutter/material.dart';
 
 class CompletedSchedule extends StatelessWidget {
@@ -5,22 +7,9 @@ class CompletedSchedule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text('Completed Schedule'),
-        ListTile(
-          leading: Icon(Icons.calendar_today),
-          title: Text('Week 1'),
-        ),
-        ListTile(
-          leading: Icon(Icons.calendar_today),
-          title: Text('Week 2'),
-        ),
-        ListTile(
-          leading: Icon(Icons.calendar_today),
-          title: Text('Week 3'),
-        ),
-      ],
+    return const ScheduleListView(
+      scheduleType: ScheduleType.completed,
+      itemCount: 4,
     );
   }
 }

@@ -1,3 +1,5 @@
+import 'package:doc_link_project/features/user_views/schedule/presentation/enums/schedule_type.dart';
+import 'package:doc_link_project/features/user_views/schedule/presentation/views/widgets/schedule_list_view.dart';
 import 'package:flutter/material.dart';
 
 class CanceledSchedule extends StatelessWidget {
@@ -5,23 +7,9 @@ class CanceledSchedule extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text(
-          'Your schedule has been canceled.',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-        Text(
-          'Please check your email for details on when and where your appointment will be.',
-        ),
-        SizedBox(height: 16),
-        Text(
-          'If you have any questions, feel free to reach out.',
-        ),
-        Text(
-          'Customer Support: (123) 456-7890',
-        ),
-      ],
+    return const ScheduleListView(
+      scheduleType: ScheduleType.canceled,
+      itemCount: 4,
     );
   }
 }
