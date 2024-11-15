@@ -21,18 +21,10 @@ class CommunicationSectionItem extends StatelessWidget {
       onTap: onTap,
       child: ListTile(
         contentPadding: EdgeInsets.zero,
-        title: Text(
-          title,
-          style: Styless.textBold18.copyWith(color: AppColors.black),
-        ),
-        subtitle: Text(
-          subtitle,
-          style: Styless.textRegular16,
-        ),
-        leading: SvgPicture.asset(
-          leadingImage,
-          fit: BoxFit.fill,
-        ),
+        title: Text(title,
+            style: Styless.textBold18.copyWith(color: AppColors.black)),
+        subtitle: Text(subtitle, style: Styless.textRegular16),
+        leading: SvgPicture.asset(leadingImage, fit: BoxFit.fill),
       ),
     );
   }

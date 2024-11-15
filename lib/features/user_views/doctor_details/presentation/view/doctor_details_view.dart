@@ -15,9 +15,7 @@ class DoctorDetailsView extends StatelessWidget {
         context,
         showLeadingIcon: true,
         actions: [
-          const CustomIconButtonContainer(
-            child: Icon(Icons.more_vert_sharp),
-          ),
+          const CustomIconButtonContainer(child: Icon(Icons.more_vert_sharp)),
         ],
       ),
       body: const DoctorDetailsViewBody(),
