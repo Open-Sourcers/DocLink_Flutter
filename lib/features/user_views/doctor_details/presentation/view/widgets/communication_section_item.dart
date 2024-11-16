@@ -1,4 +1,3 @@
-import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -21,9 +20,8 @@ class CommunicationSectionItem extends StatelessWidget {
       onTap: onTap,
       child: ListTile(
         contentPadding: EdgeInsets.zero,
-        title: Text(title,
-            style: Styless.textBold18.copyWith(color: AppColors.black)),
-        subtitle: Text(subtitle, style: Styless.textRegular16),
+        title: Text(title, style: Styless.textMedium18),
+        subtitle: Text(subtitle, style: Styless.textRegular14),
         leading: SvgPicture.asset(leadingImage, fit: BoxFit.fill),
       ),
     );
