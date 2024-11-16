@@ -1,3 +1,5 @@
+import 'package:doc_link_project/constants.dart';
+import 'package:doc_link_project/core/common/widgets/custom_fade_animation.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/custom_doctor_card.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,10 @@ class AllDoctorsGridView extends StatelessWidget {
         ),
         itemCount: 10,
         itemBuilder: (context, state) {
-          return const CustomDoctorCard();
+          return const CustomFadeInUp(
+            duration: animationDuration,
+            child: CustomDoctorCard(),
+          );
         },
       ),
     );
