@@ -20,18 +20,13 @@ class CustomListTileWidget extends StatelessWidget {
           ? const EdgeInsets.only(left: 20)
           : const EdgeInsets.only(right: 20),
       child: ListTile(
+        onTap: onPressed,
         title: Text(
           txt,
           style: Styless.textSemiBold20.copyWith(color: Colors.black),
         ),
         leading: Image.asset(imagePath),
-        trailing: IconButton(
-          onPressed: onPressed,
-          icon: const Icon(
-            Icons.arrow_forward_ios_outlined,
-            size: 18,
-          ),
-        ),
+        trailing: const Icon(Icons.arrow_forward_ios_outlined, size: 18),
       ),
     );
   }
