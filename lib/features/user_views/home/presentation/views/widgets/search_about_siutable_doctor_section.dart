@@ -16,7 +16,7 @@ class SearchAboutSuitableDoctorSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
+      onTap: () async {
         GoRouter.of(context).push(AppRouter.allDoctorView);
       },
       child: Container(
