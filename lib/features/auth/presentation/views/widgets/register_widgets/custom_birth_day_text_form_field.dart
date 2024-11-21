@@ -14,7 +14,7 @@ class CustomBirthDayTextFormField extends StatelessWidget {
     return await showDatePickerDialog(
       context: context,
       initialDate: DateTime(2022, 11, 26),
-      minDate: DateTime(2000, 1, 1),
+      minDate: DateTime(1950),
       maxDate: DateTime.now(),
     );
   }

@@ -14,6 +14,8 @@ class RegisterFailure extends AuthState {
 
 class SetRegisterBirthDay extends AuthState {}
 
+class SetRegisterGender extends AuthState {}
+
 class LoginLoading extends AuthState {}
 
 class LoginSuccess extends AuthState {}

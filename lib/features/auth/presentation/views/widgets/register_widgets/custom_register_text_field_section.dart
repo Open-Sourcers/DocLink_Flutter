@@ -5,6 +5,7 @@ import 'package:doc_link_project/core/common/widgets/custom_text_form_field.dart
 import 'package:doc_link_project/features/auth/presentation/manager/cubits/auth_cubit.dart';
 import 'package:doc_link_project/features/auth/presentation/manager/functions/validation_of_input_fields.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/custom_birth_day_text_form_field.dart';
+import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/custom_gender_text_form_field.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/register_widgets/custom_name_text_field_section.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -34,13 +35,7 @@ class CustomRegisterTextFieldSection extends StatelessWidget {
         const SizedBox(height: 15),
         const CustomBirthDayTextFormField(),
         const SizedBox(height: 15),
-        CustomFadeInLeft(
-          duration: animationDuration,
-          child: CustomTextFormField(
-            hintTxt: S.of(context).gender,
-            controller: context.read<AuthCubit>().registerGender,
-          ),
-        ),
+        const CustomGenderTextFormField(),
         const SizedBox(height: 15),
         CustomFadeInLeft(
           duration: animationDuration,

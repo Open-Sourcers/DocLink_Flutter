@@ -14,7 +14,7 @@ class AuthCubit extends Cubit<AuthState> {
   TextEditingController registerPassword = TextEditingController();
   TextEditingController registerConfirmPassword = TextEditingController();
   TextEditingController registerBirthDay = TextEditingController();
-  TextEditingController registerGender = TextEditingController();
+  String? registerGender;
   TextEditingController registerEmergencyContact = TextEditingController();
   GlobalKey<FormState> registerFormKey = GlobalKey();
   // login
@@ -30,7 +30,7 @@ class AuthCubit extends Cubit<AuthState> {
       lastName: registerLastName.text,
       email: registerEmail.text,
       birthDay: registerBirthDay.text,
-      gender: registerGender.text,
+      gender: registerGender!,
       emergencyContact: registerEmergencyContact.text,
       password: registerPassword.text,
     );
@@ -59,9 +59,17 @@ class AuthCubit extends Cubit<AuthState> {
     emit(LogoutDone());
   }
 
+//birth day
   setRegisterBirthDay(DateTime? date) {
     if (date == null) return;
     registerBirthDay.text = DateFormat("dd/MM/yyy").format(date);
     emit(SetRegisterBirthDay());
+  }
+
+  // gender
+  setRegisterGender(String? gender) {
+    if (gender == null) return;
+    registerGender = gender;
+    emit(SetRegisterGender());
   }
 }
