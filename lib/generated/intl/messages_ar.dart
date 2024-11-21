@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "حدث خطا , من فضلك حاول مره اخري لاحقا"),
         "availableTime": MessageLookupByLibrary.simpleMessage("الوقت المتاح"),
         "beCareful": MessageLookupByLibrary.simpleMessage("! كن  حريص"),
+        "birthDay": MessageLookupByLibrary.simpleMessage("تاريخ الميلاد"),
         "bookAppoinment": MessageLookupByLibrary.simpleMessage("حجز موعد"),
         "callDoctor":
             MessageLookupByLibrary.simpleMessage("اتصل بطبيبك مباشرة."),
@@ -56,6 +57,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(" بريدك الالكتروني  "),
         "emailToReset": MessageLookupByLibrary.simpleMessage(
             "أدخل بريدك الالكتروني لتغيير كلمة المرور"),
+        "emergencyContact":
+            MessageLookupByLibrary.simpleMessage("جهة اتصال الطوارئ"),
         "enterPassword":
             MessageLookupByLibrary.simpleMessage("من فضلك ادخل الرقم السري"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(

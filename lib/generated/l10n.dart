@@ -889,6 +889,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Birthday`
+  String get birthDay {
+    return Intl.message(
+      'Birthday',
+      name: 'birthDay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Emergency Contact`
+  String get emergencyContact {
+    return Intl.message(
+      'Emergency Contact',
+      name: 'emergencyContact',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

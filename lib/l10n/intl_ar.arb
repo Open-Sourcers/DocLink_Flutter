@@ -82,5 +82,7 @@
   "specialties": "التخصصات",
   "upcoming": "Upcoming",
   "completed": "مكتمل",
-  "canceled": "مرفوض"
+  "canceled": "مرفوض",
+  "birthDay" : "تاريخ الميلاد",
+  "emergencyContact" : "جهة اتصال الطوارئ"
 }

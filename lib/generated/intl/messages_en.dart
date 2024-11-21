@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "There was an error please try again"),
         "availableTime": MessageLookupByLibrary.simpleMessage("Available Time"),
         "beCareful": MessageLookupByLibrary.simpleMessage("Be Careful !"),
+        "birthDay": MessageLookupByLibrary.simpleMessage("Birthday"),
         "bookAppoinment":
             MessageLookupByLibrary.simpleMessage("Book Appointment"),
         "callDoctor":
@@ -57,6 +58,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "emailHintTxt": MessageLookupByLibrary.simpleMessage("Email"),
         "emailToReset": MessageLookupByLibrary.simpleMessage(
             "Enter your email to reset your password"),
+        "emergencyContact":
+            MessageLookupByLibrary.simpleMessage("Emergency Contact"),
         "enterPassword":
             MessageLookupByLibrary.simpleMessage("Please enter password"),
         "enterValidPassword": MessageLookupByLibrary.simpleMessage(

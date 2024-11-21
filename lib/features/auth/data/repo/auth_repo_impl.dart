@@ -18,11 +18,16 @@ class AuthRepoImpl implements AuthRepo {
   AuthRepoImpl({required this.dioConsumer});
 
   @override
-  Future<Either<String, AuthModel>> register(BuildContext context,
-      {required String firstName,
-      required String lastName,
-      required String email,
-      required String password}) async {
+  Future<Either<String, AuthModel>> register(
+    BuildContext context, {
+    required String firstName,
+    required String lastName,
+    required String email,
+    required String birthDay,
+    required String gender,
+    required String emergencyContact,
+    required String password,
+  }) async {
     try {
       final response = await dioConsumer.post(EndPoints.register, data: {
         ApiKeys.firstName: firstName,
@@ -63,7 +68,7 @@ class AuthRepoImpl implements AuthRepo {
       return left(e.errorModel.message ?? S.of(context).authError);
     }
   }
-  
+
   @override
   void logout() {
     getit<CacheHelper>().removePreference(ApiKeys.token);

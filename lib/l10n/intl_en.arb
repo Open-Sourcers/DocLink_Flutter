@@ -82,5 +82,7 @@
   "specialties": "Specialties",
   "upcoming": "Upcoming",
   "completed": "Completed",
-  "canceled": "Canceled"
+  "canceled": "Canceled",
+  "birthDay" : "Birthday",
+  "emergencyContact" : "Emergency Contact"
 }
