@@ -10,6 +10,8 @@ class CustomTextFormField extends StatelessWidget {
   final String? Function(String?)? validator;
   final TextInputType? keyboardType;
   final int? maxLines;
+  final Widget? suffix;
+  final bool? readOnly;
   const CustomTextFormField({
     super.key,
     required this.hintTxt,
@@ -17,13 +19,17 @@ class CustomTextFormField extends StatelessWidget {
     this.validator,
     this.keyboardType,
     this.maxLines,
+    this.suffix,
+    this.readOnly,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       maxLines: maxLines,
+      readOnly: readOnly ?? false,
       keyboardType: keyboardType,
+      style: Styless.textSemiBold15,
       validator: validator,
       autovalidateMode: AutovalidateMode.onUserInteraction,
       controller: controller,
@@ -32,6 +38,7 @@ class CustomTextFormField extends StatelessWidget {
         contentPadding: const EdgeInsets.all(20),
         enabled: true,
         hintText: hintTxt,
+        suffix: suffix,
         hintStyle: Styless.textMedium16,
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide.none,

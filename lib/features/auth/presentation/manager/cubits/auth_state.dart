@@ -12,6 +12,8 @@ class RegisterFailure extends AuthState {
   RegisterFailure({required this.errorMessage});
 }
 
+class SetRegisterBirthDay extends AuthState {}
+
 class LoginLoading extends AuthState {}
 
 class LoginSuccess extends AuthState {}
@@ -22,4 +24,4 @@ class LoginFailure extends AuthState {
   LoginFailure({required this.errorMessage});
 }
 
-final class LogoutDone extends AuthState{}
+final class LogoutDone extends AuthState {}
