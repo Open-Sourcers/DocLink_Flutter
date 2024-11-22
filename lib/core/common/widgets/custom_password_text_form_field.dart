@@ -27,6 +27,7 @@ class _CustomPasswordTextFormFieldState
       controller: widget.controller,
       validator: widget.validator,
       cursorColor: AppColors.commonColor,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       obscureText: isShown,
       decoration: InputDecoration(
         suffixIcon: IconButton(

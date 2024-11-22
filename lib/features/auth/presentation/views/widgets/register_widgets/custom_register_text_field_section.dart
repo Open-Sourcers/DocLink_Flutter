@@ -39,14 +39,6 @@ class CustomRegisterTextFieldSection extends StatelessWidget {
         const SizedBox(height: 15),
         CustomFadeInLeft(
           duration: animationDuration,
-          child: CustomTextFormField(
-            hintTxt: S.of(context).emergencyContact,
-            controller: context.read<AuthCubit>().registerEmergencyContact,
-          ),
-        ),
-        const SizedBox(height: 15),
-        CustomFadeInLeft(
-          duration: animationDuration,
           child: CustomPasswordTextFormField(
             hintTxt: S.of(context).passwordHintTxt,
             controller: context.read<AuthCubit>().registerPassword,

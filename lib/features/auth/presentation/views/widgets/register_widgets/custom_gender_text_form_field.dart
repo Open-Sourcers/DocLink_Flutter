@@ -18,6 +18,7 @@ class CustomGenderTextFormField extends StatelessWidget {
         return DropdownButtonHideUnderline(
           child: DropdownButtonFormField<String>(
             hint: Text(S.of(context).gender, style: Styless.textRegular14),
+            autovalidateMode: AutovalidateMode.onUserInteraction,
             validator: (val) {
               if (val == null || val.isEmpty) {
                 return S.of(context).required;

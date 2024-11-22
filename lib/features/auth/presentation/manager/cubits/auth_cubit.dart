@@ -15,7 +15,7 @@ class AuthCubit extends Cubit<AuthState> {
   TextEditingController registerConfirmPassword = TextEditingController();
   TextEditingController registerBirthDay = TextEditingController();
   String? registerGender;
-  TextEditingController registerEmergencyContact = TextEditingController();
+  String registerEmergencyContact = '123';
   GlobalKey<FormState> registerFormKey = GlobalKey();
   // login
   TextEditingController loginEmail = TextEditingController();
@@ -31,7 +31,7 @@ class AuthCubit extends Cubit<AuthState> {
       email: registerEmail.text,
       birthDay: registerBirthDay.text,
       gender: registerGender!,
-      emergencyContact: registerEmergencyContact.text,
+      emergencyContact: registerEmergencyContact,
       password: registerPassword.text,
     );
 
