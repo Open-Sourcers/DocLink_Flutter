@@ -12,4 +12,7 @@ class ApiKeys {
   static const firstName = 'firstName';
   static const lastName = 'lastName';
   static const otp = 'otp';
+  static const birthDay = 'birthDay';
+  static const gender = 'gender';
+  static const emergencyContact = 'emergencyContact';
 }

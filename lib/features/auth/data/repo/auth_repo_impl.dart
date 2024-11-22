@@ -29,12 +29,18 @@ class AuthRepoImpl implements AuthRepo {
     required String password,
   }) async {
     try {
-      final response = await dioConsumer.post(EndPoints.register, data: {
-        ApiKeys.firstName: firstName,
-        ApiKeys.lastName: lastName,
-        ApiKeys.email: email,
-        ApiKeys.password: password,
-      });
+      final response = await dioConsumer.post(
+        EndPoints.register,
+        data: {
+          ApiKeys.firstName: firstName,
+          ApiKeys.lastName: lastName,
+          ApiKeys.email: email,
+          ApiKeys.password: password,
+          ApiKeys.birthDay: birthDay,
+          ApiKeys.gender: gender,
+          ApiKeys.emergencyContact: emergencyContact,
+        },
+      );
       AuthModel authModel = AuthModel.fromJson(response);
       if (authModel.statusCode == 200) {
         cachedTokenInLocalStorage(authModel);

@@ -19,6 +19,7 @@ class ForgetPasswordForm extends StatelessWidget {
         children: [
           CustomTextFormField(
             hintTxt: S.of(context).emailHintTxt,
+            keyboardType: TextInputType.emailAddress,
             controller:
                 context.read<ForgetPasswordCubit>().forgetedPasswordEmail,
             validator: (email) {

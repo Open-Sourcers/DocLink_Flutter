@@ -62,7 +62,7 @@ class AuthCubit extends Cubit<AuthState> {
 //birth day
   setRegisterBirthDay(DateTime? date) {
     if (date == null) return;
-    registerBirthDay.text = DateFormat("dd/MM/yyy").format(date);
+    registerBirthDay.text = DateFormat("yyyy-MM-dd").format(date);
     emit(SetRegisterBirthDay());
   }
 

@@ -22,6 +22,7 @@ class CustomLoginTextFieldsSection extends StatelessWidget {
           child: CustomTextFormField(
             hintTxt: S.of(context).emailHintTxt,
             controller: context.read<AuthCubit>().loginEmail,
+            keyboardType: TextInputType.emailAddress,
             validator: (text) {
               return validatorOfEmail(context, value: text);
             },
