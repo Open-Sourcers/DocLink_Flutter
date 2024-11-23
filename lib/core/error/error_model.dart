@@ -1,15 +1,27 @@
 import 'package:doc_link_project/core/api/api_keys.dart';
 
 class ErrorModel {
-  final int statstatusCodeus;
-  final dynamic message;
+  int? statusCode;
+  bool? data;
+  String? responseMessage;
+  int? totalCount;
+  List<dynamic>? errors;
 
-  ErrorModel({required this.statstatusCodeus, required this.message});
+  ErrorModel({
+    this.statusCode,
+    this.data,
+    this.responseMessage,
+    this.totalCount,
+    this.errors,
+  });
 
   factory ErrorModel.fromJson(Map<String, dynamic> json) {
     return ErrorModel(
-      statstatusCodeus: json[ApiKeys.statusCode],
-      message: json[ApiKeys.message],
+      statusCode: json[ApiKeys.statusCode] as int?,
+      data: json[ApiKeys.data] as bool?,
+      responseMessage: json[ApiKeys.responseMessage] as String?,
+      totalCount: json[ApiKeys.totalCount] as int?,
+      errors: json[ApiKeys.errors] as List<dynamic>?,
     );
   }
 }

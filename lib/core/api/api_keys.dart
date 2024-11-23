@@ -5,9 +5,10 @@ class ApiKeys {
   static const email = 'email';
   static const token = 'token';
   static const statusCode = 'statusCode';
-  static const message = 'message';
+  static const responseMessage = 'responseMessage';
   static const errors = 'errors';
   static const data = 'data';
+  static const totalCount = 'totalCount';
   static const displayName = 'displayName';
   static const firstName = 'firstName';
   static const lastName = 'lastName';

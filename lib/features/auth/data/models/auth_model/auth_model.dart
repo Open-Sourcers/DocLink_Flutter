@@ -4,25 +4,18 @@ import 'data.dart';
 
 class AuthModel {
   int? statusCode;
-  String? message;
+  String? responseMessage;
   dynamic errors;
   Data? data;
 
-  AuthModel({this.statusCode, this.message, this.errors, this.data});
+  AuthModel({this.statusCode, this.responseMessage, this.errors, this.data});
 
   factory AuthModel.fromJson(Map<String, dynamic> json) => AuthModel(
         statusCode: json[ApiKeys.statusCode] as int?,
-        message: json[ApiKeys.message] as String?,
+        responseMessage: json[ApiKeys.responseMessage] as String?,
         errors: json[ApiKeys.errors] as dynamic,
         data: json[ApiKeys.data] == null
             ? null
             : Data.fromJson(json['data'] as Map<String, dynamic>),
       );
-
-  Map<String, dynamic> toJson() => {
-        'statusCode': statusCode,
-        'message': message,
-        'errors': errors,
-        'data': data?.toJson(),
-      };
 }

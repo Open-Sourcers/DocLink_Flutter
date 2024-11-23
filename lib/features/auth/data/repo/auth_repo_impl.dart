@@ -46,9 +46,13 @@ class AuthRepoImpl implements AuthRepo {
         cachedTokenInLocalStorage(authModel);
         return right(authModel);
       }
-      return left(authModel.message ?? S.of(context).authError);
+      return left(authModel.responseMessage ??
+          authModel.errors[0] ??
+          S.of(context).authError);
     } on ServerException catch (e) {
-      return left(e.errorModel.message ?? S.of(context).authError);
+      return left(e.errorModel.responseMessage ??
+          e.errorModel.errors?[0] ??
+          S.of(context).authError);
     }
   }
 
@@ -69,9 +73,9 @@ class AuthRepoImpl implements AuthRepo {
         cachedTokenInLocalStorage(authModel);
         return right(authModel);
       }
-      return left(authModel.message ?? S.of(context).authError);
+      return left(authModel.responseMessage ?? S.of(context).authError);
     } on ServerException catch (e) {
-      return left(e.errorModel.message ?? S.of(context).authError);
+      return left(e.errorModel.responseMessage ?? S.of(context).authError);
     }
   }
 

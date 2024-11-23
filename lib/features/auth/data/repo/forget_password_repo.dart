@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:doc_link_project/features/auth/data/models/auth_model/auth_model.dart';
-import 'package:doc_link_project/features/auth/data/models/reset_password_model.dart';
 import 'package:flutter/material.dart';
 
 abstract class ForgetPasswordRepo {
@@ -15,7 +14,7 @@ abstract class ForgetPasswordRepo {
     required String otp,
   });
   //reset password
-  Future<Either<String, ResetPasswordModel>> resetPassword(
+  Future<Either<String, AuthModel>> resetPassword(
     BuildContext context, {
     required String email,
     required String token,
