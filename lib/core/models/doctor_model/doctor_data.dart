@@ -1,3 +1,5 @@
+import 'package:doc_link_project/core/api/api_keys.dart';
+
 class DoctorData {
   String? email;
   String? userName;
@@ -24,28 +26,28 @@ class DoctorData {
   });
 
   factory DoctorData.fromJson(Map<String, dynamic> json) => DoctorData(
-        email: json['email'] as String?,
-        userName: json['userName'] as String?,
-        firstName: json['firstName'] as String?,
-        lastName: json['lastName'] as String?,
-        image: json['image'] as String?,
-        rate: json['rate'] as int?,
-        yearsOfExperience: json['yearsOfExperience'] as int?,
-        about: json['about'] as String?,
-        consultationFee: json['consultationFee'] as int?,
-        specialty: json['specialty'] as String?,
+        email: json[ApiKeys.email] as String?,
+        userName: json[ApiKeys.userName] as String?,
+        firstName: json[ApiKeys.firstName] as String?,
+        lastName: json[ApiKeys.lastName] as String?,
+        image: json[ApiKeys.image] as String?,
+        rate: json[ApiKeys.rate] as int?,
+        yearsOfExperience: json[ApiKeys.yearsOfExperience] as int?,
+        about: json[ApiKeys.about] as String?,
+        consultationFee: json[ApiKeys.consultationFee] as int?,
+        specialty: json[ApiKeys.specialty] as String?,
       );
 
   Map<String, dynamic> toJson() => {
-        'email': email,
-        'userName': userName,
-        'firstName': firstName,
-        'lastName': lastName,
-        'image': image,
-        'rate': rate,
-        'yearsOfExperience': yearsOfExperience,
-        'about': about,
-        'consultationFee': consultationFee,
-        'specialty': specialty,
+        ApiKeys.email: email,
+        ApiKeys.userName: userName,
+        ApiKeys.firstName: firstName,
+        ApiKeys.lastName: lastName,
+        ApiKeys.image: image,
+        ApiKeys.rate: rate,
+        ApiKeys.yearsOfExperience: yearsOfExperience,
+        ApiKeys.about: about,
+        ApiKeys.consultationFee: consultationFee,
+        ApiKeys.specialty: specialty,
       };
 }

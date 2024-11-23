@@ -1,3 +1,5 @@
+import 'package:doc_link_project/core/api/api_keys.dart';
+
 import 'doctor_data.dart';
 
 class DoctorModel {
@@ -5,7 +7,7 @@ class DoctorModel {
   DoctorData? data;
   String? responseMessage;
   int? totalCount;
-  List<String>? errors;
+  List<dynamic>? errors;
 
   DoctorModel({
     this.statusCode,
@@ -16,20 +18,20 @@ class DoctorModel {
   });
 
   factory DoctorModel.fromJson(Map<String, dynamic> json) => DoctorModel(
-        statusCode: json['statusCode'] as int?,
-        data: json['data'] == null
+        statusCode: json[ApiKeys.statusCode] as int?,
+        data: json[ApiKeys.data] == null
             ? null
-            : DoctorData.fromJson(json['data'] as Map<String, dynamic>),
-        responseMessage: json['responseMessage'] as String?,
-        totalCount: json['totalCount'] as int?,
-        errors: json['errors'] as List<String>?,
+            : DoctorData.fromJson(json[ApiKeys.data] as Map<String, dynamic>),
+        responseMessage: json[ApiKeys.responseMessage] as String?,
+        totalCount: json[ApiKeys.totalCount] as int?,
+        errors: json[ApiKeys.errors] as List<String>?,
       );
 
   Map<String, dynamic> toJson() => {
-        'statusCode': statusCode,
-        'data': data?.toJson(),
-        'responseMessage': responseMessage,
-        'totalCount': totalCount,
-        'errors': errors,
+        ApiKeys.statusCode: statusCode,
+        ApiKeys.data: data?.toJson(),
+        ApiKeys.responseMessage: responseMessage,
+        ApiKeys.totalCount: totalCount,
+        ApiKeys.errors: errors,
       };
 }

@@ -16,4 +16,11 @@ class ApiKeys {
   static const birthDay = 'birthDay';
   static const gender = 'gender';
   static const emergencyContact = 'emergencyContact';
+  static const userName = 'userName';
+  static const image = 'image';
+  static const yearsOfExperience = 'yearsOfExperience';
+  static const rate = 'rate';
+  static const about = 'about';
+  static const consultationFee = 'consultationFee';
+  static const specialty = 'specialty';
 }
