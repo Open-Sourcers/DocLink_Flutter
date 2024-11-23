@@ -16,6 +16,6 @@ class AuthModel {
         errors: json[ApiKeys.errors] as dynamic,
         data: json[ApiKeys.data] == null
             ? null
-            : Data.fromJson(json['data'] as Map<String, dynamic>),
+            : Data.fromJson(json[ApiKeys.data] as Map<String, dynamic>),
       );
 }

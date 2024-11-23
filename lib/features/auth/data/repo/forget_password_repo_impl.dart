@@ -19,9 +19,12 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
   Future<Either<String, AuthModel>> sendOtpToEmail(BuildContext context,
       {required String email}) async {
     try {
-      final response = await dioConsumer.post(EndPoints.forgetPassword, data: {
-        ApiKeys.email: email,
-      });
+      final response = await dioConsumer.post(
+        EndPoints.forgetPassword,
+        data: {
+          ApiKeys.email: email,
+        },
+      );
       if (response == null) {
         return left(S.of(context).authError);
       }
@@ -36,13 +39,19 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
   }
 
   @override
-  Future<Either<String, AuthModel>> verifyAccount(BuildContext context,
-      {required String email, required String otp}) async {
+  Future<Either<String, AuthModel>> verifyAccount(
+    BuildContext context, {
+    required String email,
+    required String otp,
+  }) async {
     try {
-      final response = await dioConsumer.post(EndPoints.verifyAccount, data: {
-        ApiKeys.email: email,
-        ApiKeys.otp: otp,
-      });
+      final response = await dioConsumer.post(
+        EndPoints.verifyAccount,
+        data: {
+          ApiKeys.email: email,
+          ApiKeys.otp: otp,
+        },
+      );
       AuthModel authModel = AuthModel.fromJson(response);
       if (authModel.statusCode == 200) {
         return right(authModel);
@@ -54,18 +63,24 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
   }
 
   @override
-  Future<Either<String, AuthModel>> resetPassword(BuildContext context,
-      {required String email,
-      required String token,
-      required String newPassword,
-      required String passwordComfirmation}) async {
+  Future<Either<String, AuthModel>> resetPassword(
+    BuildContext context, {
+    required String email,
+    required String token,
+    required String newPassword,
+    required String passwordComfirmation,
+  }) async {
     try {
-      final response = await dioConsumer.put(EndPoints.resetPassword, data: {
-        ApiKeys.email: email,
-        ApiKeys.token: token,
-        ApiKeys.newPassword: newPassword,
-        ApiKeys.passwordComfirmation: passwordComfirmation,
-      });
+      final response = await dioConsumer.put(
+        EndPoints.resetPassword,
+        data: {
+          ApiKeys.email: email,
+          ApiKeys.token: token,
+          ApiKeys.newPassword: newPassword,
+          ApiKeys.passwordComfirmation: passwordComfirmation,
+        },
+      );
+      response['data'] = null;
       AuthModel authModel = AuthModel.fromJson(response);
       if (authModel.statusCode == 200) {
         return right(authModel);
