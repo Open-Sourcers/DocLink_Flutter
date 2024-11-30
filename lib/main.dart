@@ -8,7 +8,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //observer
+  //observerRR
   Bloc.observer = AppBlocObserver();
   // enable shared_preferences
   setupServicesLocator();

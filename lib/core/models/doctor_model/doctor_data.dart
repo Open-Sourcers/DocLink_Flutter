@@ -6,10 +6,10 @@ class DoctorData {
   String? firstName;
   String? lastName;
   String? image;
-  int? rate;
-  int? yearsOfExperience;
+  num? rate;
+  num? yearsOfExperience;
   String? about;
-  int? consultationFee;
+  num? consultationFee;
   String? specialty;
 
   DoctorData({
@@ -31,10 +31,10 @@ class DoctorData {
         firstName: json[ApiKeys.firstName] as String?,
         lastName: json[ApiKeys.lastName] as String?,
         image: json[ApiKeys.image] as String?,
-        rate: json[ApiKeys.rate] as int?,
-        yearsOfExperience: json[ApiKeys.yearsOfExperience] as int?,
+        rate: json[ApiKeys.rate] as num?,
+        yearsOfExperience: json[ApiKeys.yearsOfExperience] as num?,
         about: json[ApiKeys.about] as String?,
-        consultationFee: json[ApiKeys.consultationFee] as int?,
+        consultationFee: json[ApiKeys.consultationFee] as num?,
         specialty: json[ApiKeys.specialty] as String?,
       );
 

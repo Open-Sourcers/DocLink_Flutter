@@ -14,4 +14,5 @@ class EndPoints {
   static const getDocLanguages = '/api/Doctor/GetDoctorLanguages';
   static const getDocQualifications = '/api/Doctor/GetDoctorQualifications';
   static const getDocDetails = '/api/Doctor/GetDoctorDetails/'; // you need id
+  static const getSpecialities = '/api/Doctor/GetSpecialties';
 }
