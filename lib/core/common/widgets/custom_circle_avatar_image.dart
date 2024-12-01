@@ -1,11 +1,12 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
-import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
 class CustomCircleAvatarImage extends StatelessWidget {
+  final String? url;
   const CustomCircleAvatarImage({
     super.key,
     required this.radius,
+    this.url,
   });
   final double radius;
   @override
@@ -15,7 +16,7 @@ class CustomCircleAvatarImage extends StatelessWidget {
       backgroundColor: AppColors.grey,
       child: CircleAvatar(
         radius: radius,
-        backgroundImage: const AssetImage(AppImages.imagesProfImg),
+        // backgroundImage: NetworkImage(url!),
       ),
     );
   }

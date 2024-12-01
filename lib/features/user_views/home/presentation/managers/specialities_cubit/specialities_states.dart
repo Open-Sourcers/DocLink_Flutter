@@ -1,4 +1,4 @@
-import 'package:doc_link_project/core/models/speciality_model/speciality_data.dart';
+import 'package:doc_link_project/features/user_views/home/data/models/speciality_model/speciality_data.dart';
 
 abstract class SpecialitiesStates {}
 

@@ -1,6 +1,5 @@
-import 'package:dio/dio.dart';
-import 'package:doc_link_project/core/api/dio_consumer.dart';
 import 'package:doc_link_project/core/common/widgets/custom_loading_icon.dart';
+import 'package:doc_link_project/core/services/services_locator.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:doc_link_project/features/user_views/home/data/repo/home_repo_imple.dart';
@@ -18,7 +17,7 @@ class AllSpecialtiesSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => SpecialitiesCubit(
-        homeRepo: HomeRepoImple(dio: DioConsumer(dio: Dio())),
+        homeRepo: getit.get<HomeRepoImple>(),
       )..getAllSpecialities(),
       child: BlocConsumer<SpecialitiesCubit, SpecialitiesStates>(
         listener: (context, state) {},

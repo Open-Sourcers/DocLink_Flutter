@@ -1,4 +1,4 @@
-import 'package:doc_link_project/core/models/speciality_model/speciality_data.dart';
+import 'package:doc_link_project/features/user_views/home/data/models/speciality_model/speciality_data.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/custom_specialty_card.dart';
 import 'package:flutter/material.dart';
 

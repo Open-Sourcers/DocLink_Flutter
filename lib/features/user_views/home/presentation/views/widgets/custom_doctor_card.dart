@@ -6,7 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class CustomDoctorCard extends StatelessWidget {
-  const CustomDoctorCard({super.key});
+  final String? urlImg;
+  final String? name;
+  final String? spec;
+  final num? rate;
+  const CustomDoctorCard(
+      {super.key, this.name, this.spec, this.rate, this.urlImg});
 
   @override
   Widget build(BuildContext context) {
@@ -22,19 +27,23 @@ class CustomDoctorCard extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const Expanded(child: CustomCircleAvatarImage(radius: 40)),
+            Expanded(
+                child: CustomCircleAvatarImage(
+              url: urlImg,
+              radius: 40,
+            )),
             Text(
-              "Dr/ Mahmoud",
+              name!,
               style: Styless.textBold18.copyWith(color: AppColors.black),
             ),
             const SizedBox(height: 5),
-            const Text(
-              "Specialty",
+            Text(
+              spec!,
               style: Styless.textRegular14,
             ),
             const SizedBox(height: 3),
-            const Text(
-              "⭐️ 4.5 (135 reviews)",
+            Text(
+              "⭐️${rate!}",
               style: Styless.textRegular14,
             ),
           ],
