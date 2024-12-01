@@ -52,10 +52,7 @@ class AllDoctorsGridView extends StatelessWidget {
                   return CustomFadeInUp(
                     duration: animationDuration,
                     child: CustomDoctorCard(
-                      name: state.doctors![indx].userName,
-                      spec: state.doctors![indx].specialty,
-                      rate: state.doctors![indx].rate,
-                      urlImg: state.doctors![indx].image,
+                      doctor: state.doctors![indx],
                     ),
                   );
                 },

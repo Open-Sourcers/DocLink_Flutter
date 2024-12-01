@@ -5,12 +5,14 @@ import 'package:doc_link_project/features/user_views/doctor_details/presentation
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_details_header_section.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/doctor_patients_and_experience_and_ratings.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/widgets/working_time_section.dart';
+import 'package:doc_link_project/features/user_views/home/data/models/doctor_model/doctor_data.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class DoctorDetailsViewBody extends StatelessWidget {
-  const DoctorDetailsViewBody({super.key});
+  final DoctorData? doctor;
+  const DoctorDetailsViewBody({super.key, this.doctor});
 
   @override
   Widget build(BuildContext context) {

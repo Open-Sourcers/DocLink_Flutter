@@ -2,9 +2,9 @@ import 'package:doc_link_project/features/user_views/home/data/models/speciality
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/custom_specialty_card.dart';
 import 'package:flutter/material.dart';
 
-class AllSprcialtiesListView extends StatelessWidget {
+class AllSpecialtiesListView extends StatelessWidget {
   final List<SpecialityData>? specs;
-  const AllSprcialtiesListView({super.key, this.specs});
+  const AllSpecialtiesListView({super.key, this.specs});
 
   final int itemCount = 5;
   @override

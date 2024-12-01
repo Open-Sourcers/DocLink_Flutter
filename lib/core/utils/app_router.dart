@@ -6,6 +6,7 @@ import 'package:doc_link_project/features/auth/presentation/views/register_view.
 import 'package:doc_link_project/features/auth/presentation/views/verificaition_email_view.dart';
 import 'package:doc_link_project/features/user_views/chat/presentation/views/chat_view.dart';
 import 'package:doc_link_project/features/user_views/doctor_details/presentation/view/doctor_details_view.dart';
+import 'package:doc_link_project/features/user_views/home/data/models/doctor_model/doctor_data.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/all_doctors_view.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/home_view.dart';
 import 'package:doc_link_project/features/onboarding/presentation/views/onboarding_view.dart';
@@ -88,7 +89,8 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: doctorDetailsView,
-        builder: (context, state) => const DoctorDetailsView(),
+        builder: (context, state) =>
+            DoctorDetailsView(doctorData: state.extra as DoctorData?),
       ),
       GoRoute(
         path: newAppointmentView,

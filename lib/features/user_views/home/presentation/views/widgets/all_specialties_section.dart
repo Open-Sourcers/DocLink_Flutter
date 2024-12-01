@@ -43,7 +43,7 @@ class AllSpecialtiesSection extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                AllSprcialtiesListView(
+                AllSpecialtiesListView(
                   specs: state.specialities,
                 ),
               ],
