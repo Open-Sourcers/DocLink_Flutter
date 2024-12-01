@@ -15,15 +15,3 @@ class GetAllDoctorsFailure extends DoctorStates {
   final String? errMessage;
   GetAllDoctorsFailure({this.errMessage});
 }
-
-class GetAllSpecLoading extends DoctorStates {}
-
-class GetAllSpecSuccess extends DoctorStates {
-  final List<DoctorData>? doctors;
-  GetAllSpecSuccess({this.doctors});
-}
-
-class GetAllSpecFailure extends DoctorStates {
-  final String? errMessage;
-  GetAllSpecFailure({this.errMessage});
-}

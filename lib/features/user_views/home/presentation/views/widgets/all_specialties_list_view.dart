@@ -1,8 +1,10 @@
+import 'package:doc_link_project/core/models/speciality_model/speciality_data.dart';
 import 'package:doc_link_project/features/user_views/home/presentation/views/widgets/custom_specialty_card.dart';
 import 'package:flutter/material.dart';
 
 class AllSprcialtiesListView extends StatelessWidget {
-  const AllSprcialtiesListView({super.key});
+  final List<SpecialityData>? specs;
+  const AllSprcialtiesListView({super.key, this.specs});
 
   final int itemCount = 5;
   @override
@@ -11,14 +13,17 @@ class AllSprcialtiesListView extends StatelessWidget {
       height: 170,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: itemCount,
+        itemCount: specs!.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: EdgeInsets.only(
               left: index == 0 ? 10.0 : 0,
               right: index == itemCount - 1 ? 10.0 : 0,
             ),
-            child: const CustomSpecialtyCard(),
+            child: CustomSpecialtyCard(
+              image: specs![index].imageUrl,
+              docSpec: specs![index].name,
+            ),
           );
         },
       ),

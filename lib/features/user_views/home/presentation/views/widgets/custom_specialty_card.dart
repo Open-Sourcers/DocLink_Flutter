@@ -1,14 +1,16 @@
 import 'package:doc_link_project/core/utils/app_colors.dart';
-import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
 class CustomSpecialtyCard extends StatelessWidget {
+  final String? image;
+  final String? docSpec;
   const CustomSpecialtyCard({
     super.key,
+    this.image,
+    this.docSpec,
   });
 
   @override
@@ -31,15 +33,11 @@ class CustomSpecialtyCard extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              SvgPicture.asset(
-                AppImages.imagesTestDentist,
-                fit: BoxFit.fill,
-              ),
-              // const SizedBox(height: 20),
+              Image.network(image!),
               Column(
                 children: [
                   Text(
-                    'Dentistry',
+                    docSpec!,
                     style: Styless.textBold18.copyWith(color: AppColors.black),
                   ),
                   Text(
