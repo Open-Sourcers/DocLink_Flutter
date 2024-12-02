@@ -83,6 +83,7 @@
   "upcoming": "Upcoming",
   "completed": "Completed",
   "canceled": "Canceled",
-  "birthDay" : "Birthday",
-  "emergencyContact" : "Emergency Contact"
+  "birthDay": "Birthday",
+  "emergencyContact": "Emergency Contact",
+  "internetRequired": "Check your internet"
 }

@@ -83,6 +83,7 @@
   "upcoming": "Upcoming",
   "completed": "مكتمل",
   "canceled": "مرفوض",
-  "birthDay" : "تاريخ الميلاد",
-  "emergencyContact" : "جهة اتصال الطوارئ"
+  "birthDay": "تاريخ الميلاد",
+  "emergencyContact": "جهة اتصال الطوارئ",
+  "internetRequired": "لا يوجد اتصال بالانترنت"
 }

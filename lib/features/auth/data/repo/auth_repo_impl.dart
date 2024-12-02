@@ -7,6 +7,7 @@ import 'package:doc_link_project/core/api/end_points.dart';
 import 'package:doc_link_project/core/databases/cache/cache_helper.dart';
 import 'package:doc_link_project/core/error/exception.dart';
 import 'package:doc_link_project/core/services/services_locator.dart';
+import 'package:doc_link_project/core/utils/function/check_interner_connection.dart';
 import 'package:doc_link_project/features/auth/data/models/auth_model/auth_model.dart';
 import 'package:doc_link_project/features/auth/data/repo/auth_repo.dart';
 import 'package:doc_link_project/generated/l10n.dart';
@@ -28,6 +29,10 @@ class AuthRepoImpl implements AuthRepo {
     required String emergencyContact,
     required String password,
   }) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dioConsumer.post(
         EndPoints.register,
@@ -63,6 +68,10 @@ class AuthRepoImpl implements AuthRepo {
   @override
   Future<Either<String, AuthModel>> login(BuildContext context,
       {required String email, required String password}) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dioConsumer.post(EndPoints.login, data: {
         ApiKeys.email: email,

@@ -5,6 +5,7 @@ import 'package:doc_link_project/core/api/api_keys.dart';
 import 'package:doc_link_project/core/api/dio_consumer.dart';
 import 'package:doc_link_project/core/api/end_points.dart';
 import 'package:doc_link_project/core/error/exception.dart';
+import 'package:doc_link_project/core/utils/function/check_interner_connection.dart';
 import 'package:doc_link_project/features/auth/data/models/auth_model/auth_model.dart';
 import 'package:doc_link_project/features/auth/data/repo/forget_password_repo.dart';
 import 'package:doc_link_project/generated/l10n.dart';
@@ -18,6 +19,10 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
   @override
   Future<Either<String, AuthModel>> sendOtpToEmail(BuildContext context,
       {required String email}) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dioConsumer.post(
         EndPoints.forgetPassword,
@@ -44,6 +49,10 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
     required String email,
     required String otp,
   }) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dioConsumer.post(
         EndPoints.verifyAccount,
@@ -70,6 +79,10 @@ class ForgetPasswordRepoImpl implements ForgetPasswordRepo {
     required String newPassword,
     required String passwordComfirmation,
   }) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dioConsumer.put(
         EndPoints.resetPassword,

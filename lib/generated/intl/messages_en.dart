@@ -81,6 +81,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Do you have a problem?"),
         "help": MessageLookupByLibrary.simpleMessage("Help"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "internetRequired":
+            MessageLookupByLibrary.simpleMessage("Check your internet"),
         "language": MessageLookupByLibrary.simpleMessage("عربي"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "logOut": MessageLookupByLibrary.simpleMessage("Log Out"),

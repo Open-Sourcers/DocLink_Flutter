@@ -4,6 +4,7 @@ import 'package:dartz/dartz.dart';
 import 'package:doc_link_project/core/api/dio_consumer.dart';
 import 'package:doc_link_project/core/api/end_points.dart';
 import 'package:doc_link_project/core/error/exception.dart';
+import 'package:doc_link_project/core/utils/function/check_interner_connection.dart';
 import 'package:doc_link_project/features/user_views/home/data/models/doctor_model/doctor_data.dart';
 import 'package:doc_link_project/features/user_views/home/data/models/doctor_model/doctor_model.dart';
 import 'package:doc_link_project/features/user_views/home/data/models/speciality_model/speciality_data.dart';
@@ -20,6 +21,10 @@ class HomeRepoImple extends HomeRepo {
   Future<Either<String, List<DoctorData>>> getAllDoctors(
     BuildContext context,
   ) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dio.get(EndPoints.getAllDoctors);
       DoctorModel model = DoctorModel.fromJson(response);
@@ -43,6 +48,10 @@ class HomeRepoImple extends HomeRepo {
   Future<Either<String, List<SpecialityData>>> getSpecialities(
     BuildContext context,
   ) async {
+    bool isConnected = await checkInternetConnection();
+    if (!isConnected) {
+      return left(S.of(context).internetRequired);
+    }
     try {
       final response = await dio.get(EndPoints.getSpecialities);
       SpecialityModel model = SpecialityModel.fromJson(response);

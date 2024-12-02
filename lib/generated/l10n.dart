@@ -909,6 +909,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Check your internet`
+  String get internetRequired {
+    return Intl.message(
+      'Check your internet',
+      name: 'internetRequired',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
