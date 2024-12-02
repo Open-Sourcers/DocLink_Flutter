@@ -18,7 +18,7 @@ class AllSpecialtiesSection extends StatelessWidget {
     return BlocProvider(
       create: (context) => SpecialitiesCubit(
         homeRepo: getit.get<HomeRepoImple>(),
-      )..getAllSpecialities(),
+      )..getAllSpecialities(context),
       child: BlocConsumer<SpecialitiesCubit, SpecialitiesStates>(
         listener: (context, state) {},
         builder: (context, state) {

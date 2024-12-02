@@ -20,7 +20,7 @@ class AllDoctorsGridView extends StatelessWidget {
     return BlocProvider(
       create: (context) => DoctorCubit(
         homeRepo: getit.get<HomeRepoImple>(),
-      )..getAllDocs(),
+      )..getAllDocs(context),
       child: BlocConsumer<DoctorCubit, DoctorStates>(
         listener: (context, state) {},
         builder: (context, state) {
