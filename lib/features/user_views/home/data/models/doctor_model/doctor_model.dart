@@ -1,5 +1,4 @@
 import 'package:doc_link_project/core/api/api_keys.dart';
-
 import 'doctor_data.dart';
 
 class DoctorModel {
@@ -19,7 +18,10 @@ class DoctorModel {
 
   factory DoctorModel.fromJson(Map<String, dynamic> json) => DoctorModel(
         statusCode: json[ApiKeys.statusCode] as int?,
-        data: allDoctors(json['data']),
+        data: (json['data'] as List<dynamic>?)
+                ?.map((e) => DoctorData.fromJson(e as Map<String, dynamic>))
+                .toList() ??
+            [], // Default to empty list
         responseMessage: json[ApiKeys.responseMessage] as String?,
         totalCount: json[ApiKeys.totalCount] as int?,
         errors: json[ApiKeys.errors] as List<dynamic>?,
@@ -32,13 +34,4 @@ class DoctorModel {
         ApiKeys.totalCount: totalCount,
         ApiKeys.errors: errors,
       };
-}
-
-List<DoctorData> allDoctors(jsonData) {
-  List<DoctorData> data = [];
-  for (var i = 0; i < jsonData.length; i++) {
-    DoctorData doctor = DoctorData.fromJson(jsonData[i]);
-    data.add(doctor);
-  }
-  return data;
 }
