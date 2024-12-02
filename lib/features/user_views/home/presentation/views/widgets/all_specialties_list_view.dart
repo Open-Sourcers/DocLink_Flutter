@@ -6,7 +6,6 @@ class AllSpecialtiesListView extends StatelessWidget {
   final List<SpecialityData>? specs;
   const AllSpecialtiesListView({super.key, this.specs});
 
-  final int itemCount = 5;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -18,7 +17,7 @@ class AllSpecialtiesListView extends StatelessWidget {
           return Padding(
             padding: EdgeInsets.only(
               left: index == 0 ? 10.0 : 0,
-              right: index == itemCount - 1 ? 10.0 : 0,
+              right: index == specs!.length - 1 ? 10.0 : 0,
             ),
             child: CustomSpecialtyCard(
               image: specs![index].imageUrl,

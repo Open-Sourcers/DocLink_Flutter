@@ -25,29 +25,37 @@ class CustomSpecialtyCard extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 8),
         decoration: BoxDecoration(
           color: AppColors.grey200,
-          borderRadius: BorderRadius.circular(12),
+          // color: AppColors.commonColor,
+          borderRadius: BorderRadius.circular(24),
           // border: Border.all(width: 0.5)
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Image.network(image!),
-              Column(
-                children: [
-                  Text(
-                    docSpec!,
-                    style: Styless.textBold18.copyWith(color: AppColors.black),
-                  ),
-                  Text(
-                    '999 Doctor',
-                    style: Styless.textBold14.copyWith(color: AppColors.grey),
-                  ),
-                ],
-              )
-            ],
-          ),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 2 * 170 / 3,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(24),
+                child: Image.network(
+                  image!,
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+            const Expanded(child: SizedBox()),
+            Column(
+              children: [
+                Text(
+                  docSpec!,
+                  style: Styless.textBold18.copyWith(color: AppColors.black),
+                ),
+                Text(
+                  '999 Doctor',
+                  style: Styless.textBold14.copyWith(color: AppColors.grey),
+                ),
+              ],
+            ),
+            const Expanded(child: SizedBox()),
+          ],
         ),
       ),
     );
