@@ -20,7 +20,7 @@ class AllSpecialtiesSection extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        const AllSpecialitiesBlocBuilderListView(),
+        const Expanded(child: AllSpecialitiesBlocBuilderListView()),
       ],
     );
   }

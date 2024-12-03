@@ -15,52 +15,55 @@ class CustomSpecialtyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        GoRouter.of(context).push(AppRouter.allDoctorView);
-      },
-      child: Container(
-        height: 170,
-        width: 140,
-        margin: const EdgeInsets.symmetric(horizontal: 8),
-        decoration: BoxDecoration(
-          color: AppColors.grey200,
-          // color: AppColors.commonColor,
-          borderRadius: BorderRadius.circular(24),
-          // border: Border.all(width: 0.5)
-        ),
-        child: specialityData == null
-            ? const SizedBox()
-            : Column(
-                children: [
-                  SizedBox(
-                    height: 2 * 170 / 3,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(24),
-                      child: Image.network(
-                        specialityData!.imageUrl!,
-                        fit: BoxFit.fill,
+    return AspectRatio(
+      aspectRatio: 0.9,
+      child: InkWell(
+        onTap: () {
+          GoRouter.of(context).push(AppRouter.allDoctorView);
+        },
+        child: Container(
+          height: 170,
+          width: 140,
+          margin: const EdgeInsets.symmetric(horizontal: 8),
+          decoration: BoxDecoration(
+            color: AppColors.grey200,
+            // color: AppColors.commonColor,
+            borderRadius: BorderRadius.circular(24),
+            // border: Border.all(width: 0.5)
+          ),
+          child: specialityData == null
+              ? const SizedBox()
+              : Column(
+                  children: [
+                    Expanded(
+                      flex: 6,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24),
+                        child: Image.network(
+                          specialityData!.imageUrl!,
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
-                  ),
-                  const Expanded(child: SizedBox()),
-                  Column(
-                    children: [
-                      Text(
-                        specialityData!.name!,
-                        style:
-                            Styless.textBold18.copyWith(color: AppColors.black),
-                      ),
-                      Text(
-                        '${specialityData!.numberOfDoctors} Doctor',
-                        style:
-                            Styless.textBold14.copyWith(color: AppColors.grey),
-                      ),
-                    ],
-                  ),
-                  const Expanded(child: SizedBox()),
-                ],
-              ),
+                    const Expanded(child: SizedBox()),
+                    Column(
+                      children: [
+                        Text(
+                          specialityData!.name!,
+                          style: Styless.textBold18
+                              .copyWith(color: AppColors.black),
+                        ),
+                        Text(
+                          '${specialityData!.numberOfDoctors} Doctor',
+                          style: Styless.textBold14
+                              .copyWith(color: AppColors.grey),
+                        ),
+                      ],
+                    ),
+                    const Expanded(child: SizedBox()),
+                  ],
+                ),
+        ),
       ),
     );
   }
