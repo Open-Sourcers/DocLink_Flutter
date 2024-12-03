@@ -1,3 +1,4 @@
+import 'package:doc_link_project/core/common/widgets/custom_cached_network_image.dart';
 import 'package:doc_link_project/features/user_views/home/data/models/speciality_model/speciality_data.dart';
 
 import 'package:doc_link_project/core/utils/app_colors.dart';
@@ -39,9 +40,8 @@ class CustomSpecialtyCard extends StatelessWidget {
                       flex: 6,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(24),
-                        child: Image.network(
-                          specialityData!.imageUrl!,
-                          fit: BoxFit.fill,
+                        child: CustomCachedNetworkImage(
+                          imgUrl: specialityData!.imageUrl!,
                         ),
                       ),
                     ),

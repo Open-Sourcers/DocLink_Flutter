@@ -1,3 +1,4 @@
+import 'package:doc_link_project/core/common/widgets/custom_cached_network_image.dart';
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class CustomCircleAvatarImage extends StatelessWidget {
       backgroundColor: AppColors.grey,
       child: CircleAvatar(
         radius: radius,
-        // backgroundImage: NetworkImage(url!),
+        backgroundImage: customCachedNetworkImageprovider(url!),
       ),
     );
   }
