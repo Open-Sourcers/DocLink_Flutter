@@ -1,3 +1,5 @@
+import 'package:doc_link_project/features/user_views/home/data/models/speciality_model/speciality_data.dart';
+
 import 'package:doc_link_project/core/utils/app_colors.dart';
 import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
@@ -5,12 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class CustomSpecialtyCard extends StatelessWidget {
-  final String? image;
-  final String? docSpec;
+  final SpecialityData? specialityData;
   const CustomSpecialtyCard({
     super.key,
-    this.image,
-    this.docSpec,
+    this.specialityData,
   });
 
   @override
@@ -29,34 +29,38 @@ class CustomSpecialtyCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(24),
           // border: Border.all(width: 0.5)
         ),
-        child: Column(
-          children: [
-            SizedBox(
-              height: 2 * 170 / 3,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(24),
-                child: Image.network(
-                  image!,
-                  fit: BoxFit.fill,
-                ),
+        child: specialityData == null
+            ? const SizedBox()
+            : Column(
+                children: [
+                  SizedBox(
+                    height: 2 * 170 / 3,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(24),
+                      child: Image.network(
+                        specialityData!.imageUrl!,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                  const Expanded(child: SizedBox()),
+                  Column(
+                    children: [
+                      Text(
+                        specialityData!.name!,
+                        style:
+                            Styless.textBold18.copyWith(color: AppColors.black),
+                      ),
+                      Text(
+                        '${specialityData!.numberOfDoctors} Doctor',
+                        style:
+                            Styless.textBold14.copyWith(color: AppColors.grey),
+                      ),
+                    ],
+                  ),
+                  const Expanded(child: SizedBox()),
+                ],
               ),
-            ),
-            const Expanded(child: SizedBox()),
-            Column(
-              children: [
-                Text(
-                  docSpec!,
-                  style: Styless.textBold18.copyWith(color: AppColors.black),
-                ),
-                Text(
-                  '999 Doctor',
-                  style: Styless.textBold14.copyWith(color: AppColors.grey),
-                ),
-              ],
-            ),
-            const Expanded(child: SizedBox()),
-          ],
-        ),
       ),
     );
   }

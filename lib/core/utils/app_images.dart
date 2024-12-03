@@ -54,6 +54,10 @@ class AppImages {
   /// assets/images/experience_years.svg
   static const String imagesExperienceYears = "assets/images/experience_years.svg";
 
+  /// Assets for imagesFeasibilityStudyTemplate2
+  /// assets/images/Feasibility-Study-Template-2.webp
+  static const String imagesFeasibilityStudyTemplate2 = "assets/images/Feasibility-Study-Template-2.webp";
+
   /// Assets for imagesFilterSearchIcon
   /// assets/images/filterSearchIcon.svg
   static const String imagesFilterSearchIcon = "assets/images/filterSearchIcon.svg";
@@ -121,6 +125,10 @@ class AppImages {
   /// Assets for imagesPaymentProfSettings
   /// assets/images/paymentProfSettings.png
   static const String imagesPaymentProfSettings = "assets/images/paymentProfSettings.png";
+
+  /// Assets for imagesPlaceholder
+  /// assets/images/placeholder.png
+  static const String imagesPlaceholder = "assets/images/placeholder.png";
 
   /// Assets for imagesPrivacySettings
   /// assets/images/privacySettings.png

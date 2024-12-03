@@ -1,4 +1,4 @@
-import 'package:doc_link_project/core/models/doctor_model/doctor_data.dart';
+import 'package:doc_link_project/features/user_views/home/data/models/doctor_model/doctor_data.dart';
 
 abstract class DoctorStates {}
 
