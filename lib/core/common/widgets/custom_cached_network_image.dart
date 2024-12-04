@@ -26,10 +26,5 @@ class CustomCachedNetworkImage extends StatelessWidget {
 }
 
 customCachedNetworkImageprovider(String imgPath) {
-  return DecorationImage(
-    fit: BoxFit.fill,
-    image: CachedNetworkImageProvider(
-      imgPath,
-    ),
-  );
+  return CachedNetworkImageProvider(imgPath);
 }
