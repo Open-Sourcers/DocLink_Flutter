@@ -22,7 +22,7 @@ class DoctorDetailsViewBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const DoctorDetailsHeaderSecatin(),
+            DoctorDetailsHeaderSecatin(doctor: doctor),
             const DoctorPatientsAndExperienceAndRatings(
               patientsNum: 1000,
               experienceYearsNum: 10,
