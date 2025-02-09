@@ -23,15 +23,12 @@ class DoctorDetailsViewBody extends StatelessWidget {
         child: Column(
           children: [
             DoctorDetailsHeaderSecatin(doctor: doctor),
-            const DoctorPatientsAndExperienceAndRatings(
-              patientsNum: 1000,
-              experienceYearsNum: 10,
-              ratingsNum: 4.5,
+            DoctorPatientsAndExperienceAndRatings(
+              patientsNum: doctor?.consultationFee ?? 0,
+              experienceYearsNum: doctor?.yearsOfExperience ?? 0,
+              ratingsNum: doctor?.rate ?? 0,
             ),
-            const AboutDoctorSection(
-              desc:
-                  'Dr. Bellamy Nicholas is a top specialist at London Bridge Hospital at London. He has achieved several awards and recognition for is contribution and service in his own field. He is available for private consultation. ',
-            ),
+            AboutDoctorSection(desc: doctor?.about ?? 'NO-INFO'),
             const WorkingTimeSection(
               time: 'Mon - Sat (08:30 AM - 09:00 PM)',
             ),
