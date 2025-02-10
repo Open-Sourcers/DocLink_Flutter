@@ -42,6 +42,14 @@ class AppImages {
   /// assets/images/clock.svg
   static const String imagesClock = "assets/images/clock.svg";
 
+  /// Assets for imagesDocLinkLogo
+  /// assets/images/doc_link_logo.png
+  static const String imagesDocLinkLogo = "assets/images/doc_link_logo.png";
+
+  /// Assets for imagesDocLinkSplash
+  /// assets/images/docLink_splash.png
+  static const String imagesDocLinkSplash = "assets/images/docLink_splash.png";
+
   /// Assets for imagesEdit
   /// assets/images/edit.png
   static const String imagesEdit = "assets/images/edit.png";
@@ -125,10 +133,6 @@ class AppImages {
   /// Assets for imagesPaymentProfSettings
   /// assets/images/paymentProfSettings.png
   static const String imagesPaymentProfSettings = "assets/images/paymentProfSettings.png";
-
-  /// Assets for imagesPlaceholder
-  /// assets/images/placeholder.png
-  static const String imagesPlaceholder = "assets/images/placeholder.png";
 
   /// Assets for imagesPrivacySettings
   /// assets/images/privacySettings.png

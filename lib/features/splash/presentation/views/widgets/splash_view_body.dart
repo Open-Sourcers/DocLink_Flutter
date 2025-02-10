@@ -1,7 +1,6 @@
 import 'package:doc_link_project/core/utils/app_images.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({
@@ -9,18 +8,17 @@ class SplashViewBody extends StatelessWidget {
   });
 
   @override
+
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       child: Column(
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height / 6,
+            height: MediaQuery.of(context).size.height / 4,
           ),
-          // Image.asset(AppImages.imagesAppLogo),
-          Lottie.asset(AppImages.animationsAnimatedHart),
-          const SizedBox(height: 10),
-          const Text("DOCTOR", style: Styless.textBold18),
+          Expanded(child: Image.asset(AppImages.imagesDocLinkSplash)),
+          // Lottie.asset(AppImages.animationsAnimatedHart),
           const Spacer(),
           const CircularProgressIndicator(
             color: Colors.white,
