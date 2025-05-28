@@ -19,14 +19,19 @@ class CustomVerifyAccountButtonBlocConsumer extends StatelessWidget {
     return BlocConsumer<ForgetPasswordCubit, ForgetPasswordState>(
       listener: (context, state) {
         if (state is VerifyAccountFailure) {
-          customBottomToastMessage(context,
-              msg: state.errorMessage, type: ToastMessageType.error);
+          ToastHelper.showBottomToast(
+            context,
+            message: state.errorMessage,
+            type: ToastMessageType.error,
+          );
         }
         if (state is VerifyAccountSuccess) {
           context.read<ForgetPasswordCubit>().toResetPassword();
-          customTopToastMessage(context,
-              msg: S.of(context).verification_success,
-              type: ToastMessageType.success);
+          ToastHelper.showTopToast(
+            context,
+            message: S.of(context).verification_success,
+            type: ToastMessageType.success,
+          );
         }
       },
       builder: (context, state) {

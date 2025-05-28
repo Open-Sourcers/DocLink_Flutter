@@ -18,8 +18,11 @@ class CustomResetPasswordButtonBlocConsumer extends StatelessWidget {
     return BlocConsumer<ForgetPasswordCubit, ForgetPasswordState>(
       listener: (context, state) {
         if (state is ResetPasswordFailure) {
-          customBottomToastMessage(context,
-              msg: state.errorMessage, type: ToastMessageType.error);
+          ToastHelper.showBottomToast(
+            context,
+            message: state.errorMessage,
+            type: ToastMessageType.error,
+          );
         } else if (state is ResetPasswordSuccess) {
           GoRouter.of(context).pushReplacement(AppRouter.customSuccessView);
         }
@@ -35,9 +38,11 @@ class CustomResetPasswordButtonBlocConsumer extends StatelessWidget {
                           .read<ForgetPasswordCubit>()
                           .passwordComfirmation
                           .text) {
-                    customBottomToastMessage(context,
-                        msg: S.of(context).passwordEqualConfirmPass,
-                        type: ToastMessageType.error);
+                    ToastHelper.showBottomToast(
+                      context,
+                      message: S.of(context).passwordEqualConfirmPass,
+                      type: ToastMessageType.error,
+                    );
                   } else if (context
                       .read<ForgetPasswordCubit>()
                       .resetPasswordFormKey

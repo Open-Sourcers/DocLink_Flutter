@@ -17,10 +17,12 @@ class ForgetPasswordBottonBlocConsumer extends StatelessWidget {
       listener: (context, state) {
         if (state is SendOtpToEmailSuccess) {
           context.read<ForgetPasswordCubit>().toVerifyAccount();
-          customTopToastMessage(context,
-              msg:
-                  '${S.of(context).codeWasSentToYourEmail} ${context.read<ForgetPasswordCubit>().forgetedPasswordEmail.text}',
-              type: ToastMessageType.success);
+          ToastHelper.showTopToast(
+            context,
+            message:
+                '${S.of(context).codeWasSentToYourEmail} ${context.read<ForgetPasswordCubit>().forgetedPasswordEmail.text}',
+            type: ToastMessageType.success,
+          );
         } else if (state is SendOtpToEmailFailure) {}
       },
       builder: (context, state) {
