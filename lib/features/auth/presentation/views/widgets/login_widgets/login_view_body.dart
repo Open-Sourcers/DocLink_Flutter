@@ -46,7 +46,10 @@ class LoginViewBody extends StatelessWidget {
               ),
               const SizedBox(height: 80),
               // Continue with section
-              const CustomContinueWithSection(),
+              CustomContinueWithSection(
+                onPressedOnFace: () {},
+                onPressedOnGoogle: () {},
+              ),
             ],
           ),
         ),
