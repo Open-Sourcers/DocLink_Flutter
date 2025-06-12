@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../manager/services/google_services.dart';
+
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
 
@@ -48,7 +50,9 @@ class LoginViewBody extends StatelessWidget {
               // Continue with section
               CustomContinueWithSection(
                 onPressedOnFace: () {},
-                onPressedOnGoogle: () {},
+                onPressedOnGoogle: () {
+                  GoogleServices().loginWithGoogle();
+                },
               ),
             ],
           ),
