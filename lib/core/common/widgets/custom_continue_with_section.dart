@@ -1,16 +1,17 @@
 import 'package:doc_link_project/constants.dart';
-import 'package:doc_link_project/core/utils/app_router.dart';
 import 'package:doc_link_project/core/utils/styless.dart';
 import 'package:doc_link_project/features/auth/presentation/views/widgets/custom_continue_with_button.dart';
 import 'package:doc_link_project/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class CustomContinueWithSection extends StatelessWidget {
   const CustomContinueWithSection({
     super.key,
+    this.onPressedOnFace,
+    this.onPressedOnGoogle,
   });
-
+  final Function()? onPressedOnFace;
+  final Function()? onPressedOnGoogle;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,16 +27,12 @@ class CustomContinueWithSection extends StatelessWidget {
           children: [
             CustomContinueWithButton(
               icon: googleIcon,
-              onPressed: () {
-                GoRouter.of(context).push(AppRouter.verificationView);
-              },
+              onPressed: onPressedOnGoogle,
             ),
             const SizedBox(width: 10),
             CustomContinueWithButton(
               icon: faceIcon,
-              onPressed: () {
-                GoRouter.of(context).push(AppRouter.appBottomNavBar);
-              },
+              onPressed: onPressedOnFace,
             ),
           ],
         ),

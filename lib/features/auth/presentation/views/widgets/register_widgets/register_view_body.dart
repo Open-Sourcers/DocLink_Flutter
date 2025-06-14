@@ -42,7 +42,10 @@ class RegisterViewBody extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 30),
-              const CustomContinueWithSection()
+              CustomContinueWithSection(
+                onPressedOnFace: () {},
+                onPressedOnGoogle: () {},
+              ),
             ],
           ),
         ),

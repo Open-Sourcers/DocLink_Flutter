@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class CustomContinueWithButton extends StatelessWidget {
   final Icon icon;
-  final Function() onPressed;
+  final Function()? onPressed;
   const CustomContinueWithButton({
     super.key,
     required this.icon,
-    required this.onPressed,
+    this.onPressed,
   });
 
   @override
