@@ -6,6 +6,7 @@ class EndPoints {
   static const forgetPassword = '/api/Account/forget-password';
   static const verifyAccount = '/api/Account/Confirm-Email';
   static const resetPassword = '/api/Account/Reset-Password';
+  static const googleSignIn = '/api/Account/SignIn-Google';
   // # Doctors Endpoints
   static const createDocAccount = '/api/Doctor/CreateDoctorAccount';
   static const updateDoctor = '/api/Doctor/UpdateDoctor';

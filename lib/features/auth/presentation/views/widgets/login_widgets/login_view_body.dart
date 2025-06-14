@@ -51,7 +51,7 @@ class LoginViewBody extends StatelessWidget {
               CustomContinueWithSection(
                 onPressedOnFace: () {},
                 onPressedOnGoogle: () {
-                  GoogleServices().loginWithGoogle();
+                  GoogleServices().signInWithGoogle();
                 },
               ),
             ],
