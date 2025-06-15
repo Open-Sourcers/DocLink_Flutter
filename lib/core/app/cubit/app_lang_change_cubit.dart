@@ -13,7 +13,7 @@ class AppLangChangeCubit extends Cubit<AppLangChangeStates> {
   getCachedLanguage() {
     String? answer =
         getit.get<CacheHelper>().getString(CachedKey.currentLanguage);
-    currentLang = (answer != null) ? answer : 'ar';
+    currentLang = (answer != null) ? answer : 'en';
   }
 
   _changeLanguage({required String lang}) {
